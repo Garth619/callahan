@@ -1,0 +1,23 @@
+
+
+header {
+	width:100%;
+}
+
+header#homepage_header {
+	height:115px;
+	padding:0 0 0 75px;
+}
+
+.logo_wrapper {
+	display: flex;
+	align-items: center;
+	height:100%;
+	a.logo_link {
+		display: block;
+		img {
+			width:417px;
+			height: 28px;
+		}
+	}
+}

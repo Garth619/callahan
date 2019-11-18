@@ -31,6 +31,7 @@
 
 <style>
 
+@import url("https://use.typekit.net/rzj3elv.css");
 
 <?php the_field( 'review_css','option'); ?>
 
@@ -46,12 +47,21 @@
 
 <body <?php body_class(); ?>>
 	
-	
-	<header>
+	<header id="homepage_header">
+		
+		<div class="logo_wrapper">
+			
+			<a class="logo_link" href="">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/logo.svg"/>
+								
+			</a><!-- logo_link -->
+			
+		</div><!-- logo_wrapper -->
 		
 		<?php // wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
 		
-	</header>
+	</header><!-- homepage_header -->
 				
 
 

@@ -1,15 +1,68 @@
-$themePath: '/wp-content/themes/starter/';
+$themePath: '/wp-content/themes/callahan/';
 
 
 
+// fonts
 
-/*
-@mixin quatro_reg {
-  font-family: quatro, sans-serif;
+
+// operretta
+
+@mixin operetta {
+	font-family: operetta-18,serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+// proxima
+
+@mixin proxima_reg {
+	font-family: proxima-nova,sans-serif;
 	font-weight: 400;
 	font-style: normal;
 }
 
-@include quatro_reg;
+@mixin proxima_semibold {
+	font-family: proxima-nova,sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
 
-*/
+@mixin proxima_bold {
+	font-family: proxima-nova,sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@mixin proxima_extrabold {
+	font-family: proxima-nova,sans-serif;
+	font-weight: 800;
+	font-style: normal;
+}
+
+@mixin proxima_black {
+	font-family: proxima-nova,sans-serif;
+	font-weight: 900;
+	font-style: normal;
+}
+
+
+// colors
+
+
+$bluelight: #21436d;
+$bluedark: #173355;
+$bluegrad: linear-gradient(-58deg, #21436d 0%,#173355 100%);
+
+$red: #f62300;
+$redgrad: #e32202;
+
+$goldlight: #fcb36e;
+$gold: #b7783e;
+$goldgrad: linear-gradient(-58deg, #fcb36e 0%,#b7783e 100%);
+
+$white: #faf7f0;
+
+
+
+
+
