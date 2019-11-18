@@ -49,7 +49,7 @@
 	
 	<header id="homepage_header">
 		
-		<div class="logo_wrapper">
+		<div class="header_left">
 			
 			<a class="logo_link" href="">
 				
@@ -57,9 +57,27 @@
 								
 			</a><!-- logo_link -->
 			
-		</div><!-- logo_wrapper -->
+		</div><!-- header_left -->
 		
-		<?php // wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
+		<div class="header_right">
+			
+			<nav>
+				
+				<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
+				
+			</nav>
+			
+			<div class="phone_wrapper">
+				
+				<span class="call_us">Call Us Today</span><!-- call_us -->
+				
+				<a class="phone" href="">(714) 241-4444</a><!-- phone -->
+				
+			</div><!-- phone_wrapper -->
+			
+		</div><!-- header_right -->
+		
+		
 		
 	</header><!-- homepage_header -->
 				

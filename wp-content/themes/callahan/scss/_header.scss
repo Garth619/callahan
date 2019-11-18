@@ -2,14 +2,15 @@
 
 header {
 	width:100%;
+	display: flex;
 }
 
 header#homepage_header {
 	height:115px;
-	padding:0 0 0 75px;
+	padding:0 50px 0 75px;
 }
 
-.logo_wrapper {
+.header_left {
 	display: flex;
 	align-items: center;
 	height:100%;
@@ -21,3 +22,42 @@ header#homepage_header {
 		}
 	}
 }
+
+
+.header_right {
+	display: flex;
+}
+
+
+nav {
+	ul {
+		list-style: none;
+	}
+	ul.menu {
+		display: flex;
+	}
+	ul.sub-menu {
+		display: none;
+	}
+}
+
+
+.phone_wrapper {
+	text-align: right;
+	span.call_us {
+		display: block;
+		text-transform: uppercase;
+		font-size:14px;
+		letter-spacing: 0.2em;
+		color:$gold;
+		@include proxima_black;
+	}
+	a.phone {
+		color:$red;
+		text-decoration: none;
+		font-size: 40px;
+		display: inline-block;
+		@include operetta;
+	}
+}
+
