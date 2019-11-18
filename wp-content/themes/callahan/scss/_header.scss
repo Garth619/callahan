@@ -3,6 +3,7 @@
 header {
 	width:100%;
 	display: flex;
+	background: #fff;
 }
 
 header#homepage_header {
@@ -50,12 +51,52 @@ nav {
 				margin:0 19px;
 				text-transform: lowercase;
 				font-size: 17px;
+				padding-bottom: 44px;
 				@include proxima_bold;
 				> a {
 						color:$black;
 				}
+				> ul.sub-menu {
+						position: absolute;
+						top: 61px;
+						left:50%;
+						width:331px;
+						background: $offwhite;
+						transform: translateX(-50%);
+						padding-bottom:13px;
+						box-shadow: 0px 7px 9px 0px rgba(147, 147, 147, 0.93);
+						> li {
+			
+						}
+						> li.menu-item-has-children {
+							> a {
+								position: relative;
+								&:after {
+									content:"+";
+									display: block;
+									position: absolute;
+									top:21px;
+									right:-5px;
+								}
+							}
+						}
+			}
+			ul.sub-menu {
+				text-align: center;
+				li {
+					font-size: 18px;
+					line-height: 24px;
+					@include proxima_bold;
+					a {
+						padding:21px 10px;
+						display: inline-block;
+						color:$black;
+					}
+				}
+			}
 		}
 		> li.menu-item-has-children {
+			position: relative;
 			&:hover {
 				> a {
 					&:after {
@@ -88,10 +129,11 @@ nav {
 			 }
 		}
 	}
-	ul.sub-menu {
-		display: none;
-	}
+	
 }
+
+
+
 
 
 .phone_wrapper {

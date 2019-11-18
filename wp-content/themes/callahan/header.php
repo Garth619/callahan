@@ -51,7 +51,7 @@
 		
 		<div class="header_left">
 			
-			<a class="logo_link" href="">
+			<a class="logo_link" href="<?php bloginfo('url');?>">
 				
 				<img src="<?php bloginfo('template_directory');?>/images/logo.svg"/>
 								
