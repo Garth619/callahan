@@ -7,7 +7,7 @@ header {
 
 header#homepage_header {
 	height:115px;
-	padding:0 50px 0 75px;
+	padding:0 47px 0 75px;
 }
 
 .header_left {
@@ -26,15 +26,67 @@ header#homepage_header {
 
 .header_right {
 	display: flex;
+	flex-grow:1;
+	justify-content: flex-end;
 }
 
 
 nav {
+	flex-grow:1;
+	margin:54px 0 0 0;
 	ul {
 		list-style: none;
+		li {
+			a {
+				text-decoration: none;
+				cursor: pointer;
+			}
+		}
 	}
 	ul.menu {
 		display: flex;
+		justify-content: center;
+		> li {
+				margin:0 19px;
+				text-transform: lowercase;
+				font-size: 17px;
+				@include proxima_bold;
+				> a {
+						color:$black;
+				}
+		}
+		> li.menu-item-has-children {
+			&:hover {
+				> a {
+					&:after {
+						opacity: 1;
+					}
+					&:before {
+						opacity: 0;
+					}
+				}
+			}
+			 > a {
+				 position: relative;
+				 	&:before, &:after {
+					 	content:"";
+					 	position: absolute;
+					 	top:8px;
+					 	right:-18px;
+					 	width:12px;
+					 	height:8px;
+					 	background-size: 13px 10px;
+					 	transition: all 200ms ease-in-out;
+				 	}
+				 	&:after {
+					 	opacity: 0;
+					 	background: url(#{$themePath}images/icon-arrow-down-red.svg) no-repeat;
+				 }
+				 &:before {
+					 background: url(#{$themePath}images/icon-arrow-down.svg) no-repeat;
+				 }
+			 }
+		}
 	}
 	ul.sub-menu {
 		display: none;
@@ -43,13 +95,18 @@ nav {
 
 
 .phone_wrapper {
-	text-align: right;
+	//text-align: right;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
 	span.call_us {
 		display: block;
 		text-transform: uppercase;
 		font-size:14px;
 		letter-spacing: 0.2em;
 		color:$gold;
+		margin-bottom:2px;
 		@include proxima_black;
 	}
 	a.phone {
