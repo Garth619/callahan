@@ -234,3 +234,73 @@ nav {
 	}
 }
 
+
+@media screen and (max-width: 1765px) {
+	
+	
+	.phone_wrapper {
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+		margin-top:24px;
+		margin-bottom: 20px;
+		span.call_us {
+			display: inline-block;
+			margin-right:14px;
+			margin-bottom: 0;
+			position: relative;
+			top:3px;
+		}
+		a.phone {
+			font-size: 33px;
+		}
+	}
+	
+	
+	.header_right {
+		flex-direction: column;
+	}
+	
+	nav {
+		order:2;
+		margin-top:0;
+		ul.menu {
+			justify-content: flex-end;
+			> li {
+				padding-bottom: 21px;
+				&:last-of-type {
+					margin-right:0;
+				}
+				> ul.sub-menu {
+						top: 38px;
+				}
+			}
+		}
+	}
+	
+	.phone_wrapper {
+		order:1;
+	}
+	
+} /* Media Query */
+
+
+
+
+@media screen and (max-width: 1450px) {
+	
+	
+	header#homepage_header {
+		padding:0 31px;
+	}
+	
+.header_left {
+	a.logo_link {
+		img {
+			width:359px;
+		}
+	}
+}	
+	
+} /* Media Query */
+
