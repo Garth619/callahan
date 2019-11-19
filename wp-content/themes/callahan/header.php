@@ -89,7 +89,13 @@
 					
 			</div><!-- open_wrapper -->
 				
-		<div class="close_wrapper"></div><!-- close_wrapper -->
+		<div class="close_wrapper">
+			
+			<div class="close"></div><!-- close -->
+			
+			<span class="close_title">Close</span><!-- close_title -->
+			
+		</div><!-- close_wrapper -->
 				
 	</div><!-- menu_wrapper -->
 		
