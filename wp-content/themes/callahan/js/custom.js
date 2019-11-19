@@ -330,5 +330,20 @@ var macyInstance = Macy({
 $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 
 
+
+// nav
+
+
+$('nav ul.sub-menu > li.menu-item-has-children > a').on('click', function(e) {
+	
+	$(this).toggleClass('active');
+  
+	$(this).next('ul.sub-menu').slideToggle(300);
+
+});
+
+
+
+
   
 }); // document ready
