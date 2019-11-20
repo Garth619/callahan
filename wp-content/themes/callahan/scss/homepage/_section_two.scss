@@ -1,0 +1,40 @@
+#section_two {
+	position: relative;
+	z-index: 1;
+	height:3000px;
+}
+
+.sec_two_slider {
+	max-width: 1613px;
+	margin:-325px auto 0;
+}
+
+
+.sec_two_slide {
+	height:510px;
+	width:502px;//
+	position: absolute;
+	//background: pink;
+	&:before {
+		content:"";
+		display: block;
+		position: absolute;
+		z-index:1;
+		top:0;
+		left:32px;
+		width:calc(100% - 64px);
+		height:100%;
+		border: 1px solid;
+		border-image: linear-gradient(58deg, rgb(252,179,110), rgb(183,120,62)) 1;
+	}
+	&:after {
+		content:"";
+		display: block;
+		position: absolute;
+		top:28px;
+		left:0;
+		width:100%;
+		height:calc(100% - 56px);
+		background: $offwhite;
+	}
+}
