@@ -101,19 +101,48 @@ nav.nav_desktop {
 								}
 						}
 						> li.menu-item-has-children {
+								&:hover {
+									> a {
+										 span {
+											 &:after {
+												 opacity: 1;
+											 }
+										 }
+									}
+								}
 							> a {
 								position: relative;
 								display: block;
-								&:after {
-									content:"+";
-									display: inline-block;
-									margin-left:7px;
-									vertical-align: top;
-								}
-							}
+								span {
+									position: relative;
+									&:before, &:after {
+										content:"";
+										position: absolute;
+										top:8px;
+										right:-18px;
+										width:12px;
+										height:8px;
+										background-size: 13px 10px;
+										transition: all 200ms ease-in-out;
+				 					}
+				 					&:after {
+				 						opacity: 0;
+				 						background: url(#{$themePath}images/icon-arrow-down-white.svg) no-repeat;
+				 					}
+				 					&:before {
+				 						background: url(#{$themePath}images/icon-arrow-down.svg) no-repeat;
+				 					}
+				 				}
+				 			}
 							a.active {
 								background: $bluedark;
 								color:#fff;
+								span {
+									&:after {
+										//opacity: 1;
+										transform: rotate(180deg);
+									}
+								}
 							}
 							ul.sub-menu {
 								display: none;
