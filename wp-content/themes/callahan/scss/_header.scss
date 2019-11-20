@@ -461,17 +461,45 @@ nav.nav_desktop {
 	
 	nav.nav_tablet {
 		text-align: center;
-		padding-top:80px;
+		padding-top:83px;
 		ul {
 			li {
 				text-transform: lowercase;
+				font-size: 18px;
+				line-height: 24px;
 				@include proxima_extrabold;
 				a {
 					text-decoration: none;
+					display: block;
+					padding:20px 0;
+					color:$black;
+					cursor: pointer;
 				}
 			}
 		}
-	}
+		ul.menu {
+			> li.menu-item-has-children {
+					> a.active {
+							background: $bluedark;
+							color:#fff;
+					}
+					> ul.sub-menu {
+							background: $bluelight;
+							> li {
+									a {
+										color:#fff;
+									}
+								}
+							> li.menu-item-has-children {
+								
+							}
+						}
+					}
+				}
+				ul.sub-menu {
+					display: none;
+				}
+		}
 	
 	
 } /* Media Query */

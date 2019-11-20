@@ -336,7 +336,9 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 
 $('nav ul.sub-menu > li.menu-item-has-children > a').on('click', function(e) {
 	
-	
+	$(this).toggleClass('active');
+  
+	$(this).next('ul.sub-menu').slideToggle(300);
 
 });
 
@@ -362,13 +364,14 @@ $('nav ul.sub-menu > li.menu-item-has-children > a').on('click', function(e) {
 		
 	}
 	
-	function desktopClick() {
+	function topMenu() {
 		
 		$(this).toggleClass('active');
-  
-		$(this).next('ul.sub-menu').slideToggle(300);
 		
+		$(this).next('ul.sub-menu').slideToggle(300);
+	
 	}
+	
 	
 	
 	// nav
@@ -378,7 +381,9 @@ $('nav ul.sub-menu > li.menu-item-has-children > a').on('click', function(e) {
 			
 		navDesktop();
 		
-		$('nav ul.sub-menu > li.menu-item-has-children > a').off().on('click', desktopClick);
+		// off
+		
+		$('nav ul.menu > li.menu-item-has-children > a').off('click', topMenu);
 				
 	}	
 	
@@ -389,7 +394,7 @@ $('nav ul.sub-menu > li.menu-item-has-children > a').on('click', function(e) {
 		
 		// off
 		
-		$('nav ul.sub-menu > li.menu-item-has-children > a').off('click', desktopClick);
+		$('nav ul.menu > li.menu-item-has-children > a').off().on('click', topMenu);
 				
 	}
 	
@@ -403,11 +408,9 @@ $('nav ul.sub-menu > li.menu-item-has-children > a').on('click', function(e) {
 			
 			navDesktop();
 			
-			$('nav ul.sub-menu > li.menu-item-has-children > a').off().on('click', desktopClick);
-			
 			// off
-			
-			//$('.nav_inner li.menu-item-has-children > a').off('click', tabletClick);			
+		
+			$('nav ul.menu > li.menu-item-has-children > a').off('click', topMenu);		
 		
 		}	
 		
@@ -416,15 +419,12 @@ $('nav ul.sub-menu > li.menu-item-has-children > a').on('click', function(e) {
 			navTablet();
 			
 			// off
-			
-			$('nav ul.sub-menu > li.menu-item-has-children > a').off('click', desktopClick);
+		
+			$('nav ul.menu > li.menu-item-has-children > a').off().on('click', topMenu);
 					
 		}
 		
 	}, 100)); 
-
-
-
 
 
   
