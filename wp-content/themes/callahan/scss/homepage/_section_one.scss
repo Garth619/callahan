@@ -145,3 +145,26 @@ svg#play_button {
 		fill:#fff;
 	}
 }
+
+a.button {
+	margin-top:35px;
+	background: $red;
+	color:#fff;
+	padding:27px 37px 23px;
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 14px;
+	border-radius: 45px;
+	letter-spacing: 0.28em;
+	box-shadow: 0px 7px 9px 0px rgba(0, 0, 0, 0.3);
+	transition: all 200ms ease-in-out;
+	@include proxima_black;
+	&:hover {
+		background: #fff;
+		color:$red;
+	}
+}
+
+
+

@@ -34,6 +34,8 @@
 				
 				<span class="sec_one_header">California’s<br/> Premier Litigation Law Firm</span>
 				
+				<a class="button" href="#consultation">Free Consultation</a>
+				
 			</div><!-- sec_one_title_wrapper -->
 			
 		</div><!-- sec_one_content_inner -->
