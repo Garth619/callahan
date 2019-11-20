@@ -1,8 +1,7 @@
 <svg version="1.1" id="play_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="91.8px" height="91.8px" viewBox="0 0 91.8 91.8" style="enable-background:new 0 0 91.8 91.8;" xml:space="preserve">
 <style type="text/css">
-	.st0-play{fill:#FFFFFF;}
-	.st1-play{fill:#E12619;}
+	
 </style>
 <circle class="st0-play" cx="45.9" cy="45.9" r="45.9"/>
 <polygon class="st1-play" points="64.8,47.1 51.3,54.9 37.8,62.6 37.8,47.1 37.8,31.6 51.3,39.3 "/>

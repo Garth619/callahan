@@ -26,6 +26,8 @@
 					
 				</div><!-- sec_one_video_thumb_wrapper -->
 				
+				<span class="video_title">Text will go here about the firm and the video that is above this</span><!-- video_title -->
+				
 			</div><!-- sec_one_vid_wrapper -->
 			
 			<div class="sec_one_title_wrapper">
