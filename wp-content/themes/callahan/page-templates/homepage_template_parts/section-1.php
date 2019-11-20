@@ -32,7 +32,7 @@
 			
 			<div class="sec_one_title_wrapper">
 				
-				
+				<span class="sec_one_header">California’s<br/> Premier Litigation Law Firm</span>
 				
 			</div><!-- sec_one_title_wrapper -->
 			
