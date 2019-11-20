@@ -63,6 +63,18 @@
 			
 			<nav>
 				
+				<div class="menu_wrapper menu_wrapper_close">
+				
+					<div class="close_wrapper">
+			
+						<div class="close"></div><!-- close -->
+			
+							<span class="close_title">Close</span><!-- close_title -->
+			
+					</div><!-- close_wrapper -->
+				
+				</div><!-- menu_wrapper -->
+				
 				<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
 				
 			</nav>
@@ -75,9 +87,7 @@
 				
 			</div><!-- phone_wrapper -->
 			
-		</div><!-- header_right -->
-		
-		<div class="menu_wrapper">
+			<div class="menu_wrapper">
 				
 			<div class="open_wrapper">
 					
@@ -89,15 +99,11 @@
 					
 			</div><!-- open_wrapper -->
 				
-		<div class="close_wrapper">
+			</div><!-- menu_wrapper -->
 			
-			<div class="close"></div><!-- close -->
-			
-			<span class="close_title">Close</span><!-- close_title -->
-			
-		</div><!-- close_wrapper -->
-				
-	</div><!-- menu_wrapper -->
+		</div><!-- header_right -->
+		
+		
 		
 	</header><!-- homepage_header -->
 				
