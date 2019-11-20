@@ -7,14 +7,16 @@
 .sec_two_slider {
 	max-width: 1613px;
 	margin:-325px auto 0;
+	display: flex;
+	justify-content: space-between;
 }
 
 
 .sec_two_slide {
 	height:510px;
-	width:502px;//
-	position: absolute;
-	//background: pink;
+	width:502px;
+	position: relative;
+	transform: translateY(38px);
 	&:before {
 		content:"";
 		display: block;
