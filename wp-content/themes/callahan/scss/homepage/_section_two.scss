@@ -15,8 +15,23 @@
 .sec_two_slide {
 	height:510px;
 	width:502px;
+	padding:103px 65px;
 	position: relative;
 	transform: translateY(38px);
+	transition: all 800ms cubic-bezier(.17,.66,.34,.98);
+	&:hover {
+		transform: translateY(0px);
+		a {
+			.sec_two_inner {
+				span.learn_more {
+					color:$redlight;
+				}
+			}
+		}
+	}
+	a {
+		text-decoration: none;
+	}
 	&:before {
 		content:"";
 		display: block;
@@ -38,5 +53,37 @@
 		width:100%;
 		height:calc(100% - 56px);
 		background: $offwhite;
+	}
+}
+
+
+.sec_two_inner {
+	position: relative;
+	z-index:1;
+	max-width:340px;
+	margin:0 auto;
+	span {
+		display: block;
+	}
+	span.sec_two_slide_title {
+		font-size: 45px;
+		color:$redlight;
+		@include operetta;
+	}
+	span.sec_two_slide_content {
+		color:$black;
+		font-size: 18px;
+		line-height: 32px;
+		margin-top:48px;
+		@include proxima_semibold;
+	}
+	span.learn_more {
+		text-transform: uppercase;
+		color:$gold;
+		margin-top:31px;
+		font-size: 13px;
+		letter-spacing: 0.15em;
+		transition: all 200ms ease-in-out;
+		@include proxima_black;
 	}
 }
