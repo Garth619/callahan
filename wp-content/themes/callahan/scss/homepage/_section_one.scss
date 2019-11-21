@@ -83,6 +83,8 @@
 	position: relative;
 	cursor: pointer;
 	svg#play_button {
+		width:91px;
+		height:91px;
 		.st0-play, .st1-play {
 			transition: all 200ms ease-in-out;
 		}
@@ -232,5 +234,62 @@ a.button {
 	    
 	
 	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1195px) {
+	
+	
+	.sec_one_title_wrapper {
+    padding: 95px 0 0 60px;
+	}
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1180px) {
+	
+	
+
+	#section_one {
+		margin-top:82px;
+	}
+	
+	.sec_one_bg_wrapper {
+		display: block;
+	}
+	
+	.sec_one_left {
+		width:100%;
+	}
+	
+	.sec_one_right {
+		display: none;
+	}
+	
+	.sec_one_title_wrapper {
+		span.sec_one_header {
+			font-size: 72px;
+			line-height: 78px;
+			 max-width: 460px;
+		}
+	}
+	
+	.sec_one_vid_wrapper {
+		flex-basis:231px;
+	}
+	
+	.sec_one_video_thumb_wrapper {
+		height:295px;
+		svg#play_button {
+			width:73px;
+			height:73px;
+			top: 116px;
+			left: 79px;
+		}
+	}
+	
+	   
 	
 } /* Media Query */

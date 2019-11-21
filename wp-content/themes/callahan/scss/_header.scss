@@ -647,9 +647,13 @@ nav.nav_desktop {
 	
 	
 	header#homepage_header {
-		display: block;
+		//display: block;
 		padding:0;
 		height:auto;
+	}
+	
+	.header_inner {
+		display: block;
 	}
 	
 	.header_left, .header_right {
@@ -658,6 +662,7 @@ nav.nav_desktop {
 	
 	.header_left {
 		height:60px;
+		text-align: center;
 		a.logo_link {
 			margin:0 auto;
 			img {
