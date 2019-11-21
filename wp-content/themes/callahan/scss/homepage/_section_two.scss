@@ -321,6 +321,7 @@
 		
 		.sec_two_content_wrapper {
 			max-width:708px;
+			margin: 0 auto 200px;
 		}
 		
 		.sec_two_content_intro {
@@ -376,7 +377,49 @@
 			margin-top: 23px;
 		}
 	}
+	
+	.sec_two_content_wrapper {
+    max-width: 550px;
+    margin-bottom:130px;
+    padding:0;
+   }
+	
+	.sec_two_content_intro {
+		padding: 61px 0 0;
+		
+		h1 {
+			font-size:52px;
+			line-height: 60px;
+			padding-bottom: 27px;
+			max-width: 405px;
+		}
+		p {
+			font-size: 21px;
+			line-height: 34px;
+		}
+	}
+	
+	.sec_two_columns {
+		margin-top: 52px;
+	}
 	    
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 475px) {
+	
+	    
+	   .sec_two_content_intro {
+		   p {
+			   max-width: 312px;
+		   }
+	   } 
+	    
+	    
+	
 	
 	
 } /* Media Query */
