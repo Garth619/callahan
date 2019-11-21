@@ -28,13 +28,15 @@
 				
 				<span class="video_title">Text will go here about the firm and the video that is above this</span><!-- video_title -->
 				
+				<a class="button video_button" href="#consultation">Free Consultation</a>
+				
 			</div><!-- sec_one_vid_wrapper -->
 			
 			<div class="sec_one_title_wrapper">
 				
 				<span class="sec_one_header">California’s<br/> Premier Litigation Law Firm</span>
 				
-				<a class="button" href="#consultation">Free Consultation</a>
+				<a class="button title_button" href="#consultation">Free Consultation</a>
 				
 			</div><!-- sec_one_title_wrapper -->
 			

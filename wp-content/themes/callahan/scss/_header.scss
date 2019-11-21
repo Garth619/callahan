@@ -343,7 +343,7 @@ nav.nav_desktop {
 	
 .header_left {
 	display: block;
-	margin-top:34px;
+	padding-top:34px;
 	a.logo_link {
 		img {
 			width:359px;
@@ -646,6 +646,11 @@ nav.nav_desktop {
 @media screen and (max-width: 767px) {
 	
 	
+	header {
+		position: relative;
+	}
+	
+	
 	header#homepage_header {
 		//display: block;
 		padding:0;
@@ -661,6 +666,7 @@ nav.nav_desktop {
 	}
 	
 	.header_left {
+		padding-top: 20px;
 		height:60px;
 		text-align: center;
 		a.logo_link {
@@ -675,6 +681,14 @@ nav.nav_desktop {
 	.header_right {
 		background: $offwhite;
 		height:80px;
+	}
+	
+	
+	.header_right.fixed {
+		position: fixed;
+		top:0;
+		left:0;
+		
 	}
 	
 	

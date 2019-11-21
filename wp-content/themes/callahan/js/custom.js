@@ -231,7 +231,7 @@ jQuery(document).ready(function($){
 		
 		
 
-    // createWaypoint('section_one', '.sticky_header', 'visible', -300, null, true);
+    createWaypoint('section_one', '.header_right, #section_one', 'fixed', 80, null, true);
     
    
 
@@ -303,6 +303,24 @@ $('.sec_three_slider').slick({
  });
  
 */
+
+
+$('.sec_two_slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  mobileFirst:true,
+  adaptiveHeight: true,
+  slidesToScroll: 1,
+	arrows:false,
+	dots:true,
+	responsive: [
+    {
+      breakpoint: 1150,
+      settings: "unslick"
+     }
+	]
+ });
+
  
  
  

@@ -146,3 +146,169 @@
 	
 	
 } /* Media Query */
+
+
+@media screen and (max-width: 1180px) {
+	
+	
+	.sec_two_slide {
+		height: 553px;
+	}
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1150px) {
+	
+	
+		.sec_two_slider {
+    	max-width: 502px;
+    	margin: -324px auto 0;
+    	padding-bottom: 67px;
+    	.slick-slide {
+		    margin: 0 19px;
+		  }
+		  /* the parent */
+		  .slick-list {
+		    margin: 0 -19px;
+		  }
+		  .slick-dots {
+		  	bottom: 0px;
+		  	li.slick-active {
+		  		button {
+		  			&:before {
+		  				color:$redlight;
+		  			}
+		  		}
+		  	}
+		  	li:hover {
+		  		button {
+		  			&:before {
+		  				color:$red;
+		  			}
+		  		}
+		  	}
+		  	li {
+		  		margin:0 3px;
+		  		width:16px;
+		  		button {
+		  			width:16px;
+		  			&:before {
+		  				width:16px;
+		  				opacity: 1;
+		  				color: $black;
+		  				font-size:43px;
+		  			}
+		  		}
+		  	}
+		  }
+
+		}
+	
+		.sec_two_slide {
+			width:auto;
+			padding: 99px 65px 0;
+			height:510px;
+			transform: translateY(0);
+			&:before {
+				left:33px;
+				width:calc(100% - 66px);
+			}
+			&:after {
+				top:28px;
+				height:calc(100% - 56px);
+			}
+		}
+		
+		
+		.sec_two_inner {
+			span.sec_two_slide_content {
+				margin-top: 46px;
+			}
+		}
+		
+		
+			
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 767px) {
+	
+	.sec_two_slider {
+		margin: -344px auto 0;
+		padding-bottom: 48px;
+		max-width:355px;
+	}
+	
+	
+	.sec_two_slide {
+		height:auto;
+		padding: 84px 65px 99px;
+	}
+	
+	
+	.sec_two_inner {
+		span.sec_two_slide_title {
+			font-size: 42px;
+			line-height: 46px;
+		}
+		span.sec_two_slide_content {
+			margin-top:28px;
+			font-size: 17px;
+		}
+		span.learn_more {
+			margin-top: 23px;
+		}
+	}
+	    
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 400px) {
+	
+	
+	.sec_two_inner {
+		span.sec_two_slide_title {
+			font-size: 35px;
+			line-height: 39px;
+		}
+		span.sec_two_slide_content {
+			
+		}
+		span.learn_more {
+			
+		}
+	}
+
+	
+	
+} /* Media Query */
+
+@media screen and (max-width: 360px) {
+	
+	
+	.sec_two_inner {
+		span.sec_two_slide_title {
+			font-size: 30px;
+			line-height: 35px;
+		}
+		span.sec_two_slide_content {
+			
+		}
+		span.learn_more {
+			
+		}
+	}
+
+	
+	
+} /* Media Query */
+
+
+
