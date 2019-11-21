@@ -49,6 +49,8 @@
 	
 	<header id="homepage_header">
 		
+		<div class="header_inner">
+		
 		<div class="header_left">
 			
 			<a class="logo_link" href="<?php bloginfo('url');?>">
@@ -103,7 +105,7 @@
 			
 		</div><!-- header_right -->
 		
-		
+		</div><!-- header_inner -->
 		
 	</header><!-- homepage_header -->
 				
