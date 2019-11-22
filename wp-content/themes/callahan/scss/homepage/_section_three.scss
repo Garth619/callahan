@@ -4,13 +4,11 @@
 	width:100%;
 	background: $bluegrad;
 	padding:0 88px;
-	height:3000px;
-	
 }
 
 
 .sec_three_inner {
-	//max-width:1044px;
+	max-width:1744px;
 	margin:0 auto;
 	display: flex;
 	padding:0px 0 0 50px;
@@ -18,7 +16,7 @@
 
 
 .sec_three_slider_wrapper {
-	flex-grow: 1;
+	//flex-grow: 1;
 	margin-top:70px;
 }
 
@@ -39,30 +37,77 @@
 	}
 }
 
-.sec_three_slider {
-	padding: 0 149px 0 75px;
+
+.sec_three_slider_wrapper {
+	width:calc(100% - 531px);
+	margin-bottom:120px;
 }
+
+.sec_three_slider {
+	padding: 0 149px 105px 75px;
+	
+	.slick-dots {
+		bottom: 0px;
+		text-align: left;
+		li.slick-active {
+			button {
+				&:before {
+					color:$redlight;
+				}
+			}
+		}
+		li:hover {
+			button {
+				&:before {
+					color:$redlight;
+				}
+			}
+		}
+		li {
+			margin:0 5px 0 0;
+			width:16px;
+			button {
+				width:16px;
+				&:before {
+					width:16px;
+					opacity: 1;
+					color: $goldlight;
+					font-size:43px;
+				}
+			}
+		}
+	}
+}
+
 
 .sec_three_slide {
 	margin-top:101px;
-}
-
-span.sec_three_slide_content {
-	display: block;
-	font-size: 74px;
-	line-height: 95px;
-	color:$gold;
-	  @supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent) {
-	  	background: $goldgrad;
+	span.sec_three_slide_content {
+		display: block;
+		font-size: 74px;
+		line-height: 95px;
+		color:$gold;
+		@supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent) {
+			background: $goldgrad;
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 	 	}
-	@include operetta;
+	 	@include operetta;
+	}
+	span.sec_three_name {
+		display: block;
+		color:$offwhite;
+		text-transform: lowercase;
+		font-size: 18px;
+		margin-top:32px;
+		@include proxima_extrabold;
+	}
 }
 
 
+
 .sec_three_image_wrapper {
-	flex-basis:531px;
+	width:531px;
 	flex-shrink: 0;
 	overflow: hidden;
 	margin-top:-98px;

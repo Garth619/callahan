@@ -320,6 +320,20 @@ $('.sec_two_slider').slick({
      }
 	]
  });
+ 
+ 
+ 
+ $('.sec_three_slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  mobileFirst:true,
+  adaptiveHeight:true,
+  adaptiveHeight: true,
+  slidesToScroll: 1,
+	arrows:false,
+	fade:true,
+	dots:true
+ });
 
  
  
