@@ -315,7 +315,7 @@ $('.sec_two_slider').slick({
 	dots:true,
 	responsive: [
     {
-      breakpoint: 1150,
+      breakpoint: 1100,
       settings: "unslick"
      }
 	]

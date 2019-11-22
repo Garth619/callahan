@@ -16,8 +16,7 @@
 				
 				<div class="sec_three_slide">
 					
-					<span class="sec_three_slide_content">Lorem ipsum dolor sit am
-et consec ipsum lorme doij. Femme amet consect sdfulle amet consecturer pre.</span><!-- sec_three_slide_content -->
+					<span class="sec_three_slide_content">Lorem ipsum dolor sit am consec ipsum lorme doij. Femme amet consect sdfulle amet consecturer pre.</span><!-- sec_three_slide_content -->
 
 					<span class="sec_three_name">- clients first and last name</span><!-- sec_three_name -->
 					
