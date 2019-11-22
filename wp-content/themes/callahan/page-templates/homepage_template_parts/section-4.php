@@ -4,7 +4,7 @@
 		
 		<div class="sec_four_top_content">
 			
-			<span>Record Breaking Results</span>
+			<span>Record<br/> Breaking Results</span>
 			
 			<a class="results_button" href="">View All Results</a><!-- results_button -->
 			
@@ -80,7 +80,7 @@
 				
 				<div class="sec_four_sp_left">
 					
-					<span>We’re not a traditional law firm</span>
+					<span>We’re not<br/> a traditional<br/> law firm</span>
 					
 				</div><!-- sec_four_sp_left -->
 				
@@ -102,7 +102,7 @@
 				
 				<div class="sec_four_sp_left">
 					
-					<span>The benefits of our integrated approach to accident litigation</span>
+					<span>The benefits<br/> of our integrated approach to accident litigation</span>
 					
 				</div><!-- sec_four_sp_left -->
 				

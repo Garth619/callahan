@@ -22,13 +22,16 @@
 	text-align: center;
 	position: relative;
 	z-index:1;
-	padding:170px 0 0;
+	padding:170px 45px 0;
 	span {
 		color:#fff;
 		display:block;
 		font-size: 74px;
 		line-height: 74px;
 		@include operetta;
+		br {
+			display: none;
+		}
 	}
 }
 
@@ -56,10 +59,11 @@ a.results_button {
 
 
 .sec_four_slider_wrapper {
-	max-width:1768px;
+	max-width:1888px;
 	margin:-423px auto 0;
 	position: relative;
 	z-index:1;
+	padding:0 60px;
 }
 
 .sec_four_slider {
@@ -155,7 +159,9 @@ a.results_button {
 }
 
 .sec_four_selling_points {
-	max-width: 1450px;
+	max-width: 1690px;
+	padding-left:120px;
+	padding-right: 120px;
 	margin:127px auto 0;
 }
 
@@ -194,6 +200,9 @@ a.results_button {
 						-webkit-text-fill-color: transparent;
 				 	}
 				@include operetta;
+				br {
+					display: none;
+				}
 			}
 		}
 		.sec_four_sp_right {
@@ -205,3 +214,91 @@ a.results_button {
 		}
 	}
 }
+
+@media screen and (max-width: 1640px) {
+	
+	
+	.sec_four_top {
+		height:827px;
+	}
+	
+	.sec_four_top_content {
+    padding: 113px 45px 0;
+	}
+	
+	.sec_four_slider_wrapper {
+		max-width:1360px;
+	}
+	
+	a.results_button {
+		margin-top: 56px;
+	}
+	
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1450px) {
+	
+	
+	#section_four {
+    padding-bottom: 40px;
+	}
+	
+	.sec_four_selling_points {
+		margin: 107px auto 0;
+	}
+	
+	.sec_four_selling_point {
+		padding-bottom: 69px;
+		.sec_four_sp_inner {
+			.sec_four_sp_left {
+				flex-basis:46%;
+				span {
+					font-size: 45px;
+					line-height: 60px;
+					max-width: 396px;
+					br {
+						display: inline-block;
+					}
+				}
+			}
+			.sec_four_sp_right.content {
+				margin-top:46px;
+				flex-basis:54%;
+			}
+		}
+	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1100px) {
+	
+	.sec_four_top {
+		height:846px;
+	}
+	
+	.sec_four_top_content {
+		padding: 82px 45px 0;
+		span {
+			br {
+				display: inline-block;
+			}
+		}
+	}
+	
+	a.results_button {
+    margin-top: 49px;
+	}
+	
+	.sec_four_slider_wrapper {
+		margin: -409px auto 0;
+		max-width:700px;
+	}
+	
+	
+} /* Media Query */

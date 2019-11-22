@@ -313,7 +313,7 @@ $('.sec_four_slider').slick({
 	dots:true,
 	responsive: [
     {
-      breakpoint: 1150,
+      breakpoint: 1640,
       settings: {
       slidesToShow: 2,
       slidesToScroll: 2,
@@ -321,14 +321,6 @@ $('.sec_four_slider').slick({
    },
    {
       breakpoint: 1100,
-      settings: {
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      dots:true,
-     }
-   },
-   {
-      breakpoint: 767,
       settings: {
       slidesToShow: 1,
       slidesToScroll: 1,
