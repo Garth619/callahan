@@ -33,3 +33,130 @@
 }
 
 
+a.results_button {
+	color:#fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: $redlight;
+	font-size: 16px;
+	border-radius: 45px;
+	text-align: center;
+	margin-top:60px;
+	letter-spacing: 0.28em;
+	padding:27px 44px 23px;
+	display: inline-block;
+	box-shadow: 0px 7px 9px 0px rgba(0, 0, 0, 0.3);
+	transition: all 300ms ease-in-out;
+	@include proxima_black;
+	&:hover {
+		background: #fff;
+		color:$red;
+	}
+}
+
+
+.sec_four_slider_wrapper {
+	max-width:1768px;
+	margin:-423px auto 0;
+	position: relative;
+	z-index:1;
+}
+
+.sec_four_slider {
+	padding-bottom: 80px;
+	.slick-slide {
+	    margin: 0 30px;
+	  }
+	  .slick-list {
+	    margin: 0 -30px;
+	  }
+	  .slick-dots {
+	  	bottom: 0px;
+	  	li.slick-active {
+	  		button {
+	  			&:before {
+	  				color:$redlight;
+	  			}
+	  		}
+	  	}
+	  	li:hover {
+	  		button {
+	  			&:before {
+	  				color:$redlight;
+	  			}
+	  		}
+	  	}
+	  	li {
+	  		margin:0 3px 0;
+	  		width:16px;
+	  		button {
+	  			width:16px;
+	  			&:before {
+	  				width:16px;
+	  				opacity: 1;
+	  				color: $black;
+	  				font-size:43px;
+	  				transition: all 200ms ease-in-out;
+	  			}
+	  		}
+	  	}
+	  }
+}
+
+.sec_four_slide {
+	height:652px;
+	position: relative;
+	&:before {
+		content:"";
+		display: block;
+		position: absolute;
+		z-index:1;
+		top:0;
+		left:52px;
+		width:calc(100% - 104px);
+		height:100%;
+		border: 1px solid;
+		border-image: linear-gradient(58deg, rgb(252,179,110), rgb(183,120,62)) 1;
+	}
+	&:after {
+		content:"";
+		display: block;
+		position: absolute;
+		top:50px;
+		left:0;
+		width:100%;
+		height:calc(100% - 100px);
+		background: $offwhite;
+	}
+}
+
+
+.sec_four_slide_inner {
+	position: relative;
+	padding: 183px 53px 0;
+	z-index:1;
+	text-align: center;
+	span {
+		display: block;
+	}
+	span.amount {
+		font-size: 100px;
+		color:$redlight;
+		@include operetta;
+	}
+	span.description {
+		font-size: 22px;
+		line-height: 34px;
+		color:$black;
+		margin:60px auto 0;
+		max-width:330px;
+		@include proxima_semibold;
+	}
+}
+
+.sec_four_selling_points {
+	max-width: 1465px;
+	margin:0 auto;
+	height:300px;
+	background: pink;
+}

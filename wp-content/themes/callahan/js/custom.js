@@ -305,6 +305,41 @@ $('.sec_three_slider').slick({
 */
 
 
+$('.sec_four_slider').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+	arrows:false,
+	dots:true,
+	responsive: [
+    {
+      breakpoint: 1150,
+      settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2,
+     }
+   },
+   {
+      breakpoint: 1100,
+      settings: {
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      dots:true,
+     }
+   },
+   {
+      breakpoint: 767,
+      settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots:true,
+     }
+   }
+	]
+ });
+
+
+
 $('.sec_two_slider').slick({
   infinite: true,
   slidesToShow: 1,
