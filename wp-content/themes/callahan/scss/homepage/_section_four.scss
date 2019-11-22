@@ -1,5 +1,5 @@
 #section_four {
-	
+	padding-bottom:100px;
 }
 
 
@@ -149,14 +149,59 @@ a.results_button {
 		line-height: 34px;
 		color:$black;
 		margin:60px auto 0;
-		max-width:330px;
+		max-width: 324px;
 		@include proxima_semibold;
 	}
 }
 
 .sec_four_selling_points {
-	max-width: 1465px;
-	margin:0 auto;
-	height:300px;
-	background: pink;
+	max-width: 1450px;
+	margin:127px auto 0;
+}
+
+.sec_four_selling_point {
+	padding-bottom:96px;
+	span.number {
+		display: flex;
+		color:$redlight;
+		font-size: 18px;
+		letter-spacing: 0.15em;
+		align-items: center;
+		@include proxima_black;
+		&:after {
+			content:"";
+			flex-grow:1;
+			background: $gold;
+			height:1px;
+			margin-left:11px;
+		}
+	}
+	.sec_four_sp_inner {
+		display: flex;
+		.sec_four_sp_left {
+			flex-basis:49%;
+			margin-top:48px;
+			padding-right:50px;
+			span {
+				font-size: 50px;
+				line-height: 70px;
+				display: inline-block;
+				color:$gold;
+				max-width: 506px;
+				  @supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent) {
+				  	background: $goldgrad;
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+				 	}
+				@include operetta;
+			}
+		}
+		.sec_four_sp_right {
+			flex-basis:51%;
+			margin-top:49px;
+		}
+		.sec_four_sp_right.content {
+			color:$black;
+		}
+	}
 }
