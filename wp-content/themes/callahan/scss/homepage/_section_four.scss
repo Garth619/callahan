@@ -278,6 +278,12 @@ a.results_button {
 
 @media screen and (max-width: 1100px) {
 	
+	
+	#section_four {
+    padding-bottom: 10px;
+	}
+	
+	
 	.sec_four_top {
 		height:846px;
 	}
@@ -299,6 +305,33 @@ a.results_button {
 		margin: -409px auto 0;
 		max-width:700px;
 	}
+	
+	.sec_four_selling_points {
+		padding-left:60px;
+		padding-right:60px;
+	}
+	
+	.sec_four_selling_point {
+		padding-bottom: 38px;
+		.sec_four_sp_inner {
+			display: block;
+			.sec_four_sp_left {
+				padding-right:0;
+				margin-top: 46px;
+				span {
+					max-width: 100%;
+					br {
+						display: none;
+					}
+				}
+			}
+			.sec_four_sp_right.content {
+				margin-top: 24px;
+			}
+		}
+	}
+	
+	
 	
 	
 } /* Media Query */
