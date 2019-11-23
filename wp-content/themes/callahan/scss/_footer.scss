@@ -3,22 +3,23 @@
 .form_wrapper {
 	width:100%;
 	background: $bluegrad;
-	padding:70px;
+	padding:67px;
 }
 
 
 .form_inner {
-	height:937px;
+// 	height:937px;
 	border: 1px solid;
 	text-align: center;
 	border-image: linear-gradient(58deg, rgb(252,179,110), rgb(183,120,62)) 1;
+	padding-bottom:122px;
 	span.free_consultation_title {
 		display: inline-block;
 		font-size: 96px;
 		line-height: 96px;
 		
 		color:$gold;
-		margin:98px 0 0;
+		margin:96px 0 0;
 		  @supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent) {
 		  	background: $goldgrad;
 				-webkit-background-clip: text;
@@ -29,7 +30,7 @@
 	span.free_consultation_subtitle {
 		color:#fff;
 		display: block;
-		margin-top:3px;
+		margin-top:4px;
 		font-size: 18px;
 		line-height: 22px;
 		@include proxima_semibold;
@@ -44,7 +45,7 @@
 		@include proxima_extrabold;
 	}
 	.gform_wrapper {
-		margin:63px auto 0;
+		margin:66px auto 0;
 		max-width: 968px;
 		text-align: left;
 		ul {
@@ -87,5 +88,38 @@
 				display: none;
 			}
 		}
+		.gform_footer {
+			text-align: center;
+		}
+		input[type="submit"] {
+			background: $red;
+			cursor: pointer;
+			width:239px;
+			text-align: center;
+			margin:24px auto 0;
+			border:none;
+			color:#fff;
+			font-size: 37px;
+			border-radius: 45px;
+			padding:0 60px;
+			box-shadow: 0px 7px 9px 0px rgba(0, 0, 0, 0.93);
+			@include operetta;
+			transition: all 200ms ease-in-out;
+			&:hover {
+				background: #fff;
+				color:$red;
+			}
+		}
 	}
+	.gfield_description, .validation_message {
+		color:$red;
+		display: block;
+		text-transform: uppercase;
+		font-size: 13px;
+		margin-top:9px;
+		letter-spacing: 0.2em;
+		@include proxima_extrabold;	}
 }
+
+
+
