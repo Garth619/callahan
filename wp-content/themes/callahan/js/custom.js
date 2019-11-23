@@ -326,6 +326,15 @@ $('.sec_four_slider').slick({
       slidesToScroll: 1,
       dots:true,
      }
+   },
+   {
+      breakpoint: 767,
+      settings: {
+      slidesToShow: 1,
+      adaptiveHeight: true,
+      slidesToScroll: 1,
+      dots:true,
+     }
    }
 	]
  });

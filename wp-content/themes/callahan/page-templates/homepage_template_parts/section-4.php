@@ -24,7 +24,7 @@
 					
 					<span class="amount">$47m</span>
 					
-					<span class="description">Jury clears widow in any wrongdoing in Ponzi Scheme</span><!-- description -->
+					<span class="description">Jury clears widow<br/> in any wrongdoing in Ponzi Scheme</span><!-- description -->
 					
 				</div><!-- sec_four_slide_inner -->
 				
