@@ -1,0 +1,91 @@
+
+
+.form_wrapper {
+	width:100%;
+	background: $bluegrad;
+	padding:70px;
+}
+
+
+.form_inner {
+	height:937px;
+	border: 1px solid;
+	text-align: center;
+	border-image: linear-gradient(58deg, rgb(252,179,110), rgb(183,120,62)) 1;
+	span.free_consultation_title {
+		display: inline-block;
+		font-size: 96px;
+		line-height: 96px;
+		
+		color:$gold;
+		margin:98px 0 0;
+		  @supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent) {
+		  	background: $goldgrad;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+		 	}
+		@include operetta;
+	}
+	span.free_consultation_subtitle {
+		color:#fff;
+		display: block;
+		margin-top:3px;
+		font-size: 18px;
+		line-height: 22px;
+		@include proxima_semibold;
+	}
+	span.required {
+		color:$red;
+		display: block;
+		text-transform: uppercase;
+		font-size: 14px;
+		margin-top:15px;
+		letter-spacing: 0.2em;
+		@include proxima_extrabold;
+	}
+	.gform_wrapper {
+		margin:63px auto 0;
+		max-width: 968px;
+		text-align: left;
+		ul {
+			list-style: none;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			li {
+				display: block;
+				flex-basis:48.5%;
+				width:100%;
+				margin-bottom: 23px;
+				label {
+					display: none;
+				}
+				input, textarea {
+					border: none;
+					padding:21px 35px;
+					display: block;
+					width: 100%;
+					text-transform: lowercase;
+					font-size: 18px;
+					border: 4px solid #fff;
+					color:$black;
+					@include proxima_extrabold
+					transition: all 300ms ease-in-out;
+					&:focus {
+						border: 4px solid $red;
+						color: $red;
+					}
+				}
+				textarea {
+					height:202px;
+				}
+			}
+			li#field_1_6 {
+				flex-basis: 100%;
+			}
+			li.gform_validation_container {
+				display: none;
+			}
+		}
+	}
+}
