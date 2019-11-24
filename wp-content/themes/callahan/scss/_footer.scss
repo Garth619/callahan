@@ -133,6 +133,9 @@
 	max-width:1700px;
 	margin:0px auto;
 	padding:130px 0 0;
+	display: flex;
+	justify-content: space-between;
+	background: pink;
 }
 
 
@@ -161,12 +164,87 @@
 		span {
 			color:$redlight;
 			margin-right:12px;
-			
 			@include proxima_extrabold;
 		}
 		a {
 			text-decoration: none;
 			color:#000;
+		}
+	}
+	a.map_button {
+		background: $gold;
+		display: inline-block;
+		color:#fff;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 16px;
+		letter-spacing: 0.28em;
+		padding:16px 0;
+		margin-top: 35px;
+		width:119px;
+		text-align: center;
+		border-radius: 45px;
+		box-shadow: 3px 7px 9px 0px rgba(0,0,0,0.4);
+		transition: all 200ms ease-in-out;
+		@include proxima_black;
+		&:hover {
+			background: $red;
+			
+		}
+	}
+}
+
+
+.location_col {
+	&:first-of-type {
+		padding-left:46px;
+	}
+}
+
+
+.social_media {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 170px;
+	a {
+		text-decoration: none;
+		display: block;
+		margin:0 10px 27px;
+		//margin-right:25px;
+		margin-bottom:27px;
+		flex-shrink: 0;
+		&:hover {
+			svg.sm {
+				.st0-sm {
+					fill:$gold;
+				}
+			}
+		}
+		svg.sm {
+			width:30px;
+			height:30px;
+			.st0-sm {
+				fill:$black;
+				transition: all 200ms ease-in-out;
+			}
+		}
+	}
+	a.sm-g {
+		svg.sm {
+			width:27px;
+		}
+	}
+	a.sm-fb {
+		svg.sm {
+			width:33px;
+			height:32px;
+		}
+	}
+	a.sm-yt {
+		svg.sm {
+			width:33px;
+			height:32px;
 		}
 	}
 }

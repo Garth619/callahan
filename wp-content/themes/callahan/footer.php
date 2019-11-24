@@ -57,6 +57,22 @@
 			<div class="location_col location_col_two">
 			
 				<span class="location_title">stay connected</span><!-- location_title -->
+				
+				<div class="social_media">
+					
+					<a class="sm-g" href=""><?php echo file_get_contents("wp-content/themes/callahan/images/social-g.svg"); ?></a>
+					
+					<a class="sm-fb" href=""><?php echo file_get_contents("wp-content/themes/callahan/images/social-fb.svg"); ?></a>
+					
+					<a class="s-in" href=""><?php echo file_get_contents("wp-content/themes/callahan/images/social-in.svg"); ?></a>
+					
+					<a class="sm-t" href=""><?php echo file_get_contents("wp-content/themes/callahan/images/social-t.svg"); ?></a>
+					
+					<a class="sm-yt" href=""><?php echo file_get_contents("wp-content/themes/callahan/images/social-yt.svg"); ?></a>
+					
+					<a class="sm-av" href=""><?php echo file_get_contents("wp-content/themes/callahan/images/social-av.svg"); ?></a>
+					
+				</div>
 			
 			</div><!-- location_col_two -->
 		
