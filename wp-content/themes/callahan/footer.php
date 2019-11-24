@@ -100,6 +100,8 @@
 			<div class="location_col location_col_four">
 			
 				<span class="location_title">In the News</span><!-- location_title -->
+				
+				<span class="news_title">Dan Callahan holds a press conference to announce lawsuit against Michael Avenatti for stealing $4,000,000 from paraplegic client.</span><!-- news_title -->
 			
 			</div><!-- location_col_four -->
 		
