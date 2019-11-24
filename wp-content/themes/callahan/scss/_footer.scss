@@ -102,7 +102,7 @@
 			font-size: 37px;
 			border-radius: 45px;
 			padding:0 60px;
-			box-shadow: 0px 7px 9px 0px rgba(0, 0, 0, 0.93);
+			box-shadow: 3px 7px 9px 0px rgba(0,0,0,0.4);
 			@include operetta;
 			transition: all 200ms ease-in-out;
 			&:hover {
@@ -123,3 +123,112 @@
 
 
 
+@media screen and (max-width: 1450px) {
+	
+	
+	.form_wrapper {
+		padding:60px;
+	}
+	
+	.form_inner {
+		padding-bottom: 94px;
+		span.free_consultation_title {
+			margin: 80px 0 0;
+			font-size: 86px;
+		}
+		.gform_wrapper {
+			margin: 50px auto 0;
+			max-width:840px;
+			input[type="submit"] {
+				margin-top:28px;
+				padding: 3px 60px;
+			}
+		}
+	}
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1100px) {
+	
+	
+	.form_inner {
+		padding:0 45px 90px;
+		span.free_consultation_title {
+			font-size: 66px;
+			line-height: 66px;
+			margin: 81px 0 0;
+		}
+		span.free_consultation_subtitle {
+			margin-top: 13px;
+		}
+		span.required {
+			margin-top: 18px;
+		}
+		.gform_wrapper {
+			max-width: 670px;
+			ul {
+				display: block;
+			}
+			input[type="submit"] {
+				
+			}
+		}
+	}
+
+	
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	.form_wrapper {
+		padding:0;
+	}
+	
+	.form_inner {
+		border: none;
+		padding:0 30px 70px;
+		span.free_consultation_title {
+			font-size: 56px;
+			line-height: 56px;
+			max-width: 370px;
+			margin: 62px 0 0;
+		}
+		span.free_consultation_subtitle {
+			max-width:273px;
+			margin:17px auto 0;
+		}
+		span.required {
+			margin-top: 14px;
+		}
+		.gform_wrapper {
+			max-width: 540px;
+			ul {
+				li {
+					input, textarea {
+						padding: 17px 35px;
+					}
+					textarea {
+						height:225px;
+					}
+				}
+			}
+			input[type="submit"] {
+				font-size: 30px;
+				margin-top:0;
+				padding: 6px 10px;
+				width:100%;
+				max-width: 357px;
+			}
+		}
+	}
+	
+	
+} /* Media Query */
