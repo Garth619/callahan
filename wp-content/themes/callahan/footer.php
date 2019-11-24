@@ -79,6 +79,21 @@
 			<div class="location_col location_col_three">
 			
 				<span class="location_title">practice area</span><!-- location_title -->
+				
+				<ul>
+					<li><a href="">Complex Business Litigation</a></li>
+					<li><a href="">Insurance Litigation</a></li>
+					<li><a href="">Trade Secret Litigation</a></li>
+					<li><a href="">Employment Law</a></li>
+					<li><a href="">Intellectual Property</a></li>
+					<li><a href="">Real Estate Litigation</a></li>
+					<li><a href="">Professional Liability</a></li>
+					<li><a href="">Homeowners Associations</a></li>
+					<li><a href="">Construction Litigation</a></li>
+					<li><a href="">Class Action</a></li>
+					<li><a href="">Transactional and Corporate Law</a></li>
+					<li><a href="">Personal Injury</a></li>
+				</ul>
 			
 			</div><!-- location_col_three -->
 		

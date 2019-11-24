@@ -141,7 +141,7 @@
 
 
 .location_col {
-	color:#000;
+	color:$black;
 	@include proxima_semibold;
 	span.location_title {
 		display: block;
@@ -245,6 +245,25 @@
 		svg.sm {
 			width:33px;
 			height:32px;
+		}
+	}
+}
+
+
+
+.location_col {
+	flex-shrink: 0;
+	ul {
+		list-style: none;
+		padding-top:4px;
+		li {
+			margin-bottom: 11px;
+			font-size: 16px;
+			line-height: 19px;
+			a {
+				text-decoration: none;
+				color:$black;
+			}
 		}
 	}
 }
