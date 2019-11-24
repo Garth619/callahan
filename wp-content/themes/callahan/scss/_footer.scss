@@ -123,6 +123,57 @@
 
 
 
+.footer_bottom {
+	height:3000px;
+}
+
+
+
+.location_wrapper {
+	max-width:1700px;
+	margin:0px auto;
+	padding:130px 0 0;
+}
+
+
+
+.location_col {
+	color:#000;
+	@include proxima_semibold;
+	span.location_title {
+		display: block;
+		color: $redlight;
+		font-size: 28px;
+		line-height: 32px;
+		margin-bottom:30px;
+		@include operetta;
+	}
+	span.address {
+		display: block;
+		font-size: 18px;
+		line-height: 29px;
+		margin-bottom: 37px;
+	}
+	.phone_row {
+		display: flex;
+		margin-bottom:13px;
+		font-size: 18px;
+		span {
+			color:$redlight;
+			margin-right:12px;
+			
+			@include proxima_extrabold;
+		}
+		a {
+			text-decoration: none;
+			color:#000;
+		}
+	}
+}
+
+
+
+
 @media screen and (max-width: 1450px) {
 	
 	

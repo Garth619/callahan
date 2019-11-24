@@ -16,6 +16,66 @@
 		
 	</div><!-- form_wrapper -->
 	
+	<div class="footer_bottom">
+		
+		<div class="location_wrapper">
+		
+			<div class="location_col location_col_one">
+			
+				<span class="location_title">Orange County Office</span><!-- location_title -->
+			
+				<span class="address">3 Hutton Centre Drive Ninth Floor,<br/> Santa Ana, CA 92707</span><!-- address -->
+			
+				<div class="phone_row">
+				
+					<span>Phone</span>
+				
+					<a href="tel:7142414444">(714) 241-4444</a>
+				
+				</div><!-- phone_row -->
+			
+				<div class="phone_row">
+				
+					<span>Toll Free</span>
+				
+					<a href="tel:8882840809">(888) 284-0809</a>
+				
+				</div><!-- phone_row -->
+			
+				<div class="phone_row">
+				
+					<span>Fax</span>
+				
+					<a>(714) 241-4445</a>
+				
+				</div><!-- phone_row -->
+			
+				<a class="map_button" href="">Map</a><!-- map_button -->
+			
+			</div><!-- location_col_one -->
+		
+			<div class="location_col location_col_two">
+			
+				<span class="location_title">stay connected</span><!-- location_title -->
+			
+			</div><!-- location_col_two -->
+		
+			<div class="location_col location_col_three">
+			
+				<span class="location_title">practice area</span><!-- location_title -->
+			
+			</div><!-- location_col_three -->
+		
+			<div class="location_col location_col_four">
+			
+				<span class="location_title">In the News</span><!-- location_title -->
+			
+			</div><!-- location_col_four -->
+		
+		</div><!-- location_wrapper -->
+		
+	</div><!-- footer_bottom -->
+	
 </footer>
 
 
