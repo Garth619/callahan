@@ -517,13 +517,21 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 	
 	function laptopLayout() {
 		
-		$('.location_col_two, .location_col_four').wrapAll( "<div class='laptop_layout'></div>" );
+		if(!$('.laptop_layout').length > 0 ){
+		
+			$('.location_col_two, .location_col_four').wrapAll( "<div class='laptop_layout'></div>" );
+		
+		}
 		
 	}
 	
 	function unwrapLaptop() {
 		
-		$('.location_col_two, .location_col_four').unwrap();
+		if($('.laptop_layout').length > 0 ){
+		
+			$('.location_col_two, .location_col_four').unwrap();
+		
+		}
 		
 	}
 	
@@ -544,54 +552,43 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 	
 	function unwrapTablet() {
 		
-	if($('.mobile_col').length > 0 ){
+		if($('.mobile_col').length > 0 ){
 		
-		$('.location_col_one, .location_col_two, .location_col_three, .location_col_four').unwrap();
+			$('.location_col_one, .location_col_two, .location_col_three, .location_col_four').unwrap();
 	
-	}
+		}
 		
 	}
 	
 	// page load
 	
-	if ($(window).width() > 1450) {
+	var resizeWidth = $(window).width();
+	
+	if (resizeWidth > 1450) {
 		
-		if($('.laptop_layout').length > 0 ){
-
-			unwrapLaptop();
-		
-		}
-		
-		
-		unwrapTablet();
+		unwrapLaptop();
 		
 	}
 	
 	
-	if ($(window).width() > 1000 && $(window).width() <= 1450) {
+	if (resizeWidth > 1000 && resizeWidth <= 1450) {
 		
-		if(!$('.laptop_layout').length > 0 ){
-		
-			laptopLayout();
-		
-		}
-		
+		laptopLayout();
 		unwrapTablet();
 				
 	}
 	
 	
-	if ($(window).width() <= 1000) {
+	if (resizeWidth > 767 && resizeWidth <= 1000) {
 		
-		if($('.laptop_layout').length > 0 ){
-		
-		 unwrapLaptop();
-		 
-		
-		 
-		}
-		
+		unwrapLaptop();
 		tabletLayout();
+		
+	}
+	
+	if (resizeWidth <= 767) {
+		
+		unwrapTablet();
 		
 	}
 	
@@ -600,39 +597,31 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 	
 	$(window).resize(_.debounce(function() {
 		
+		var resizeWidth = $(window).width();
 		
-		if ($(window).width() > 1450) {
+		if (resizeWidth > 1450) {
 			
-				if($('.laptop_layout').length > 0 ){
-
-					unwrapLaptop();
-		
-				}
-				
-				unwrapTablet();	
+			unwrapLaptop();
+			
 		}
 		
-		if ($(window).width() > 1000 && $(window).width() <= 1450) {
+		if (resizeWidth > 1000 && resizeWidth <= 1450) {
 			
-			if(!$('.laptop_layout').length > 0 ){
-		
-				laptopLayout();
-		
-			}
-			
+			laptopLayout();
 			unwrapTablet();
 			
 		}
 		
-		if ($(window).width() <= 1000) {
+		if (resizeWidth > 767 && resizeWidth <= 1000) {
 			
-			if($('.laptop_layout').length > 0 ){
-		
-				unwrapLaptop();
-		 
-			}
-			
+			unwrapLaptop();
 			tabletLayout();
+		
+		}
+		
+		if (resizeWidth <= 767) {
+		
+			unwrapTablet();
 		
 		}
 		

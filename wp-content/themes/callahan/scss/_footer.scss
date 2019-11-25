@@ -440,7 +440,9 @@
 
 @media screen and (max-width: 1000px) {
 	
-	
+	.location_wrapper {
+		max-width:800px;
+	}
 	
 	.mobile_col {
 		display: flex;
@@ -466,41 +468,6 @@
 		}
 	}
 	
-	
-
-	
-	
-/*
-	.location_wrapper {
-		flex-wrap:wrap;
-	}
-	
-	.location_col {
-		//flex-basis: 50%;
-	}
-	
-	
-	.location_col_one {
-		flex-basis:60%;
-		order:1;
-	}
-	
-	.location_col_two {
-		margin-top: -40px;
-		flex-basis:60%;
-		order:3;
-	}
-	
-	.location_col_three {
-		flex-basis:40%;
-		order:2;
-	}
-	
-	.location_col_four {
-		flex-basis:40%;
-		order:4;
-	}
-*/
 	
 } /* Media Query */
 
