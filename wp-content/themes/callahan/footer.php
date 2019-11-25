@@ -109,7 +109,7 @@
 		
 		</div><!-- location_wrapper -->
 		
-		<div class="copryright_wrapper">
+		<div class="copyright_wrapper">
 				
 				<ul>
 					<li>&copy; <?php echo date("Y"); ?> by Callahan & Blaine. All right reserved.</li>
@@ -117,13 +117,13 @@
 					<li><a href="">Site Map</a></li>
 				</ul>
 				
-				<a class="ilawyer" href="">
+				<a class="ilawyer" href="//ilawyermarketing.com" target="_blank" rel="noopener">
 					
 					<img src="<?php bloginfo('template_directory');?>/images/logo-ilawyer.svg"/>
 					
 				</a>
 			
-		</div><!-- copryright_wrapper -->
+		</div><!-- copyright_wrapper -->
 		
 	</div><!-- footer_bottom -->
 	
