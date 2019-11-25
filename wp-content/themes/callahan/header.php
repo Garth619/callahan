@@ -55,8 +55,6 @@
 			
 			<a class="logo_link" href="<?php bloginfo('url');?>">
 				
-<!-- 				<img src="<?php bloginfo('template_directory');?>/images/logo.svg"/> -->
-				
 				<?php echo file_get_contents("wp-content/themes/callahan/images/logo.svg"); ?>
 								
 			</a><!-- logo_link -->
@@ -64,6 +62,8 @@
 		</div><!-- header_left -->
 		
 		<div class="header_right">
+			
+			<div class="phone_nav_wrapper">
 			
 			<nav>
 				
@@ -91,6 +91,8 @@
 				
 			</div><!-- phone_wrapper -->
 			
+			</div><!-- phone_nav_wrapper -->
+			
 			<div class="menu_wrapper">
 				
 			<div class="open_wrapper">
@@ -101,9 +103,29 @@
 					
 				<span class="menu_title">Menu</span><!-- menu_title -->
 					
-			</div><!-- open_wrapper -->
+			</div ><!-- open_wrapper -->
 				
 			</div><!-- menu_wrapper -->
+			
+			<div class="internal_desktop_consulation">
+				
+				<a class="" href="#consultation">
+					
+					<span class="">Start Your Free Consultation</span>
+					
+				</a>
+				
+			</div><!-- internal_desktop_consulation -->
+			
+			<div class="internal_desktop_email">
+				
+				<a class="" href="">
+					
+					<?php echo file_get_contents("wp-content/themes/callahan/images/icon-mail.svg"); ?>
+					
+				</a>
+				
+			</div><!-- internal_desktop_email -->
 			
 		</div><!-- header_right -->
 		
