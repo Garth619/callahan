@@ -527,25 +527,117 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 		
 	}
 	
-	if ($(window).width() > 1450) {
+	function tabletLayout() {
 		
-		unwrapLaptop();
+		if(!$('.mobile_col').length > 0 ){
+		
+			var tabletHtml = '<div class="mobile_col"></div>';
+		
+			$('.location_col_one, .location_col_two').wrapAll(tabletHtml);
+		
+			$('.location_col_three, .location_col_four').wrapAll(tabletHtml);
+		
+		}
 		
 	}
 	
 	
-	if ($(window).width() <= 1450) {
+	function unwrapTablet() {
 		
-		laptopLayout();
+	if($('.mobile_col').length > 0 ){
+		
+		$('.location_col_one, .location_col_two, .location_col_three, .location_col_four').unwrap();
+	
+	}
+		
+	}
+	
+	// page load
+	
+	if ($(window).width() > 1450) {
+		
+		if($('.laptop_layout').length > 0 ){
+
+			unwrapLaptop();
+		
+		}
+		
+		
+		unwrapTablet();
+		
+	}
+	
+	
+	if ($(window).width() > 1000 && $(window).width() <= 1450) {
+		
+		if(!$('.laptop_layout').length > 0 ){
+		
+			laptopLayout();
+		
+		}
+		
+		unwrapTablet();
 				
 	}
 	
 	
-	if ($(window).width() <= 1100) {
+	if ($(window).width() <= 1000) {
+		
+		if($('.laptop_layout').length > 0 ){
 		
 		 unwrapLaptop();
+		 
+		
+		 
+		}
+		
+		tabletLayout();
 		
 	}
+	
+	// window resize 
+	
+	
+	$(window).resize(_.debounce(function() {
+		
+		
+		if ($(window).width() > 1450) {
+			
+				if($('.laptop_layout').length > 0 ){
+
+					unwrapLaptop();
+		
+				}
+				
+				unwrapTablet();	
+		}
+		
+		if ($(window).width() > 1000 && $(window).width() <= 1450) {
+			
+			if(!$('.laptop_layout').length > 0 ){
+		
+				laptopLayout();
+		
+			}
+			
+			unwrapTablet();
+			
+		}
+		
+		if ($(window).width() <= 1000) {
+			
+			if($('.laptop_layout').length > 0 ){
+		
+				unwrapLaptop();
+		 
+			}
+			
+			tabletLayout();
+		
+		}
+		
+		
+	}, 100)); 
 
 
   
