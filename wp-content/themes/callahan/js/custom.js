@@ -510,6 +510,42 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 		}
 		
 	}, 100)); 
+	
+	
+	// footer location wrapper - weird layout arrangement 
+	
+	
+	function laptopLayout() {
+		
+		$('.location_col_two, .location_col_four').wrapAll( "<div class='laptop_layout'></div>" );
+		
+	}
+	
+	function unwrapLaptop() {
+		
+		$('.location_col_two, .location_col_four').unwrap();
+		
+	}
+	
+	if ($(window).width() > 1450) {
+		
+		unwrapLaptop();
+		
+	}
+	
+	
+	if ($(window).width() <= 1450) {
+		
+		laptopLayout();
+				
+	}
+	
+	
+	if ($(window).width() <= 1100) {
+		
+		 unwrapLaptop();
+		
+	}
 
 
   

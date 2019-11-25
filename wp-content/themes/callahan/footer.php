@@ -110,8 +110,18 @@
 		</div><!-- location_wrapper -->
 		
 		<div class="copryright_wrapper">
-			
-			
+				
+				<ul>
+					<li>&copy; <?php echo date("Y"); ?> by Callahan & Blaine. All right reserved.</li>
+					<li><a href="">Disclaimer</a></li>
+					<li><a href="">Site Map</a></li>
+				</ul>
+				
+				<a class="ilawyer" href="">
+					
+					<img src="<?php bloginfo('template_directory');?>/images/logo-ilawyer.svg"/>
+					
+				</a>
 			
 		</div><!-- copryright_wrapper -->
 		
