@@ -47,7 +47,7 @@
 
 <body <?php body_class(); ?>>
 	
-	<header id="homepage_header">
+	<header>
 		
 		<div class="header_inner">
 		
@@ -55,7 +55,9 @@
 			
 			<a class="logo_link" href="<?php bloginfo('url');?>">
 				
-				<img src="<?php bloginfo('template_directory');?>/images/logo.svg"/>
+<!-- 				<img src="<?php bloginfo('template_directory');?>/images/logo.svg"/> -->
+				
+				<?php echo file_get_contents("wp-content/themes/callahan/images/logo.svg"); ?>
 								
 			</a><!-- logo_link -->
 			
