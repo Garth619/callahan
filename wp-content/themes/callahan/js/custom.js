@@ -399,6 +399,15 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 
 
 
+
+	// sidebar
+	
+	
+	 $('<span class="h3_icon"></span').insertAfter('.sidebarbox_inner h3'); 
+
+
+
+
 	// nav
 	
 	$('.open_wrapper').on('click', function(e) {

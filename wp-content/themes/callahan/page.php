@@ -8,7 +8,7 @@
 			
 			<span class="internal_banner_header">California’s Premier Litigation Law Attorneys</span><!-- internal_banner_header -->
 			
-			<a class="banner_button" href="">Free Consultation</a><!-- banner_button -->
+			<a class="banner_button" href="#consultation">Free Consultation</a><!-- banner_button -->
 			
 		</div><!-- internal_banner_content -->
 		
