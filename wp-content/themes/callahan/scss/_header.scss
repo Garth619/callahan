@@ -83,10 +83,25 @@ body:not(.page-template-template-home) {
 				> a {
 						
 				}
+				
 			}
 			>li.current-menu-ancestor {
 				> a {
 					
+				}
+				> ul.sub-menu {
+					> li.menu-item-has-children {
+						> a {
+							 span {
+								 &:before {
+									 background: url(#{$themePath}images/icon-arrow-down-white.svg);
+								 }
+							 }
+						}
+						ul.sub-menu {
+							display: block;
+						}
+					}
 				}
 			}
 		}
@@ -473,13 +488,13 @@ nav.nav_desktop {
 										color:#fff;
 										transition: all 200ms ease-in-out;
 										&:hover {
-											color:$red;
+											color:$goldlight;
 										}
 									}
 								}
 								li.current-menu-item {
 									a {
-										color:$red;
+										color:$goldlight;
 									}
 								}
 							}
@@ -1189,14 +1204,17 @@ nav.nav_desktop {
 			margin-left:0;
 		}
 		.phone_nav_wrapper {
-			background: $bluedark;
+			//background: $bluedark;
+			background: #fff;
 		}
 		.phone_wrapper {
 			span.call_us {
-				color:$red;
+				//color:$red;
+				color:$gold;
 			}
 			a.phone {
-				color:$gold;
+				//color:$gold;
+				color:$red;
 			}
 		}
 	}

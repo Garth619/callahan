@@ -416,6 +416,8 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 		$('.menu_wrapper_close').removeClass('open');
 	  
 	});
+	
+	$('nav ul.menu > li.current-menu-ancestor > ul.sub-menu > li.current-menu-ancestor > a').addClass('active');
 
 
 	$('nav ul.sub-menu > li.menu-item-has-children > a').on('click', function(e) {
