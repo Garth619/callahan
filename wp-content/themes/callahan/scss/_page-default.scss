@@ -1,4 +1,8 @@
 
+#internal_main {
+	padding-bottom:102px;
+}
+
 .internal_banner {
 	width:100%;
 	height:440px;
@@ -22,7 +26,6 @@
 	justify-content: center;
 	height:100%;
 	max-width: 1580px;
-	background: pink;
 	margin:0 auto;
 	padding-left:73px;
 	.internal_banner_header {
@@ -55,3 +58,29 @@
 		}
 	}
 }
+
+
+.internal_content_wrapper {
+	max-width: 1580px;
+	margin:0 auto;
+	padding-left:73px;
+}
+
+
+.two_col {
+	display: flex;
+}
+
+.content_wrapper {
+	flex-grow: 1;
+	margin-top:140px;
+	padding-right:145px;
+}
+
+.sidebar_wrapper {
+	flex-basis:501px;
+	flex-shrink: 0;
+	height:3000px;
+	background: pink;
+}
+
