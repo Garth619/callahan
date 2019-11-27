@@ -179,6 +179,24 @@ h1,h2,h3,h4 {
 	
 } /* Media Query */
 
+
+@media screen and (max-width: 1066px) {
+	
+	
+	.content {
+		.content_header {
+			font-size: 70px;
+			line-height: 74px;
+		}
+		blockquote {
+			margin: 80px 0 78px 0;
+		}
+	}
+	
+	
+	
+} /* Media Query */
+
 @media screen and (max-width: 767px) {
 	
 	
@@ -197,7 +215,17 @@ img.aligncenter {
 	.content {
 		font-size: 17px;
 		line-height: 33px;
+		.content_header {
+			font-size: 52px;
+			line-height: 60px;
+			padding-bottom: 24px;
+		}
+		blockquote {
+			font-size: 28px;
+			line-height: 42px;
+			padding: 58px 59px;
+		}
 	}
-	
+		
 	
 } /* Media Query */
