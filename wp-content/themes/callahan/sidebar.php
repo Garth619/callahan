@@ -1,13 +1,11 @@
-<?php // bulk_sidebar(); ?>
-
 
 <div class="sidebar_wrapper">
 	
 	<div class="sidebar_box">
 		
 		<div class="sidebarbox_inner">
-		
-			<h3>Practice Areas</h3>
+			
+			<?php bulk_sidebar(); ?>
 		
 		</div><!-- sidebarbox_inner -->
 		

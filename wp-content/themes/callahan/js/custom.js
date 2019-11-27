@@ -403,9 +403,19 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 	// sidebar
 	
 	
-	 $('<span class="h3_icon"></span').insertAfter('.sidebarbox_inner h3'); 
+	 $('<span class="h3_icon"></span>').insertAfter('.sidebarbox_inner h3'); 
+	 
+	 
+	 $('<span class="h3_icon"></span>').appendTo('.sidebarbox_inner ul.menu > li.menu-item-has-children > a');
 
 
+	 $('.sidebarbox_inner ul.menu > li.menu-item-has-children > a').on('click', function(e) {
+		 
+		$(this).toggleClass('active');
+	   
+	 	$(this).next('ul.sub-menu').slideToggle(300);
+	 
+	 });
 
 
 	// nav
