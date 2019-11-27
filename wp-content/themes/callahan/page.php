@@ -16,6 +16,8 @@
 		
 	</div><!-- internal_banner -->
 	
+	<div class="container">
+	
 	<div class="internal_content_wrapper two_col">
 		
 		<div class="content_wrapper content">
@@ -40,6 +42,8 @@
 			</ul>
 
 			<p>Nunc scelerisque, tortor non dictum tristique, magna augue semper nisl, sed mollis ipsum urna at tellus. Nullam nec velit ut ante vehicula mattis in non est. Vestibulum maximus, neque nec tincidunt iaculis, magna enim suscipit ipsum, vitae vulputate mauris tellus non est.</p>
+			
+			<blockquote>“Duis dignissim, metus nec suscipit eleifend, orci dolor set laoreet eros, nec finibus sapien tellus et nisi. Interdum et malesuada fames ac tante ipsum primis in faucibus. Proin maximus tincidunt convallis.”</blockquote>
 
 			<h3>H3 - Ut eget sem diam, Mauris at augue tempus, pulvinar</h3>
 
@@ -57,6 +61,8 @@
 		<?php get_sidebar(); ?>
 		
 	</div><!-- internal_content_wrapper -->
+	
+	</div><!-- container -->
 		
 </div><!-- internal_main -->
 

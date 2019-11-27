@@ -126,10 +126,58 @@ h1,h2,h3,h4 {
 			}
 		}
 	}
+	blockquote {
+		font-size: 32px;
+		line-height: 52px;
+		color:$bluedark;
+		position: relative;
+		z-index:1;
+		margin: 98px 0 78px 0;
+		padding:77px 80px;
+		@include operetta;
+		&:before, &:after {
+			content:"";
+			display: block;
+			position: absolute;
+		}
+		&:before {
+			top:0;
+			left:30px;
+			width:calc(100% - 60px);
+			height:100%;
+			border: 1px solid;
+			border-image: linear-gradient(58deg, rgb(252,179,110), rgb(183,120,62)) 1;
+			z-index:-1;
+		}
+		&:after {
+			top:30px;
+			left:0;
+			width:100%;
+			height:calc(100% - 60px);
+			background: $offwhite;
+			z-index:-2;
+		}
+	}
 	strong {
 		@include proxima_extrabold;
 	}
 }
+
+
+
+@media screen and (max-width: 1450px) {
+	
+	
+	.content {
+		.content_header {
+			font-size: 74px;
+			line-height: 78px;
+		}
+	}
+	
+	
+	
+} /* Media Query */
 
 @media screen and (max-width: 767px) {
 	

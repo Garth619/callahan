@@ -402,8 +402,8 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 
 	// sidebar
 	
-	
-	 $('<span class="h3_icon"></span>').insertAfter('.sidebarbox_inner h3'); 
+		
+		$('<span class="h3_icon"></span>').insertAfter('.sidebarbox_inner h3'); 
 	 
 	 
 	 $('<span class="h3_icon"></span>').appendTo('.sidebarbox_inner ul.menu > li.menu-item-has-children > a');
@@ -418,6 +418,20 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 	 	$(this).next('ul.sub-menu').slideToggle(300);
 	 
 	 });
+	 
+	 $('.sidebar_box, .sidebarbox_inner > .widget > span.h3_icon').addClass('active');
+	 
+	 $('.sidebarbox_inner h3').on('click', function(e) {
+		 
+		 	$(this).parents('.sidebar_box').toggleClass('active');
+			
+			$(this).next().toggleClass('active');
+		  
+			$(this).siblings('ul.menu').slideToggle(300);
+			
+			
+		
+		});
 
 
 	// nav
