@@ -335,6 +335,25 @@
 		display: block;
 	}
 	
+	.sidebarbox_inner {
+		position: relative;
+		.widget {
+			span.h3_icon {
+				position: absolute;
+				top:5px;
+				right:45px;
+			} 
+		}
+		h3 {
+			display: flex;
+			padding-right:85px;
+			&:after {
+				flex-grow:1;
+			}
+		}
+		
+	}
+	
 } /* Media Query */
 
 
@@ -345,10 +364,6 @@
 		padding-top:82px;
 	}
 	
-	
-	.content_wrapper {
-    //margin-top: 60px;
-	}
 	
 	
 } /* Media Query */
