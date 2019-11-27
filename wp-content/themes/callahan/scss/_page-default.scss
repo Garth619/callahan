@@ -160,9 +160,28 @@
 				}
 			}
 		}
+		> li.current-menu-item {
+			> a {
+				color:$redlight;
+			}
+		}
+		> li.current-menu-ancestor {
+				> a {
+					
+				}
+				> ul.sub-menu {
+					display: block;
+					li.current-menu-item {
+						a {
+							color:$goldlight;
+						}
+					}
+				}
+		}
 	}
 	ul.menu {
 		margin-top:31px;
+		padding-bottom:30px;
 		> li {
 			> a {
 					&:hover {

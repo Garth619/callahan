@@ -407,6 +407,8 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 	 
 	 
 	 $('<span class="h3_icon"></span>').appendTo('.sidebarbox_inner ul.menu > li.menu-item-has-children > a');
+	 
+	 $('.sidebarbox_inner ul.menu > li.current-menu-ancestor > a').addClass('active');
 
 
 	 $('.sidebarbox_inner ul.menu > li.menu-item-has-children > a').on('click', function(e) {
