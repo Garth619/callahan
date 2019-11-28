@@ -1,5 +1,10 @@
-<?php // dynamic_sidebar( 'recent_posts' ); ?>
 
-<?php // dynamic_sidebar( 'category_sidebar' ); ?>
-
-<?php // dynamic_sidebar( 'archive_sidebar' ); ?>
+<div class="blog_sidebar_wrapper">
+	
+	<div class="sidebar_blog">
+		
+			<?php bulk_sidebar(); ?>
+		
+	</div><!-- sidebar_blog -->
+	
+</div><!-- blog_sidebar_wrapper -->

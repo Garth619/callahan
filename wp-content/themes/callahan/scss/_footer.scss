@@ -11,7 +11,7 @@
 // 	height:937px;
 	border: 1px solid;
 	text-align: center;
-	border-image: linear-gradient(58deg, rgb(252,179,110), rgb(183,120,62)) 1;
+	border-image: $goldgradborder;
 	padding-bottom:122px;
 	span.free_consultation_title {
 		display: inline-block;

@@ -42,7 +42,7 @@
 		width:calc(100% - 64px);
 		height:100%;
 		border: 1px solid;
-		border-image: linear-gradient(58deg, rgb(252,179,110), rgb(183,120,62)) 1;
+		border-image: $goldgradborder;
 	}
 	&:after {
 		content:"";
