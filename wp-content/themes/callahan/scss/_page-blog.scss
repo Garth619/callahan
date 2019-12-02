@@ -43,27 +43,36 @@
 		line-height: 22px;
 		letter-spacing: 0.15em;
 		color:$redlight;
-		display: inline-block;
+		//display: inline-block;
 		padding:0 0px 0 90px;
 		cursor: pointer;
+		padding:0 85px 0 90px;
+		display: flex;
+		width:calc(100% - 40px);
 		@include proxima_black;
 		&:after {
 			content:"";
-			display: inline-block;
-			vertical-align: top;
+			//display: inline-block;
+			//vertical-align: top;
 			margin-top:10px;
 			width:62px;
 			height:1px;
 			background: $gold;
-			margin-left:29px;
+			margin-left:30px;
+			flex-grow:1;
 		}
+	}
+	.widget {
+		position: relative;
 	}
 	span.h3_icon {
 		width:12px;
 		height:12px;
 		margin-left:30px;
-		position: relative;
-		display: inline-block;
+		position: absolute;
+		top:5px;
+		right:85px;
+		//display: inline-block;
 		&:before, &:after {
 			content:"";
 			position: absolute;
@@ -164,7 +173,7 @@
 				  span.h3_icon {
 					  position: absolute;
 					  top: 26px;
-					  right:90px;
+					  right:85px;
 				  }
 			 }
 			 a.active {
@@ -188,12 +197,90 @@
 			a {
 				color:#fff;
 				transition: all 200ms ease-in-out;
+				padding-left:119px;
 				&:hover {
 					color:$goldlight;
 				}
 			}
 		}
 		
+	}
+}
+
+.blog_feed {
+	padding-top:5px;
+}
+
+.blog_post {
+	border-bottom: 1px solid $gold;
+	padding-bottom: 95px;
+	margin-bottom: 80px;
+	h2 {
+		font-size: 35px;
+		line-height: 48px;
+		padding-top:0;
+		padding-bottom:19px;
+		display: inline-block;
+		a {
+			text-decoration: none;
+			color:$redlight;
+			transition: all 200ms ease-in-out;
+		}
+	}
+	.meta_data {
+		text-transform: uppercase;
+		font-size: 15px;
+		letter-spacing: 0.2em;
+		color:$gold;
+		line-height: 24px;
+		padding-bottom:39px;
+		@include proxima_extrabold;
+		span {
+			display: inline;
+		}
+		ul {
+			display: inline;
+			padding-left:0;
+			li {
+				padding-left:0;
+				display: inline;
+				&:before {
+					display: none;
+				}
+				a {
+					color:$gold;
+					text-decoration: none;
+					transition: all 200ms ease-in-out;
+					&:before {
+						content:"|";
+						padding:0 17px 0 15px;
+					}
+					&:hover {
+						color:$redlight;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+a.read_more {
+	background: $gold;
+	color:#fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 16px;
+	letter-spacing: 0.28em;
+	padding:6px 33px;
+	display: inline-block;
+	margin-top:50px;
+	border-radius: 45px;
+	transition: all 200ms ease-in-out;
+	box-shadow: 3px 7px 9px 0px rgba(0,0,0,0.4);
+	@include proxima_extrabold;
+	&:hover {
+		background: $red;
 	}
 }
 

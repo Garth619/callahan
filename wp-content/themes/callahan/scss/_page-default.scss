@@ -77,7 +77,7 @@
 
 .content_wrapper {
 	flex-grow: 1;
-	margin-top:140px;
+	margin-top:137px;
 	padding-right:145px;
 }
 
@@ -104,27 +104,33 @@
 		line-height: 22px;
 		letter-spacing: 0.15em;
 		color:$redlight;
-		display: inline-block;
-		padding:0 0px 0 90px;
+		//display: inline-block;
+		padding:0 85px 0 90px;
 		cursor: pointer;
+		display: flex;
+		
+		width:calc(100% - 40px);
+		//padding-right:85px;
 		@include proxima_black;
 		&:after {
 			content:"";
-			display: inline-block;
-			vertical-align: top;
 			margin-top:10px;
 			width:62px;
 			height:1px;
 			background: $gold;
-			margin-left:29px;
+			margin-left:30px;
+			flex-grow:1;
 		}
+	}
+	.widget {
+		position: relative;
 	}
 	span.h3_icon {
 		width:12px;
 		height:12px;
-		margin-left:26px;
-		position: relative;
-		display: inline-block;
+		position: absolute;
+		top:5px;
+		right:85px;
 		&:before, &:after {
 			content:"";
 			position: absolute;
@@ -210,7 +216,7 @@
 				  span.h3_icon {
 					  position: absolute;
 					  top: 26px;
-					  right:90px;
+					  right:85px;
 				  }
 			 }
 			 a.active {
@@ -234,6 +240,7 @@
 			a {
 				color:#fff;
 				transition: all 200ms ease-in-out;
+				padding-left:119px;
 				&:hover {
 					color:$goldlight;
 				}
@@ -284,12 +291,13 @@
 	.sidebarbox_inner {
 		h3 {
 			padding: 0 0px 0 45px;
+			width: calc(100% - 78px);
 			&:after {
-				margin-left: 24px;
+				margin-left: 20px;
 			}
 		}
 		span.h3_icon {
-			
+			right:45px;
 		}
 		ul {
 			li {
@@ -305,6 +313,13 @@
 						 right: 45px;
 					 }
 				 }
+			}
+		}
+		ul.sub-menu {
+			li {
+				a {
+					padding-left:70px;
+				}
 			}
 		}
 	}
@@ -334,21 +349,15 @@
 	.two_col {
 		display: block;
 	}
-	
 	.sidebarbox_inner {
-		position: relative;
 		.widget {
 			span.h3_icon {
-				position: absolute;
-				top:5px;
-				right:45px;
+
 			} 
 		}
 		h3 {
-			display: flex;
-			padding-right:85px;
 			&:after {
-				flex-grow:1;
+				
 			}
 		}
 		
@@ -406,6 +415,16 @@
 	
 	.container {
 		padding:0 30px;
+	}
+	
+	.sidebarbox_inner {
+		ul.sub-menu {
+			li {
+				a {
+					padding-left:45px;
+				}
+			}
+		}
 	}
 	
 	
