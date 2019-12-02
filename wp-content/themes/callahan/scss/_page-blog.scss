@@ -23,7 +23,8 @@
 		height:100%;
 		border: 1px solid;
 		border-image: linear-gradient(116deg, rgb(252,179,110), rgb(183,120,62)) 1;
-		z-index: -1;
+		z-index: 1;
+		pointer-events: none;
 	}
 	&:after {
 		content:"";
@@ -60,7 +61,7 @@
 	span.h3_icon {
 		width:12px;
 		height:12px;
-		margin-left:26px;
+		margin-left:30px;
 		position: relative;
 		display: inline-block;
 		&:before, &:after {
@@ -94,7 +95,6 @@
 
 
 .sidebar_blog {
-	
 	ul {
 		list-style: none;
 		li {
@@ -131,9 +131,25 @@
 				}
 		}
 	}
-	ul.menu {
-		margin-top:31px;
-		padding-bottom:30px;
+	.widget.active {
+		padding-bottom: 40px;
+	}
+	.widget {
+		padding-bottom:90px;
+		transition: all 200ms ease-in-out;
+		&:last-of-type {
+			padding-bottom:0;
+			> ul {
+				
+			}
+		}
+		> ul {
+			margin-top:31px;
+			
+		}
+	}
+	ul {
+		
 		> li {
 			> a {
 					&:hover {
