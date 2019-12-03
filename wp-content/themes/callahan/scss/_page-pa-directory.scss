@@ -59,6 +59,7 @@
 				color:$black;
 				text-decoration: none;
 				display: inline-block;
+				transition: all 200ms ease-in-out;
 				&:after {
 					content:"";
 					margin-top:2px;
@@ -69,6 +70,7 @@
 					transition: all 200ms ease-in-out;
 				}
 				&:hover {
+					color:$gold;
 					&:after {
 						background: $gold;
 					}
@@ -79,25 +81,71 @@
 }
 
 
-/*
-.sec_four_logos {
-	display: flex;
-	flex-wrap:wrap;
-	margin:85px 0px 0px 0px;
-	.sec_four_single_logo {
-		flex-basis:calc(25% - 40px);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height:140px;
-		background:red;
-		margin:0 20px 55px;
-		img {
-			display: block;
-			max-width:100%;
-			height:auto;
-			
+@media screen and (max-width: 1365px) {
+	
+	
+	
+	.pa_directory {
+		ul.sub-menu {
+			li {
+				flex-basis: calc(33% - 40px);
+			}
 		}
 	}
-}
-*/
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	.pa_directory {
+		margin-top:20px;
+	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 930px) {
+	
+	
+	.pa_directory {
+		ul.sub-menu {
+			li {
+				flex-basis: calc(50% - 40px);
+			}
+		}
+	}
+	
+	
+} /* Media Query */
+
+@media screen and (max-width: 680px) {
+	
+	
+	.pa_directory {
+		ul.menu {
+			> li {
+				font-size: 18px;
+				line-height: 22px;
+				 > a {
+					 &:after {
+						 margin: 11px 0 0 13px;
+					 }
+				 }
+			}
+		}
+		ul.sub-menu {
+			display: block;
+			margin: 35px 0 50px 0;
+			li {
+				height:auto;
+			}
+		}
+	}
+	
+	
+} /* Media Query */
