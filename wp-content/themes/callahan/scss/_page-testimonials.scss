@@ -1,0 +1,73 @@
+
+
+.testimonial_page_wrapper {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1515px;
+	margin:75px auto 0;
+}
+
+.testi_col {
+	flex-basis: 46%;
+}
+
+.single_testi {
+	width:100%;
+	position: relative;
+	text-align: left;
+	margin-bottom:90px;
+	&:last-of-type {
+		margin-bottom:47px;
+	}
+	&:before {
+		content:"";
+		display: block;
+		position: absolute;
+		z-index:1;
+		top:0;
+		left:50px;
+		width:calc(100% - 100px);
+		height:100%;
+		border: 1px solid;
+		border-image: $goldgradborder;
+	}
+	&:after {
+		content:"";
+		display: block;
+		position: absolute;
+		top:50px;
+		left:0;
+		width:100%;
+		height:calc(100% - 100px);
+		background: $offwhite;
+	}
+	.single_testi_inner {
+		padding:142px 85px 136px;
+		position: relative;
+		z-index:1;
+		max-width: 645px;
+		margin:0 auto;
+		img {
+			width:203px;
+			height:23px;
+		}
+		span.tesi_quote {
+			color:$redlight;
+			display: block;
+			font-size:50px;
+			line-height: 70px;
+			margin-top:31px;
+			margin-bottom:41px;
+			padding-right:45px;
+			@include operetta;
+		}
+		span.testi_name {
+			display: block;
+			color:$redlight;
+			text-transform: lowercase;
+			font-size: 18px;
+			line-height: 22px;
+			@include proxima_extrabold;
+		}
+	}
+}

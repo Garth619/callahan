@@ -4,7 +4,7 @@
 
 get_header(); ?>
 
-	<div id="internal_main">
+<div id="internal_main">
 	
 	<div class="container no_banner">
 	
