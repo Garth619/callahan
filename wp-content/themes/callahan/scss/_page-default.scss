@@ -115,7 +115,7 @@
 		&:after {
 			content:"";
 			margin-top:10px;
-			width:62px;
+			//width:62px;
 			height:1px;
 			background: $gold;
 			margin-left:30px;
@@ -302,7 +302,7 @@
 		ul {
 			li {
 				a {
-					padding: 20px 114px 20px 45px;
+					padding: 20px 75px 20px 45px;
 				}
 			}
 		}
@@ -418,10 +418,32 @@
 	}
 	
 	.sidebarbox_inner {
+		h3 {
+			padding: 0 0 0 30px;
+		}
+		span.h3_icon {
+			right:30px;
+		}
+		ul {
+			li {
+				a {
+				padding: 20px 60px 20px 30px;
+				}
+			}
+		}
+		ul.menu {
+			li.menu-item-has-children {
+				> a {
+					 span.h3_icon {
+						 right:30px;
+					 }
+				}
+			}
+		}
 		ul.sub-menu {
 			li {
 				a {
-					padding-left:45px;
+					padding-left:30px;
 				}
 			}
 		}

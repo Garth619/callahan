@@ -49,19 +49,31 @@
 
 </div><!-- blog_feed -->
 
-<?php if (  $wp_query->max_num_pages > 1 ) : ?>
+<div class="pagination">
+
+	<?php if (  $wp_query->max_num_pages > 1 ) : ?>
 	
-	<div id="nav-below">
-		
-		<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">Prev</span>' ) ); ?></div>
+		<div id="nav-below">
 			
-		<div class="nav-next"><?php previous_posts_link( __( '<span class="meta-nav">Next</span>') ); ?></div>
-	
-	</div>
+			<?php if(get_previous_posts_link()) { ?>
+			
+				<div class="nav-next"><?php previous_posts_link( __( '<span class="meta-nav">Prev</span>') ); ?></div>
+				
+			<?php } ?>
+			
+			<?php if(get_next_posts_link()) { ?>
+		
+				<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">Next</span>' ) ); ?></div>
+			
+			<?php } ?>
+			
+		</div>
 
-<?php endif; ?>
+		<?php endif; ?>
 
-<?php wpbeginner_numeric_posts_nav(); ?>
+		<?php wpbeginner_numeric_posts_nav(); ?>
+
+</div><!-- pagination -->
 
 
 
