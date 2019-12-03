@@ -158,7 +158,11 @@
 		}
 	}
 	ul {
-		
+		> li.active {
+			 > a {
+				 	color:$gold;
+			 }
+		}
 		> li {
 			> a {
 					&:hover {
@@ -166,6 +170,7 @@
 						cursor: pointer;
 					}
 			}
+			
 		}
 		> li.menu-item-has-children {
 			 > a {
@@ -230,7 +235,11 @@
 			transition: all 200ms ease-in-out;
 		}
 	}
-	.meta_data {
+	
+}
+
+
+.meta_data {
 		text-transform: uppercase;
 		font-size: 15px;
 		letter-spacing: 0.2em;
@@ -265,7 +274,6 @@
 			}
 		}
 	}
-}
 
 
 a.read_more {

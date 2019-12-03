@@ -432,6 +432,20 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 			
 		
 		});
+		
+		
+		// blog sidebar
+		
+		
+			var pgurl = window.location.href;
+			
+			$(".widget ul li").each(function(){
+		  
+		  if($(this).find('a').attr("href") == pgurl)
+		    
+		    $(this).addClass("active");
+			
+			})
 
 
 	// nav
