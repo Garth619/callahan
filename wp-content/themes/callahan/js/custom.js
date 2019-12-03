@@ -4,6 +4,7 @@
 // @codekit-prepend 'modernizr-webp.js'
 // @codekit-prepend 'underscore.js'
 
+
 jQuery(document).ready(function($){
 	
 
@@ -377,16 +378,18 @@ $('.sec_two_slider').slick({
 // macy http://macyjs.com/
 
 /*
+
 var macyInstance = Macy({
-  container: '.testimonials_wrapper',
-	columns: 3,
-	margin:49,
+  container: '.pa_directory ul.menu > li.menu-item-has-children > ul.sub-menu',
+	columns: 4,
+	margin:50,
 	breakAt: {
         1450: 2,
         1066:1
   }
 });
 */
+
 
 
 	
