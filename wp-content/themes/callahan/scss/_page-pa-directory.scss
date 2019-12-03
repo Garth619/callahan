@@ -102,7 +102,7 @@
 	
 	
 	.pa_directory {
-		margin-top:20px;
+		margin-top:30px;
 	}
 	
 	
@@ -132,6 +132,7 @@
 				font-size: 18px;
 				line-height: 22px;
 				 > a {
+					 margin:0;
 					 &:after {
 						 margin: 11px 0 0 13px;
 					 }
@@ -143,6 +144,8 @@
 			margin: 35px 0 50px 0;
 			li {
 				height:auto;
+				margin-left:0;
+				margin-right:0;
 			}
 		}
 	}

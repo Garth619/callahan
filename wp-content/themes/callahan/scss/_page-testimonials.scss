@@ -42,10 +42,9 @@
 		background: $offwhite;
 	}
 	.single_testi_inner {
-		padding:142px 85px 136px;
+		padding:142px 120px 136px;
 		position: relative;
 		z-index:1;
-		max-width: 645px;
 		margin:0 auto;
 		img {
 			width:203px;
@@ -58,7 +57,7 @@
 			line-height: 70px;
 			margin-top:31px;
 			margin-bottom:41px;
-			padding-right:45px;
+			padding-right:38px;
 			@include operetta;
 		}
 		span.testi_name {
@@ -71,3 +70,173 @@
 		}
 	}
 }
+
+
+@media screen and (max-width: 1620px) {
+	
+	
+	.testi_col {
+		flex-basis:47%;
+	}
+	
+	.single_testi {
+		.single_testi_inner {
+			span.tesi_quote {
+				padding-right:0;
+			}
+		}
+	} 
+	
+	
+	
+} /* Media Query */
+
+@media screen and (max-width: 1490px) {
+	
+	
+	.single_testi {
+		.single_testi_inner {
+			padding: 142px 90px 136px;
+			span.tesi_quote {
+				
+			}
+		}
+	} 
+
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1360px) {
+	
+	
+	.single_testi {
+		.single_testi_inner {
+			span.tesi_quote {
+				font-size: 45px;
+				line-height: 63px;
+			}
+		}
+	} 
+	
+	
+	
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1310px) {
+	
+	
+	
+	.single_testi {
+		.single_testi_inner {
+			span.tesi_quote {
+				font-size: 40px;
+				line-height: 57px;
+			}
+		}
+	} 
+
+	
+	
+} /* Media Query */
+
+@media screen and (max-width: 1145px) {
+	
+	
+	
+	.testimonial_page_wrapper {
+		display: block;
+		max-width: 765px;
+	}
+	
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	.testimonial_page_wrapper {
+		margin-top:30px;
+	}
+	
+	.testi_col {
+		&:last-of-type {
+			.single_testi {
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	
+	.single_testi {
+		&:last-of-type {
+			margin-bottom: 90px;
+		}
+		&:before {
+			left:30px;
+			width:calc(100% - 60px);
+		}
+		&:after {
+			top:30px;
+			height:calc(100% - 60px);
+		}
+		.single_testi_inner {
+			padding-left:120px;
+			padding-right:120px;
+		}
+	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	.single_testi {
+		margin-bottom:60px;
+		&:last-of-type {
+			margin-bottom:60px;
+		}
+		.single_testi_inner {
+			padding: 85px 70px 90px;
+			span.tesi_quote {
+				font-size: 32px;
+				line-height: 40px;
+				 margin-bottom: 25px;
+			}
+		}
+	}
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 400px) {
+	
+	
+	
+	.single_testi {
+		.single_testi_inner {
+			padding: 85px 60px 90px;
+			img {
+				width:150px;
+				height:17px;
+			}
+		}
+	}
+	
+	
+	
+} /* Media Query */
