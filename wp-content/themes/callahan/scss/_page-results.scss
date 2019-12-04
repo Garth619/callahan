@@ -20,7 +20,7 @@
 }
 
 .single_cr {
-	height:476px;
+	height:475px;
 	flex-basis: 30.5%;
 	margin-top:-123px;
 	position: relative;
@@ -45,5 +45,26 @@
 		width:100%;
 		height:calc(100% - 56px);
 		background: #fff;
+	}
+	.single_cr_inner {
+		padding:0 70px;
+		position: relative;
+		z-index: 1;
+		span {
+			display: block;
+		}
+		span.amount {
+			font-size: 80px;
+			color:$redlight;
+			margin-top:140px;
+			@include operetta;
+		}
+		span.cr_content {
+			font-size: 20px;
+			line-height: 32px;
+			max-width: 293px;
+			margin:49px auto 0;
+			@include proxima_semibold;
+		}
 	}
 }
