@@ -681,6 +681,21 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 		
 		
 	}, 100)); 
+	
+	
+	
+	// case results row wrap
+	
+	
+	var divs = $(".single_cr");
+	
+	for(var i = 0; i < divs.length; i+=3) {
+  	
+  	divs.slice(i, i+3).wrapAll("<div class='row_wrap'></div>");
+	
+	}
+	
+	
 
 
   
