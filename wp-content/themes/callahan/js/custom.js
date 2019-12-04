@@ -401,9 +401,17 @@ var macyInstance = Macy({
 $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 
 
+// 404 go back
+
+$('a.goback').on('click', function(e) {
+  
+	window.history.back();
 
 
-	// sidebar
+});
+
+
+// sidebar
 	
 		
 		$('<span class="h3_icon"></span>').insertAfter('.sidebarbox_inner h3, .widget h3'); 

@@ -60,7 +60,7 @@
 
 .container {
 	padding:0 90px;
-	min-height: 400px;
+	min-height: 630px;
 }
 
 .container.no_banner {
@@ -211,8 +211,14 @@
 		> li {
 			> a {
 					&:hover {
-						color:$red;
+						color:#fff;
+						background: $bluedark;
 						cursor: pointer;
+						span.h3_icon {
+							&:before, &:after {
+								background: #fff;
+							}
+						}
 					}
 			}
 		}
@@ -340,7 +346,7 @@
 
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1190px) {
 	
 	#internal_main {
 		padding-bottom: 90px;
@@ -460,7 +466,7 @@
 		ul.sub-menu {
 			li {
 				a {
-					padding-left:30px;
+					padding-left:40px;
 				}
 			}
 		}
