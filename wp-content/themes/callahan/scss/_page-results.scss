@@ -17,6 +17,9 @@
 		display: block;
 		flex-basis: 30.5%;
 	}
+	&:last-of-type {
+		margin-bottom:50px;
+	}
 }
 
 .single_cr {
@@ -68,3 +71,36 @@
 		}
 	}
 }
+
+
+
+@media screen and (max-width: 1500px) {
+	
+	
+	
+	.row_wrap {
+		padding:0 50px;
+	}
+	
+	.single_cr {
+		.single_cr_inner {
+			span.amount {
+				font-size: 69px;
+				margin-top: 127px;
+			}
+		}
+	}
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1360px) {
+	
+	
+	
+	
+	
+	
+} /* Media Query */

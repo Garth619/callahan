@@ -116,6 +116,8 @@ get_header(); ?>
 			
 			
 		</div><!-- cr_wrapper -->
+		
+		<span class="test">test</span>
 			
 	</div><!-- container -->
 		

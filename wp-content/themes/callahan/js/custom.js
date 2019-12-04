@@ -557,8 +557,6 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 			
 			navTablet();
 			
-			// off
-		
 			$('nav ul.menu > li.menu-item-has-children > a').off().on('click', topMenu);
 					
 		}
@@ -687,6 +685,82 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 	// case results row wrap
 	
 	
+	
+	var rowCount;
+	
+	function rowWrap(rowCount) {
+		
+		var divs = $(".single_cr");
+	
+		for(var i = 0; i < divs.length; i+=rowCount) {
+  	
+  		divs.slice(i, i+rowCount).wrapAll("<div class='row_wrap row_wrap_"+rowCount+"'></div>");
+		
+		}
+		
+	}
+	
+	
+	var resizeRow = $(window).width();
+	
+	
+	if (resizeRow > 1360) {
+		
+		if(!$('.row_wrap_3').length > 0 ){
+			
+			rowWrap(3); // number to wrap rows
+			
+		}
+			
+		
+	}
+	
+	
+	if (resizeRow <= 1360) {
+		
+		if(!$('.row_wrap_2').length > 0 ){
+		
+		rowWrap(2); // number to wrap rows
+		
+		}
+		
+	}
+	
+	$(window).resize(_.debounce(function() {
+		
+		var resizeRow = $(window).width();
+		
+		if (resizeRow > 1360) {
+			
+			if(!$('.row_wrap_3').length > 0 ){
+			
+			rowWrap(3); // number to wrap rows
+			
+		}
+		
+		}
+	
+	
+		if (resizeRow <= 1360) {
+			
+			if(!$('.row_wrap_2').length > 0 ){
+		
+		rowWrap(2); // number to wrap rows
+		
+		}
+		
+		}
+
+		
+		
+		
+	}, 100)); 
+
+	
+	
+	
+/*
+	
 	var divs = $(".single_cr");
 	
 	for(var i = 0; i < divs.length; i+=3) {
@@ -694,6 +768,11 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
   	divs.slice(i, i+3).wrapAll("<div class='row_wrap'></div>");
 	
 	}
+*/
+	
+	
+	
+
 	
 	
 
