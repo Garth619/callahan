@@ -994,6 +994,14 @@
 		"oAP": "/search.php",
 		"oF": 0
 		},
+	"/sidebar-attbio.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/sidebar-attbio.php",
+		"oF": 0
+		},
 	"/sidebar-blog.php": {
 		"cB": 0,
 		"ft": 8192,

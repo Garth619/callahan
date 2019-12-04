@@ -93,6 +93,7 @@ span.position {
 	font-size: 22px;
 	line-height: 32px;
 	margin-top:82px;
+	max-width:775px;
 	@include proxima_bold;
 	p {
 		margin-bottom: 45px;
@@ -104,4 +105,21 @@ span.position {
 			color:$goldlight;
 		}
 	}
+}
+
+
+.att_bio_bottom {
+	max-width:1600px;
+	margin:139px auto 0;
+	display: flex;
+}
+
+.att_bio_bottom_content {
+	flex-grow:1;
+	padding:0 150px 0 70px;
+}
+
+
+.sidebar_wrapper.att_bio {
+	margin:0;
 }
