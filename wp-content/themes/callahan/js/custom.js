@@ -684,7 +684,7 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 	
 	// case results row wrap
 	
-	
+	// loops through single case results and wraps into sets of the rowCount parameter
 	
 	var rowCount;
 	
@@ -700,6 +700,16 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 		
 	}
 	
+	// unwraps an exsisting row function to reset
+	
+	function unwrapRow() {
+		
+		$(".single_cr").unwrap();
+		
+	}
+	
+	
+	// page load windiw widths
 	
 	var resizeRow = $(window).width();
 	
@@ -708,11 +718,9 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 		
 		if(!$('.row_wrap_3').length > 0 ){
 			
-			rowWrap(3); // number to wrap rows
-			
+			rowWrap(3); // number of single case results to wrap into rows
 		}
 			
-		
 	}
 	
 	
@@ -720,11 +728,13 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 		
 		if(!$('.row_wrap_2').length > 0 ){
 		
-		rowWrap(2); // number to wrap rows
+		rowWrap(2); // number of single case results to wrap into rows
 		
 		}
 		
 	}
+	
+	// window resize
 	
 	$(window).resize(_.debounce(function() {
 		
@@ -732,49 +742,39 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 		
 		if (resizeRow > 1360) {
 			
+			if($('.row_wrap_2').length > 0 ){
+				
+				unwrapRow();
+				
+			}
+			
 			if(!$('.row_wrap_3').length > 0 ){
 			
-			rowWrap(3); // number to wrap rows
+				rowWrap(3); //  number of single case results to wrap into rows
 			
-		}
+			}
 		
 		}
 	
 	
 		if (resizeRow <= 1360) {
 			
+			if($('.row_wrap_3').length > 0 ){
+				
+				unwrapRow();
+				
+			}
+			
 			if(!$('.row_wrap_2').length > 0 ){
 		
-		rowWrap(2); // number to wrap rows
+				rowWrap(2); //  number of single case results to wrap into rows
+		
+			}
 		
 		}
-		
-		}
 
-		
-		
-		
-	}, 100)); 
+	}, 100)); // timeouts functions
 
-	
-	
-	
-/*
-	
-	var divs = $(".single_cr");
-	
-	for(var i = 0; i < divs.length; i+=3) {
-  	
-  	divs.slice(i, i+3).wrapAll("<div class='row_wrap'></div>");
-	
-	}
-*/
-	
-	
-	
-
-	
-	
 
 
   
