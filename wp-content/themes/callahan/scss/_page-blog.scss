@@ -23,7 +23,7 @@
 		height:100%;
 		border: 1px solid;
 		border-image: linear-gradient(116deg, rgb(252,179,110), rgb(183,120,62)) 1;
-		z-index: 1;
+		z-index: -1;
 		pointer-events: none;
 	}
 	&:after {
@@ -104,6 +104,7 @@
 
 
 .sidebar_blog {
+	
 	ul {
 		list-style: none;
 		li {
@@ -114,7 +115,7 @@
 				text-decoration: none;
 				display: block;
 				color:$black;
-				padding: 20px 114px 20px 90px;
+				padding: 20px 114px 20px 57px;
 				transition: all 200ms ease-in-out;
 				&:hover {
 					color:$redlight;
@@ -149,12 +150,12 @@
 		&:last-of-type {
 			padding-bottom:0;
 			> ul {
-				
+					
 			}
 		}
 		> ul {
 			margin-top:31px;
-			
+			padding:0 32px;
 		}
 	}
 	ul {
@@ -166,7 +167,8 @@
 		> li {
 			> a {
 					&:hover {
-						color:$red;
+						color:#fff;
+						background: $bluedark;
 						cursor: pointer;
 					}
 			}
@@ -175,10 +177,17 @@
 		> li.menu-item-has-children {
 			 > a {
 				 position: relative;
+				 &:hover {
+					 span.h3_icon {
+						 &:before, &:after {
+							 background: #fff;
+						 }
+					 }
+				 }
 				  span.h3_icon {
 					  position: absolute;
 					  top: 26px;
-					  right:85px;
+					  right:55px;
 				  }
 			 }
 			 a.active {
@@ -202,7 +211,8 @@
 			a {
 				color:#fff;
 				transition: all 200ms ease-in-out;
-				padding-left:119px;
+				padding-left: 87px;
+				padding-right: 84px;
 				&:hover {
 					color:$goldlight;
 				}
@@ -399,14 +409,14 @@ a.read_more {
 		ul {
 			li {
 				a {
-					padding: 20px 119px 20px 70px;
+					padding: 20px 89px 20px 37px;
 				}
 			}
 		}
 		ul.sub-menu {
 			li {
 				a {
-					padding-left:90px;
+					padding-left: 55px;
 				}
 			}
 		}
@@ -530,13 +540,13 @@ a.read_more {
     	ul {
 	    	li {
 		    	a {
-			    	padding: 20px 80px 20px 55px;
+			    	padding: 20px 80px 20px 23px;
 		    	}
 	    	}
 	    	> li.menu-item-has-children {
 		    	> a {
 			    	span.h3_icon {
-				    	right:55px;
+				    	right: 24px;
 			    	}
 		    	}
 	    	}
@@ -544,7 +554,7 @@ a.read_more {
     	ul.sub-menu {
 	    	li {
 		    	a {
-			    	padding-left:55px;
+			    	padding-left: 29px;
 		    	}
 	    	}
     	}
