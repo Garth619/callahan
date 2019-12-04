@@ -4,7 +4,6 @@
 
 get_header(); ?>
 
-
 <div id="internal_main">
 	
 	<div class="container no_banner">
@@ -38,9 +37,5 @@ get_header(); ?>
 	</div><!-- container -->
 		
 </div><!-- internal_main -->
-
-						
-			  
-
 
 <?php get_footer(); ?>
