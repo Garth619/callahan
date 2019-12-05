@@ -14,19 +14,33 @@ get_header(); ?>
 			
 			<div class="single_att">
 				
+				<a class="" href="">
+				
 				<div class="single_att_img_wrapper">
 					
 					<div class="single_att_inner">
 						
-						<img class="profile_pic" src="<?php bloginfo('template_directory');?>/images/att-bio-callahan.jpg"/><!-- profile_pic -->
+						<div class="single_profile_pic_wrapper">
+						
+							<img class="profile_pic" src="<?php bloginfo('template_directory');?>/images/att-bio-callahan.jpg"/><!-- profile_pic -->
+						
+							<div class="single_att_overlay"></div><!-- single_att_overlay -->
+						
+						</div><!-- single_profile_pic_wrapper -->
 						
 					</div><!-- single_att_inner -->
+					
+					<div class="single_overlay_hover"></div><!-- single_overlay_hover -->
 					
 				</div><!-- single_att_img_wrapper -->
 				
 				<span class="att_title">Daniel J. Callahan</span><!-- att_title -->
 				
 				<span class="att_position">Founding Partner</span><!-- att_position -->
+				
+				
+				
+				</a>
 				
 			</div><!-- single_att -->
 			
