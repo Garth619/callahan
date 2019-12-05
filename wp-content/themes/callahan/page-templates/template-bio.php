@@ -13,8 +13,12 @@ get_header(); ?>
 			<div class="att_top_inner">
 			
 				<div class="att_bio_left">
+					
+					<div class="att_bio_img_wrapper">
 				
-					<img class="att_bio_img" src="<?php bloginfo('template_directory');?>/images/att-bio-callahan.jpg"/><!-- att_bio_img -->
+						<img class="att_bio_img desktop" src="<?php bloginfo('template_directory');?>/images/att-bio-callahan.jpg"/><!-- att_bio_img -->
+					
+					</div><!-- att_bio_img_wrapper -->
 				
 				</div><!-- att_bio_left -->
 			
@@ -23,6 +27,8 @@ get_header(); ?>
 					<h1 class="att_bio_header" ><?php the_title();?></h1><!-- att_bio_header -->
 					
 					<span class="position">Founding Partner</span><!-- position -->
+					
+					<img class="att_bio_img mobile" src="<?php bloginfo('template_directory');?>/images/att-bio-callahan.jpg"/><!-- att_bio_img -->
 					
 					<div class="att_top_content">
 						
