@@ -40,7 +40,10 @@ h1.contact_header {
 
 .contact_right {
 	flex-grow:1;
-	background: pink;
+	iframe {
+		width:100% !important;
+		height:100% !important;
+	}
 }
 
 
