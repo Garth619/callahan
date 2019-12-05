@@ -2,7 +2,7 @@
 
 .att_wrapper {
 	max-width:1438px;
-	margin:75px auto 0;
+	margin:75px auto -68px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -16,9 +16,8 @@
 
 .single_att {
 	flex-basis: 30.5%;
-	height:678px;
 	position: relative;
-	margin-bottom: 68px;
+	margin-bottom: 110px;
 	a {
 		text-decoration: none;
 	}
@@ -37,7 +36,7 @@
 }
 
 .single_att_img_wrapper {
-	height:523px;
+	//height:523px;
 	position: relative;
 	&:before {
 		content:"";
@@ -85,6 +84,7 @@
 		max-width: 100%;
 		height: auto;
 		display: block;
+		margin:0 auto;
 	}
 }
 
@@ -133,3 +133,63 @@ span.att_position {
 	color:$black;
 	@include proxima_semibold;
 }
+
+
+@media screen and (max-width: 1390px) {
+	
+	
+	
+.att_wrapper {
+	max-width: 1068px;
+	&:after {
+		display: none
+	}
+}
+
+
+.single_att {
+	flex-basis:47%;
+}
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	.att_wrapper {
+		margin-top:30px;
+	}
+	
+	.single_att {
+    margin-bottom: 85px;
+  }
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 865px) {
+	
+	
+	.att_wrapper {
+		display: block;
+		max-width: 525px;
+	}
+	
+	
+	.single_att {
+		margin-bottom: 55px;
+	}
+	
+	
+	span.att_title {
+		margin-top: 30px;
+	}
+	
+	
+	
+	
+	
+} /* Media Query */
