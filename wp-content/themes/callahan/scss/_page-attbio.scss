@@ -122,4 +122,61 @@ span.position {
 
 .sidebar_wrapper.att_bio {
 	margin:0;
+	.sidebarbox_inner {
+		
+		h3 {
+			padding: 0 77px 0 90px;
+			&:after {
+				margin-left: 15px;
+			}
+		}
+		.widget {
+			ul {
+				padding: 0 117px 0 93px;
+			}
+		> ul {
+				padding-bottom:10px;
+				margin-top:48px;
+			> li {
+				position: relative;
+				padding-left:29px;
+				margin-bottom: 44px;
+				&:before {
+					content:"";
+					display: block;
+					width:7px;
+					height:7px;
+					border-radius: 50%;
+					background: $redlight;
+					position: absolute;
+					top:8px;
+					left:0;
+				}
+				ul {
+					padding:0;
+					margin:20px 0 0 0;
+					li {
+						margin-bottom: 23px;
+						position: relative;
+						padding-left:32px;
+							&:before {
+								content:"+";
+								color:$redlight;
+								position: absolute;
+								top:0;
+								left:0;
+							}
+						 @include proxima_semibold;
+					 }
+				}
+			}
+		}
+		}
+	}
 }
+
+
+
+
+
+
