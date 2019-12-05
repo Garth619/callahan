@@ -98,6 +98,9 @@
 	padding:55px 0px;
 	margin-bottom: 60px;
 	transition: all 200ms ease-in-out;
+	&:last-of-type {
+		margin-bottom: 0;
+	}
 }
 
 .sidebar_box.active {

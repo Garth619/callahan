@@ -1,55 +1,57 @@
 
 <div class="sidebar_wrapper att_bio">
 	
-	<div class="sidebar_box">
-		
-		<div class="sidebarbox_inner">
-			
-			<div class="widget">
+	<?php if(get_field('att_sidebar')): ?>
+	 
+		<?php while(has_sub_field('att_sidebar')): ?>
+	 
+			<div class="sidebar_box">
 				
-				<h3>Areas of Practice</h3>
+				<div class="sidebarbox_inner">
+					
+					<div class="widget">
+						
+						<h3><?php the_sub_field( 'sidebar_title' ); ?></h3>
 				
-				<ul>
-					<li>Complex Civil and Business Litigation</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-				</ul>
+						<?php if(get_sub_field('sidebar_list_items')): ?>
+							
+							<ul>
+				 
+							<?php while(has_sub_field('sidebar_list_items')): ?>
+				 
+								<li><?php the_sub_field( 'list_item' ); ?>
+								
+								<?php if(get_sub_field('nested_list_items')): ?>
+									
+									<ul>
+								 
+									<?php while(has_sub_field('nested_list_items')): ?>
+								 
+										<li><?php the_sub_field( 'nested_list_item' ); ?></li>
+								    
+									<?php endwhile; ?>
+									
+									</ul>
+								 
+								<?php endif; ?>
+								
+								
+								</li>
+				    
+							<?php endwhile; ?>
+							
+							</ul>
+				 
+						<?php endif; ?>
 				
-			</div><!-- widget -->
-		
-		</div><!-- sidebarbox_inner -->
-		
-	</div><!-- sidebar_box -->
-	
-	<div class="sidebar_box">
-		
-		<div class="sidebarbox_inner">
-			
-			<div class="widget">
+				</div><!-- widget -->
 				
-				<h3>Education</h3>
+				</div><!-- sidebarbox_inner -->
 				
-				<ul>
-					<li>Complex Civil and Business Litigation
-					<ul>
-							<li>test</li>
-							<li>test</li>
-							<li>test</li>
-							<li>test</li>
-						</ul>
-					</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-					<li>Test</li>
-				</ul>
-				
-			</div><!-- widget -->
-		
-		</div><!-- sidebarbox_inner -->
-		
-	</div><!-- sidebar_box -->
+			</div><!-- sidebar_box -->
+	    
+		<?php endwhile; ?>
+	 
+	<?php endif; ?>
 	
 </div><!-- sidebar_wrapper -->
