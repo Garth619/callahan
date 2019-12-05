@@ -1,0 +1,208 @@
+
+body.page-template-template-contact {
+	#internal_main {
+		padding-bottom:0;
+	}
+	.social_media {
+		padding-left:0;
+		a {
+			margin: 0 20px 27px 0;
+		}
+	}
+}
+
+.contact_wrapper {
+	display: flex;
+}
+
+
+.contact_left {
+	flex-basis:50%;
+	max-width:961px;
+	padding-left:124px;
+	margin:137px 0 150px;
+}
+
+h1.contact_header {
+	font-size: 92px;
+	line-height: 100px;
+	display: inline-block;
+	padding-bottom: 25px;
+	@include operetta;
+	color:$gold;
+	  @supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent) {
+	  	background: $goldgrad;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+	 	}
+}
+
+
+.contact_right {
+	flex-grow:1;
+	background: pink;
+}
+
+
+.contact_location_wrapper {
+	max-width:1700px;
+	margin:72px auto 0;
+	padding:0px;
+	display: flex;
+	flex-wrap:wrap;
+	//justify-content: space-between;
+}
+
+
+
+.contact_location_col {
+	color:$black;
+	flex-shrink: 0;
+	flex-basis:49%;
+	@include proxima_semibold;
+	span.contact_location_title {
+		display: block;
+		color: $redlight;
+		font-size: 28px;
+		line-height: 32px;
+		margin-bottom:30px;
+		@include operetta;
+	}
+	span.address {
+		display: block;
+		font-size: 18px;
+		line-height: 29px;
+		margin-bottom: 37px;
+	}
+	.phone_row {
+		display: flex;
+		margin-bottom:13px;
+		font-size: 18px;
+		span {
+			color:$redlight;
+			margin-right:12px;
+			@include proxima_extrabold;
+		}
+		a {
+			text-decoration: none;
+			color:#000;
+		}
+	}
+	a.map_button {
+		background: $gold;
+		display: inline-block;
+		color:#fff;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 16px;
+		letter-spacing: 0.28em;
+		padding:16px 0;
+		margin-top: 0px;
+		width:119px;
+		text-align: center;
+		border-radius: 45px;
+		box-shadow: 3px 7px 9px 0px rgba(0,0,0,0.4);
+		transition: all 200ms ease-in-out;
+		@include proxima_black;
+		&:hover {
+			background: $red;
+			
+		}
+	}
+}
+
+
+.contact_location_col_three {
+	margin-top:77px;
+}
+
+.contact_location_col_four {
+	margin-top:79px;
+}
+
+
+.social_media {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 175px;
+	padding-left:5px;
+	a {
+		text-decoration: none;
+		display: block;
+		margin:0 10px 27px;
+		flex-shrink: 0;
+		&:hover {
+			svg.sm {
+				.st0-sm {
+					fill:$gold;
+				}
+			}
+		}
+		svg.sm {
+			width:30px;
+			height:30px;
+			.st0-sm {
+				fill:$black;
+				transition: all 200ms ease-in-out;
+			}
+		}
+	}
+	a.sm-g {
+		svg.sm {
+			width:27px;
+		}
+	}
+	a.sm-fb {
+		svg.sm {
+			width:33px;
+			height:32px;
+		}
+	}
+	a.sm-yt {
+		svg.sm {
+			width:33px;
+			height:32px;
+		}
+	}
+}
+
+
+
+.contact_location_col {
+	ul {
+		list-style: none;
+		li {
+			margin-bottom: 11px;
+			font-size: 16px;
+			line-height: 19px;
+			a {
+				text-decoration: none;
+				color:$black;
+			}
+		}
+	}
+	span.news_post_title {
+		display: block;
+		font-size: 18px;
+		line-height: 32px;
+		margin-top:-8px;
+		max-width:317px;
+	}
+	a.views_news {
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 14px;
+		letter-spacing: 0.28em;
+		color:$gold;
+		display: inline-block;
+		margin-top:27px;
+		transition: all 200ms ease-in-out;
+		@include proxima_black;
+		&:hover {
+			color:$redlight
+		}
+	}
+}
+
+

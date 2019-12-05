@@ -18,6 +18,8 @@
 	
 	<div class="footer_bottom">
 		
+		<?php if(!is_page_template('page-templates/template-contact.php')) {?>
+		
 		<div class="location_wrapper">
 		
 			<div class="location_col location_col_one">
@@ -56,7 +58,7 @@
 		
 			<div class="location_col location_col_two">
 			
-				<span class="location_title">stay connected</span><!-- location_title -->
+				<span class="location_title">Stay Connected</span><!-- location_title -->
 				
 				<div class="social_media">
 					
@@ -78,7 +80,7 @@
 		
 			<div class="location_col location_col_three">
 			
-				<span class="location_title">practice area</span><!-- location_title -->
+				<span class="location_title">Practice Area</span><!-- location_title -->
 				
 				<ul>
 					<li><a href="">Complex Business Litigation</a></li>
@@ -108,6 +110,8 @@
 			</div><!-- location_col_four -->
 		
 		</div><!-- location_wrapper -->
+		
+		<?php } ?>
 		
 		<div class="copyright_wrapper">
 				

@@ -24,7 +24,6 @@ get_header(); ?>
 							
 							<?php setup_postdata( $post ); ?> 
 				
-				
 								<div class="single_att">
 				
 									<a class="" href="<?php the_permalink();?>">
