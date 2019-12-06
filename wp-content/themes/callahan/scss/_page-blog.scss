@@ -18,8 +18,8 @@
 		position: absolute;
 		z-index:1;
 		top:0;
-		left:32px;
-		width:calc(100% - 64px);
+		left:30px;
+		width:calc(100% - 60px);
 		height:100%;
 		border: 1px solid;
 		border-image: linear-gradient(116deg, rgb(252,179,110), rgb(183,120,62)) 1;
@@ -30,10 +30,10 @@
 		content:"";
 		display: block;
 		position: absolute;
-		top:28px;
+		top:30px;
 		left:0;
 		width:100%;
-		height:calc(100% - 56px);
+		height:calc(100% - 60px);
 		background: $offwhite;
 		z-index: -2;
 	}

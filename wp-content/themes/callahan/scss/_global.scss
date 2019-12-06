@@ -220,7 +220,9 @@ img.aligncenter {
 	.content {
 		font-size: 17px;
 		line-height: 33px;
-		
+		h2 {
+			padding-bottom:38px;
+		}
 		blockquote {
 			font-size: 28px;
 			line-height: 35px;
@@ -237,3 +239,4 @@ img.aligncenter {
 		
 	
 } /* Media Query */
+
