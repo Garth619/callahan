@@ -198,12 +198,18 @@ h1.contact_header {
 			}
 		}
 	}
-	span.news_post_title {
+	.news_post_title {
 		display: block;
 		font-size: 18px;
 		line-height: 32px;
 		margin-top:-8px;
 		max-width:317px;
+		color:$black;
+		text-decoration: none;
+		transition: all 200ms ease-in-out;
+		&:hover {
+			color:$gold;
+		}
 	}
 	a.views_news {
 		text-transform: uppercase;
@@ -315,6 +321,14 @@ h1.contact_header {
 	
 
 
+body.page-template-template-contact {
+	.copyright_wrapper {
+		padding-top: 24px;
+		margin: 0 auto 35px;
+	}
+}
+
+
 .contact_left {
 	text-align: center;
 	margin-bottom:60px;
@@ -345,7 +359,7 @@ h1.contact_header {
 	 .phone_row {
 		 justify-content: center;
 	 }
-	 span.news_post_title {
+	 .news_post_title {
 		 margin-left:auto;
 		 margin-right:auto;
 		 max-width: 310px;

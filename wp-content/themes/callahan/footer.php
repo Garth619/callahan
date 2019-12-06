@@ -103,7 +103,7 @@
 			
 				<span class="location_title">In the News</span><!-- location_title -->
 				
-				<span class="news_post_title">Dan Callahan holds a press conference to announce lawsuit against Michael Avenatti for stealing $4,000,000 from paraplegic client.</span><!-- news_post_title -->
+				<a class="news_post_title" href="">Dan Callahan holds a press conference to announce lawsuit against Michael Avenatti for stealing $4,000,000 from paraplegic client.</a><!-- news_post_title -->
 				
 				<a class="views_news" href="">view news archive</a><!-- views_news -->
 			

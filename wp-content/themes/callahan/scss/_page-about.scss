@@ -1,0 +1,55 @@
+
+
+.about_top_wrapper {
+	max-width:1450px;
+	margin:0 auto;
+	display: flex;
+	text-align: left;
+}
+
+.about_left {
+	flex-grow:1;
+}
+
+	h1.about_header {
+		font-size: 135px;
+		line-height: 146px;
+		display: inline-block;
+		color:$gold;
+		max-width: 605px;
+		@include operetta;
+		  @supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent) {
+		  	background: $goldgrad;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+		 	}
+	}
+
+
+.about_intro_wrapper {
+	font-size: 27px;
+	line-height: 42px;
+	color:$bluelight;
+	padding:33px 0 0;
+	@include proxima_bold;
+	p {
+		margin-bottom: 35px;
+	}
+	a {
+		color:$redlight;
+		transition: all 200ms ease-in-out;
+		&:hover {
+			color:$gold;
+		}
+	}
+}
+
+.about_top_content {
+	padding:18px 0 0;
+}
+
+
+.about_right {
+	flex-basis:531px;
+	flex-shrink:0;
+}
