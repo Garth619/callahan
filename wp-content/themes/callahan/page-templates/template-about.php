@@ -56,7 +56,7 @@ get_header(); ?>
 
 				 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at nisi velit. Ut fringilla, mauris facilisis congue fermentum, orci nunc porta mi, quis viverra quam dui vel augue. Vestibulum id libero laoreet, vulputate velit a, accumsan velit. In tristique ante sed aliquet venenatis. Suspendisse volutpat accumsan viverra.</p>
 
-				 <p>Nullam accumsan ex in metus semper, nec consectetur sapien venenatis. Donec tincidunt ornare volutpat. Praesent tempor est vel neque rutrum, in tempor nibh ultricies. Morbi scelerisque accumsan pharetra.</p>
+				 <p>Nullam accumsan ex in metus semper, nec consectetur sapien venenatis. Donec tincidunt ornare volutpat. Praesent tempor est vel neque rutrum, in tempor nibh ultricies. Morbi scelerisque accumsan pharetra.</p>
 				 
 			 </div><!-- about_top_content -->
 				

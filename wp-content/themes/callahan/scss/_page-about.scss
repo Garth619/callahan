@@ -1,5 +1,6 @@
 
 
+
 .about_top_wrapper {
 	max-width:1450px;
 	margin:0 auto;
@@ -210,9 +211,21 @@ span.about_video_description {
 @media screen and (max-width: 1450px) {
 	
 	
+	.about_top_wrapper {
+		padding:0 30px;
+	}
+	
 	.about_left {
 		padding-right: 55px;
 	}
+	
+	
+	.about_bottom_wrapper {
+		display: block;
+		max-width: 775px;
+		margin-bottom:-30px;
+	}
+	
 	
 	
 } /* Media Query */
@@ -220,7 +233,7 @@ span.about_video_description {
 
 
 
-@media screen and (max-width: 1345px) {
+@media screen and (max-width: 1405px) {
 	
 	
 	.about_left {
@@ -272,19 +285,141 @@ span.about_video_description {
 } /* Media Query */
 
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1345px) {
 	
-	
+	.about_top_wrapper {
+		padding:10px 60px 0 45px;
+	}
 	
 	.about_left {
 		.about_video_wrapper {
-			margin-left:-100px;
+			margin-left:-84px;
 		}
 	}
+	
+	.about_video_thumb {
+		.about_video_overlay {
+			svg#play_button {
+				width:111px;
+				height:111px;
+				margin-top:-60px;
+			}
+		}
+	} 
 	
 	.about_intro_wrapper {
 		max-width:calc(100% - 100px);
 	}
+	
+	body.page-template-template-about {
+	.container {
+		padding:0px 60px;
+	}
+}
+
+h1.about_header {
+	padding-top:9px;
+}
+
+.about_intro_wrapper {
+	padding: 52px 0 0;
+}
+
+.about_top_content {
+	padding-top:64px;	
+}	
+
+
+
+.about_blockquote {
+	margin: 71px auto 0;
+}
+
+
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1190px) {
+	
+	
+	.about_top_wrapper {
+		padding:0px;
+	}
+	
+	.about_left {
+		.about_video_wrapper {
+			max-width:470px;
+			margin:75px auto 0;
+		}
+	}
+	
+	.about_left_inner {
+		display: block;
+	}
+	
+	
+	.about_intro_wrapper {
+    padding: 41px 0 0;
+	}
+
+	.about_top_content {
+    padding-top: 35px;
+	}
+	
+	
+	.about_blockquote {
+    margin: 42px auto 0;
+    &:before {
+	    left:30px;
+	    width:calc(100% - 60px);
+    }
+    &:after {
+	    top:30px;
+	    height:calc(100% - 60px);
+    }
+	}
+	
+	
+	.about_blocquote_inner {
+		padding: 113px 159px 110px;
+		span.about_blockquote_title {
+			font-size: 18px;
+		}
+		.about_blockquote_content {
+			font-size: 26px;
+			line-height: 44px;
+		}
+	}
+	
+	
+	.about_bottom_wrapper {
+		margin: 87px auto -52px;
+	}
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	
+	
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1000px) {
+	
+	
+	.about_intro_wrapper {
+		max-width:100%;
+	}
+	
 	
 	
 } /* Media Query */
