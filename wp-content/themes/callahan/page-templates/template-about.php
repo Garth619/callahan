@@ -20,7 +20,7 @@ get_header(); ?>
 			 
 			 <div class="about_intro_wrapper">
 				 
-				 <p>Sed aliquam lectus neque, eget tincidunt justo bibendum nec. Aenean pharetra sodales augue sit amet iaculis. Praesent ultricies sollicitudin lectus, ac cursus odio sodales porttitor.</p>
+				 <?php the_field( 'about_intro' ); ?>
 				 
 			 </div><!-- about_intro_wrapper -->
 			 
@@ -28,11 +28,13 @@ get_header(); ?>
 			 
 			 <div class="about_video_wrapper">
 					
-					<a class="" href="https://www.youtube.com/embed/XBPjVzSoepo" data-lity>
+					<a class="" href="https://www.youtube.com/embed/<?php the_field( 'youtube_id_about' ); ?>" data-lity>
 					
 					<div class="about_video_thumb">
 						
-						<img class="about_thumb" src="<?php bloginfo('template_directory');?>/images/int-about-video-thumb.jpg"/><!-- about_thumb -->
+						<?php $video_thumbnail = get_field( 'video_thumbnail' ); ?>
+
+						<img class="about_thumb" src="<?php echo $video_thumbnail['url']; ?>" alt="<?php echo $video_thumbnail['alt']; ?>" />
 						
 						<div class="about_video_overlay">
 							
@@ -42,7 +44,7 @@ get_header(); ?>
 						
 					</div><!-- about_video_thumb -->
 					
-					<span class="about_video_description">Praesent tempor est vel neque rutrum, in tempor nibh ultricies. Morbi scelerisque set accumsan pharetra odio neque.</span><!-- about_video_description -->
+					<span class="about_video_description"><?php the_field( 'about_video_description' ); ?></span><!-- about_video_description -->
 					
 					</a>
 					
@@ -52,11 +54,7 @@ get_header(); ?>
 			 
 			 <div class="about_top_content content">
 				 
-				 <h2>Duis ut purus scelerisque, eleifend neque</h2>
-
-				 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at nisi velit. Ut fringilla, mauris facilisis congue fermentum, orci nunc porta mi, quis viverra quam dui vel augue. Vestibulum id libero laoreet, vulputate velit a, accumsan velit. In tristique ante sed aliquet venenatis. Suspendisse volutpat accumsan viverra.</p>
-
-				 <p>Nullam accumsan ex in metus semper, nec consectetur sapien venenatis. Donec tincidunt ornare volutpat. Praesent tempor est vel neque rutrum, in tempor nibh ultricies. Morbi scelerisque accumsan pharetra.</p>
+				 <?php the_field( 'about_top_content' ); ?>
 				 
 			 </div><!-- about_top_content -->
 				
@@ -66,11 +64,11 @@ get_header(); ?>
 				
 				<div class="about_video_wrapper">
 					
-					<a class="" href="https://www.youtube.com/embed/XBPjVzSoepo" data-lity>
+					<a class="" href="https://www.youtube.com/embed/<?php the_field( 'youtube_id_about' ); ?>" data-lity>
 					
 					<div class="about_video_thumb">
-						
-						<img class="about_thumb" src="<?php bloginfo('template_directory');?>/images/int-about-video-thumb.jpg"/><!-- about_thumb -->
+
+						<img class="about_thumb" src="<?php echo $video_thumbnail['url']; ?>" alt="<?php echo $video_thumbnail['alt']; ?>" />
 						
 						<div class="about_video_overlay">
 							
@@ -80,7 +78,7 @@ get_header(); ?>
 						
 					</div><!-- about_video_thumb -->
 					
-					<span class="about_video_description">Praesent tempor est vel neque rutrum, in tempor nibh ultricies. Morbi scelerisque set accumsan pharetra odio neque.</span><!-- about_video_description -->
+					<span class="about_video_description"><?php the_field( 'about_video_description' ); ?></span><!-- about_video_description -->
 					
 					</a>
 					
@@ -94,11 +92,11 @@ get_header(); ?>
 			
 			<div class="about_blocquote_inner">
 				
-				<span class="about_blockquote_title">What We Stand For</span><!-- about_blockquote_title -->
+				<span class="about_blockquote_title"><?php the_field( 'about_blockquote_title' ); ?></span><!-- about_blockquote_title -->
 				
 				<div class="about_blockquote_content">
 					
-					<p>Our law firm represents corporate, professional and entrepreneurial clients of all sizes: multi-national, Fortune 500 companies, California-based corporations, medium and small businesses, homeowners associations, and employers and individuals engaged in business.</p>
+					<?php the_field( 'about_quote_description' ); ?>
 					
 				</div><!-- about_blockquote_content -->
 				
@@ -110,30 +108,13 @@ get_header(); ?>
 			
 			<div class="about_col">
 				
-				<h2>Duis ut purus scelerisque, eleifend neque</h2>
-				
-				<p><strong>Sed aliquam lectus neque, eget tincidunt justo bibendum nec. Aenean pharetra sodales augue sit amet iaculis. Praesent ultricies sollicitudin lectus, ac cursus odio sodales porttitor. Suspendisse vel risus ac nulla malesuada vehicula:</strong></p>
-				
-				<ul>
-
-					<li>Duis dignissim, metus nec suscipit eleifend, orci dolor laoreet eros, nec finibus.</li>
-					<li>Nullam accumsan ex in metus semper, nec consectetur sapien venenatis. Donec tincidunt ornare volutpat.</li>
-					<li>Duis ut purus scelerisque, eleifend neque sed, pulvinar purus. Maecenas ut pellentesque elit. Proin ex eros, volutpat at consequat vitae.</li>
-					<li>Vestibulum luctus erat id rhoncus tincidunt. Donec porta odio nunc, eget semper turpis placerat nec. Vivamus pellentesque imperdiet ex, nec sollicitudin risus.</li>
-				
-				</ul>
+				<?php the_field( 'about_column_one' ); ?>
 
 				</div><!-- about_col -->
 			
 			<div class="about_col">
 				
-				<ul>
-		
-				<li>Phasellus hendrerit erat id sem vestibulum eleifend. Mauris bibendum, sem sollicitudin vestibulum venenatis.</li>
-				
-				<li>Destibulum luctus erat id rhoncus tincidunt. Donec porta odio nunc, eget semper turpis placerat nec. Vivamus pellentesque imperdiet ex, nec sollicitudin risus rutrum quis. Cras mollis scelerisque dui, et interdum magna volutpat in. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
-
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at nisi velit. Ut fringilla, mauris facilisis congue fermentum, orci nunc porta mi, quis viverra quam dui vel augue. Vestibulum id libero laoreet, vulputate velit a, accumsan velit. In tristique ante sed aliquet venenatis. Suspendisse volutpat accumsan viverra.</p>
+				<?php the_field( 'about_column_two' ); ?>
 				
 				
 			</div><!-- about_col -->
