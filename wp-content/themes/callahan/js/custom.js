@@ -477,7 +477,7 @@ $('a.goback').on('click', function(e) {
 	  
 	});
 	
-	$('nav ul.menu > li.current-menu-ancestor > ul.sub-menu > li.current-menu-ancestor > a').addClass('active');
+	$('nav ul.menu > li.current-menu-ancestor > a, nav ul.menu > li.current-menu-ancestor > ul.sub-menu > li.current-menu-ancestor > a').addClass('active');
 
 
 	$('nav ul.sub-menu > li.menu-item-has-children > a').on('click', function(e) {

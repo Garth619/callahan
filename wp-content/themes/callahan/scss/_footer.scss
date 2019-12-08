@@ -101,7 +101,7 @@
 			font-size: 37px;
 			border-radius: 45px;
 			padding:0 60px;
-			box-shadow: 3px 7px 9px 0px rgba(0,0,0,0.4);
+			box-shadow: $boxshadow;
 			@include operetta;
 			transition: all 200ms ease-in-out;
 			&:hover {
@@ -186,7 +186,7 @@
 		width:119px;
 		text-align: center;
 		border-radius: 45px;
-		box-shadow: 3px 7px 9px 0px rgba(0,0,0,0.4);
+		box-shadow: $boxshadow;
 		transition: all 200ms ease-in-out;
 		@include proxima_black;
 		&:hover {

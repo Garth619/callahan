@@ -1,7 +1,6 @@
 
 body.error404 {
 	.content_wrapper {
-		
 		p {
 			max-width:670px;
 		}
@@ -17,12 +16,13 @@ a.goback {
 	padding:7px 30px;
 	border-radius: 45px;
 	cursor: pointer;
-	box-shadow: 3px 7px 9px 0px rgba(0,0,0,0.4);
+	box-shadow: $boxshadow;
 	transition: all 200ms ease-in-out;
 	display: inline-block;
 	@include proxima_extrabold;
 	&:hover {
 		background: $red;
+		color:#fff;
 	}
 }
 

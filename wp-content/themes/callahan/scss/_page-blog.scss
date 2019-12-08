@@ -298,10 +298,11 @@ a.read_more {
 	margin-top:50px;
 	border-radius: 45px;
 	transition: all 200ms ease-in-out;
-	box-shadow: 3px 7px 9px 0px rgba(0,0,0,0.4);
+	box-shadow: $boxshadow;
 	@include proxima_extrabold;
 	&:hover {
 		background: $red;
+		color:#fff;
 	}
 }
 
