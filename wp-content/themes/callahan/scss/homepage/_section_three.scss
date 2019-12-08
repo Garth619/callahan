@@ -8,23 +8,23 @@
 
 
 .sec_three_inner {
-	max-width:1744px;
+	max-width:1780px;
 	margin:0 auto;
 	display: flex;
-	padding:0px 0 0 70px;
+	padding: 0px 0 0 95px;
 	position: relative;
 }
 
 
 .sec_three_slider_wrapper {
-	margin-top:70px;
+	margin-top: 67px;
 	position: relative;
 	z-index:1;
 	overflow: hidden;
 }
 
 
-.star_title {
+.star_title_wrapper {
 	img.stars {
 		width:174px;
 		height:171px;
@@ -38,7 +38,7 @@
 		color:$red;
 		font-size: 20px;
 		letter-spacing: 0.2em;
-		margin:-77px 0 0 76px;
+		margin: -75px 0 0 80px;
 		@include proxima_black;
 	}
 }
@@ -50,8 +50,8 @@
 }
 
 .sec_three_slider {
-	padding: 0 149px 105px 75px;
-	
+	//padding: 0 149px 105px 75px;
+	padding: 0 96px 105px 75px;
 	.slick-dots {
 		bottom: 0px;
 		text-align: left;
@@ -117,7 +117,7 @@
 	width:531px;
 	flex-shrink: 0;
 	overflow: hidden;
-	margin-top:-98px;
+	margin-top: -95px;
 	img {
 		max-width: 100%;
 		height: auto;
@@ -156,7 +156,7 @@
 		padding-left:0px;
 	}
 	
-	.star_title {
+	.star_title_wrapper {
 		span.star_title {
 			margin: -74px 0 0 76px;
 		}
@@ -197,7 +197,7 @@
 		margin-bottom: 85px;
 	}
 	
-	.star_title {
+	.star_title_wrapper {
 		span.star_title {
     	margin: -74px 0 0 62px;
     }
@@ -245,7 +245,7 @@
 	  margin-bottom:65px;
   }
   
-  .star_title {
+  .star_title_wrapper {
 	  text-align: center;
 	  img.mobile {
 		  display: inline-block;

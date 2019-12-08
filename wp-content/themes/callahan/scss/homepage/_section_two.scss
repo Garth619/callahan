@@ -6,7 +6,7 @@
 
 .sec_two_slider {
 	max-width: 1613px;
-	margin:-325px auto 0;
+	margin: -327px auto 0;
 	display: flex;
 	justify-content: space-between;
 }
@@ -74,7 +74,7 @@
 		color:$black;
 		font-size: 18px;
 		line-height: 32px;
-		margin-top:48px;
+		margin-top: 44px;
 		@include proxima_semibold;
 	}
 	span.learn_more {
@@ -90,7 +90,7 @@
 
 
 .sec_two_content_wrapper {
-	max-width:1470px;
+	max-width: 1510px;
 	margin:0 auto 230px;
 	padding:0 30px;
 }
@@ -131,7 +131,7 @@
 }
 
 .sec_two_col {
-	flex-basis: 47%;
+	flex-basis: 46%;
 }
 
 @media screen and (max-width: 1635px) {

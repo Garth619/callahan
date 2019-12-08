@@ -4,7 +4,7 @@
 		
 		<div class="sec_three_slider_wrapper">
 			
-			<div class="star_title">
+			<div class="star_title_wrapper">
 				
 				<img class="stars desktop" src="<?php bloginfo('template_directory');?>/images/test-stars.svg"/>
 				
@@ -12,7 +12,7 @@
 				
 				<span class="star_title">Client Testimonials</span><!-- star_title -->
 
-			</div><!-- star_title -->
+			</div><!-- star_title_wrapper -->
 			
 			<div class="sec_three_slider">
 				
