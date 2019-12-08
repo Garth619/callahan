@@ -12,7 +12,7 @@
 	border: 1px solid;
 	text-align: center;
 	border-image: $goldgradborder;
-	padding-bottom:122px;
+	padding-bottom: 117px;
 	span.free_consultation_title {
 		display: inline-block;
 		font-size: 96px;
@@ -29,7 +29,7 @@
 	span.free_consultation_subtitle {
 		color:#fff;
 		display: block;
-		margin-top:4px;
+		margin-top:6px;
 		font-size: 18px;
 		line-height: 22px;
 		@include proxima_semibold;
@@ -39,12 +39,12 @@
 		display: block;
 		text-transform: uppercase;
 		font-size: 14px;
-		margin-top:15px;
+		margin-top:16px;
 		letter-spacing: 0.2em;
 		@include proxima_extrabold;
 	}
 	.gform_wrapper {
-		margin:66px auto 0;
+		margin:63px auto 0;
 		max-width: 968px;
 		text-align: left;
 		ul {
@@ -92,15 +92,16 @@
 		}
 		input[type="submit"] {
 			background: $red;
+			display: inline-block;
 			cursor: pointer;
 			width:239px;
 			text-align: center;
-			margin:24px auto 0;
+			margin:23px auto 0;
 			border:none;
 			color:#fff;
 			font-size: 37px;
 			border-radius: 45px;
-			padding:0 60px;
+			padding:2px 60px;
 			box-shadow: $boxshadow;
 			@include operetta;
 			transition: all 200ms ease-in-out;
@@ -131,7 +132,7 @@
 .location_wrapper {
 	max-width:1700px;
 	margin:0px auto;
-	padding:130px 20px 0 46px;
+	padding: 132px 20px 0 46px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -146,7 +147,7 @@
 		color: $redlight;
 		font-size: 28px;
 		line-height: 32px;
-		margin-bottom:30px;
+		margin-bottom: 26px;
 		@include operetta;
 	}
 	span.address {
@@ -157,7 +158,7 @@
 	}
 	.phone_row {
 		display: flex;
-		margin-bottom:13px;
+		margin-bottom:11px;
 		font-size: 18px;
 		span {
 			color:$redlight;
@@ -182,7 +183,7 @@
 		font-size: 16px;
 		letter-spacing: 0.28em;
 		padding:16px 0;
-		margin-top: 35px;
+		margin-top: 36px;
 		width:119px;
 		text-align: center;
 		border-radius: 45px;
@@ -209,6 +210,7 @@
 	justify-content: space-between;
 	max-width: 175px;
 	padding-left:5px;
+	padding-top: 4px;
 	a {
 		text-decoration: none;
 		display: block;
@@ -301,7 +303,7 @@
 
 .copyright_wrapper {
 	max-width:1700px;
-	margin:108px auto 60px;
+	margin: 115px auto 60px;
 	border-top:1px solid $gold;
 	display: flex;
 	justify-content: space-between;
