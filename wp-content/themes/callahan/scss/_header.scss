@@ -807,6 +807,18 @@ nav.nav_desktop {
 		}
 	}
 }
+
+body:not(.page-template-template-home) {
+	nav.nav_desktop {
+		ul.menu {
+			> li {
+				 > ul.sub-menu {
+					 	top:30px;
+				 }
+			}
+		}
+	}
+}  
 	
 } /* Media Query */
 

@@ -85,6 +85,13 @@ h1,h2,h3,h4 {
 		padding-bottom:42px;
 		@include proxima_black;
 	}
+	a {
+		color:$redlight;
+		transition: all 200ms ease-in-out;
+		&:hover {
+			color:$gold;
+		}
+	}
 	p, ul, ol {
 		margin-bottom:37px;
 	}

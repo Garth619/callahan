@@ -167,6 +167,10 @@
 		a {
 			text-decoration: none;
 			color:#000;
+			transition: all 200ms ease-in-out;
+			&:hover {
+				color:$gold;
+			}
 		}
 	}
 	a.map_button {
@@ -258,6 +262,10 @@
 			a {
 				text-decoration: none;
 				color:$black;
+				transition: all 200ms ease-in-out;
+				&:hover {
+					color:$gold;
+				}
 			}
 		}
 	}
@@ -317,6 +325,10 @@
 			a {
 				text-decoration: none;
 				color:$black;
+				transition: all 200ms ease-in-out;
+				&:hover {
+					color:$gold;
+				}
 				&:after {
 					content:"|";
 					display: inline-block;
