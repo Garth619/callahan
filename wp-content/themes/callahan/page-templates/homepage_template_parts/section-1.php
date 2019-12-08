@@ -20,9 +20,13 @@
 				
 				<div class="sec_one_video_thumb_wrapper">
 					
-					<?php echo file_get_contents("wp-content/themes/callahan/images/icon-play-button.svg"); ?>
+					<a class="" href="https://www.youtube.com/embed/XBPjVzSoepo" data-lity>
 					
-					<img class="video_thumb" src="<?php bloginfo('template_directory');?>/images/hero-video-thumb.jpg"/>
+						<?php echo file_get_contents("wp-content/themes/callahan/images/icon-play-button.svg"); ?>
+					
+						<img class="video_thumb" src="<?php bloginfo('template_directory');?>/images/hero-video-thumb.jpg"/>
+					
+					</a>
 					
 				</div><!-- sec_one_video_thumb_wrapper -->
 				

@@ -4,9 +4,9 @@
 		
 		<div class="form_inner">
 			
-			<span class="free_consultation_title">Free Consultation</span><!-- free_consultation_title -->
+			<span class="free_consultation_title"><?php the_field( 'free_consultation_verbiage','option'); ?></span><!-- free_consultation_title -->
 			
-			<span class="free_consultation_subtitle">Fill out the form below to receive a free initial consultation.</span><!-- free_consultation_subtitle -->
+			<span class="free_consultation_subtitle"><?php the_field( 'free_consultation_subheader','option'); ?></span><!-- free_consultation_subtitle -->
 			
 			<span class="required">*Field Required</span><!-- required -->
 			
@@ -24,15 +24,15 @@
 		
 			<div class="location_col location_col_one">
 			
-				<span class="location_title">Orange County Office</span><!-- location_title -->
+				<span class="location_title"><?php the_field( 'office_location_title','option'); ?></span><!-- location_title -->
 			
-				<span class="address">3 Hutton Centre Drive Ninth Floor,<br/> Santa Ana, CA 92707</span><!-- address -->
+				<span class="address"><?php the_field( 'address','option'); ?></span><!-- address -->
 			
 				<div class="phone_row">
 				
 					<span>Phone</span>
 				
-					<a href="tel:7142414444">(714) 241-4444</a>
+					<a href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field('phone_number', 'option')); ?>"><?php the_field( 'phone_number','option'); ?></a>
 				
 				</div><!-- phone_row -->
 			
@@ -40,7 +40,7 @@
 				
 					<span>Toll Free</span>
 				
-					<a href="tel:8882840809">(888) 284-0809</a>
+					<a href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field('toll_free_number', 'option')); ?>"><?php the_field( 'toll_free_number','option'); ?></a>
 				
 				</div><!-- phone_row -->
 			
@@ -48,31 +48,55 @@
 				
 					<span>Fax</span>
 				
-					<a>(714) 241-4445</a>
+					<a><?php the_field( 'fax_number','option'); ?></a>
 				
 				</div><!-- phone_row -->
 			
-				<a class="map_button" href="">Map</a><!-- map_button -->
+				<a class="map_button" href="<?php the_field( 'google_maps_link','option'); ?>" target="_blank">Map</a><!-- map_button -->
 			
 			</div><!-- location_col_one -->
 		
 			<div class="location_col location_col_two">
 			
-				<span class="location_title">Stay Connected</span><!-- location_title -->
+				<span class="location_title"><?php the_field( 'stay_connected_title','option'); ?></span><!-- location_title -->
 				
 				<div class="social_media">
 					
-					<a class="sm-g" href=""><?php echo file_get_contents("wp-content/themes/callahan/images/social-g.svg"); ?></a>
+					<?php if(get_field('google_link','option')) { ?>
 					
-					<a class="sm-fb" href=""><?php echo file_get_contents("wp-content/themes/callahan/images/social-fb.svg"); ?></a>
+						<a class="sm-g" href="<?php the_field( 'google_link','option'); ?>" target="_blank" rel="noopener"><?php echo file_get_contents("wp-content/themes/callahan/images/social-g.svg"); ?></a>
 					
-					<a class="s-in" href=""><?php echo file_get_contents("wp-content/themes/callahan/images/social-in.svg"); ?></a>
+					<?php } ?>
 					
-					<a class="sm-t" href=""><?php echo file_get_contents("wp-content/themes/callahan/images/social-t.svg"); ?></a>
+					<?php if(get_field('facebook_link','option')) { ?>
 					
-					<a class="sm-yt" href=""><?php echo file_get_contents("wp-content/themes/callahan/images/social-yt.svg"); ?></a>
+						<a class="sm-fb" href="<?php the_field( 'facebook_link','option'); ?>" target="_blank" rel="noopener"><?php echo file_get_contents("wp-content/themes/callahan/images/social-fb.svg"); ?></a>
 					
-					<a class="sm-av" href=""><?php echo file_get_contents("wp-content/themes/callahan/images/social-av.svg"); ?></a>
+					<?php } ?>
+					
+					<?php if(get_field('linkedin_link','option')) { ?>
+					
+						<a class="s-in" href="<?php the_field( 'linkedin_link','option'); ?>" target="_blank" rel="noopener"><?php echo file_get_contents("wp-content/themes/callahan/images/social-in.svg"); ?></a>
+					
+					<?php } ?>
+					
+					<?php if(get_field('twitter_link','option')) { ?>
+					
+						<a class="sm-t" href="<?php the_field( 'twitter_link','option'); ?>" target="_blank" rel="noopener"><?php echo file_get_contents("wp-content/themes/callahan/images/social-t.svg"); ?></a>
+						
+					<?php } ?>
+					
+					<?php if(get_field('youtube_link','option')) { ?>
+					
+						<a class="sm-yt" href="<?php the_field( 'youtube_link','option'); ?>" target="_blank" rel="noopener"><?php echo file_get_contents("wp-content/themes/callahan/images/social-yt.svg"); ?></a>
+					
+					<?php } ?>
+						
+					<?php if(get_field('avvo_link','option')) { ?>
+					
+						<a class="sm-av" href="<?php the_field( 'avvo_link','option'); ?>" target="_blank" rel="noopener"><?php echo file_get_contents("wp-content/themes/callahan/images/social-av.svg"); ?></a>
+					
+					<?php } ?>
 					
 				</div>
 			
@@ -80,32 +104,58 @@
 		
 			<div class="location_col location_col_three">
 			
-				<span class="location_title">Practice Area</span><!-- location_title -->
+				<span class="location_title"><?php the_field( 'practice_areas_title_header','option'); ?></span><!-- location_title -->
 				
-				<ul>
-					<li><a href="">Complex Business Litigation</a></li>
-					<li><a href="">Insurance Litigation</a></li>
-					<li><a href="">Trade Secret Litigation</a></li>
-					<li><a href="">Employment Law</a></li>
-					<li><a href="">Intellectual Property</a></li>
-					<li><a href="">Real Estate Litigation</a></li>
-					<li><a href="">Professional Liability</a></li>
-					<li><a href="">Homeowners Associations</a></li>
-					<li><a href="">Construction Litigation</a></li>
-					<li><a href="">Class Action</a></li>
-					<li><a href="">Transactional and Corporate Law</a></li>
-					<li><a href="">Personal Injury</a></li>
-				</ul>
+				
+				<?php if(get_field('practice_areas_list','option')): ?>
+				
+					<ul>
+				 
+					<?php while(has_sub_field('practice_areas_list','option')): ?>
+				 
+						<?php $post_object = get_sub_field( 'practice_area_title' ); ?>
+						
+						<?php if ( $post_object ): ?>
+							
+							<?php $post = $post_object; ?>
+							
+							<?php setup_postdata( $post ); ?> 
+							
+								<li><a href="<?php the_permalink();?>"><?php the_title();?></a></li>
+							
+							<?php wp_reset_postdata(); ?>
+							
+						<?php endif; ?>
+				    
+					<?php endwhile; ?>
+					
+					</ul>
+				 
+				<?php endif; ?>
+				
+			
 			
 			</div><!-- location_col_three -->
 		
 			<div class="location_col location_col_four">
 			
-				<span class="location_title">In the News</span><!-- location_title -->
+				<span class="location_title"><?php the_field( 'in_the_news_title','option'); ?></span><!-- location_title -->
 				
-				<a class="news_post_title" href="">Dan Callahan holds a press conference to announce lawsuit against Michael Avenatti for stealing $4,000,000 from paraplegic client.</a><!-- news_post_title -->
+				<?php $post_object = get_field( 'in_the_news_post_title','option'); ?>
 				
-				<a class="views_news" href="">view news archive</a><!-- views_news -->
+				<?php if ( $post_object ): ?>
+				
+					<?php $post = $post_object; ?>
+					
+					<?php setup_postdata( $post ); ?> 
+						
+						<a class="news_post_title" href="<?php the_permalink();?>"><?php the_title(); ?></a>
+					
+					<?php wp_reset_postdata(); ?>
+				
+				<?php endif; ?>
+
+				<a class="views_news" href="<?php the_field( 'news_feed_link','option'); ?>"><?php the_field( 'view_news_archive_verbiage','option'); ?></a><!-- views_news -->
 			
 			</div><!-- location_col_four -->
 		
@@ -116,9 +166,36 @@
 		<div class="copyright_wrapper">
 				
 				<ul>
-					<li>&copy; <?php echo date("Y"); ?> by Callahan & Blaine. All right reserved.</li>
-					<li><a href="">Disclaimer</a></li>
-					<li><a href="">Site Map</a></li>
+					<li>&copy; <?php echo date("Y"); ?> <?php the_field( 'copyright','option'); ?></li>
+					
+						<?php $post_object = get_field( 'disclaimer','option'); ?>
+						
+						<?php if ( $post_object ): ?>
+						
+						<?php $post = $post_object; ?>
+						
+						<?php setup_postdata( $post ); ?> 
+						
+						<li><a href="<?php the_permalink();?>"><?php the_title();?></a></li>
+						
+						<?php wp_reset_postdata(); ?>
+						
+						<?php endif; ?>
+					
+						<?php $post_object = get_field( 'site_map','option'); ?>
+						
+						<?php if ( $post_object ): ?>
+							
+							<?php $post = $post_object; ?>
+							
+							<?php setup_postdata( $post ); ?> 
+							
+							<li><a href="<?php the_permalink();?>"><?php the_title();?></a></li>
+							
+							<?php wp_reset_postdata(); ?>
+							
+						<?php endif; ?>
+				
 				</ul>
 				
 				<a class="ilawyer" href="//ilawyermarketing.com" target="_blank" rel="noopener">

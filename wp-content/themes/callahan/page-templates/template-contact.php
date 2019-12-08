@@ -21,7 +21,7 @@
 			
 				<span class="address"><?php the_field( 'address','option'); ?></span><!-- address -->
 			
-				<a class="map_button" href="<?php the_field( 'google_maps_link' ); ?>" target="_blank">Map</a><!-- map_button -->
+				<a class="map_button" href="<?php the_field( 'google_maps_link','option'); ?>" target="_blank">Map</a><!-- map_button -->
 			
 			</div><!-- contact_location_col_one -->
 		
@@ -55,7 +55,7 @@
 				
 				</div><!-- phone_row -->
 				
-				<a class="map_button" href="<?php the_field( 'google_maps_link' ); ?>" target="_blank">Map</a><!-- map_button -->
+				<a class="map_button" href="<?php the_field( 'google_maps_link','option'); ?>" target="_blank">Map</a><!-- map_button -->
 							
 			</div><!-- contact_location_col_two -->
 			

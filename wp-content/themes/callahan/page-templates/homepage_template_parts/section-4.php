@@ -6,7 +6,7 @@
 			
 			<span>Record<br/> Breaking Results</span>
 			
-			<a class="results_button" href="">View All Results</a><!-- results_button -->
+			<a class="results_button" href="<?php the_permalink(54);?>">View All Results</a><!-- results_button -->
 			
 		</div><!-- sec_four_top_content -->
 		
