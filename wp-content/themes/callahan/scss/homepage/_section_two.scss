@@ -156,7 +156,7 @@
 	.sec_two_slide {
   	height:523px;
   	transform: translateY(20px);
-  	padding: 85px 65px 0;
+  	padding: 85px 59px 0;
   	&:before {
 	  	left:24px;
 	  	width:calc(100% - 48px);
@@ -215,7 +215,7 @@
 	
 	.sec_two_columns {
 		display: block;
-		max-width:760px;
+		max-width: 749px;
 		margin-left:auto;
 		margin-right:auto;
 	}
