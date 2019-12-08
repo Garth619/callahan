@@ -4,7 +4,7 @@
 		
 		<div class="sec_two_slide">
 			
-			<a href="">
+			<a href="<?php the_permalink(46);?>">
 		
 				<div class="sec_two_inner">
 				
@@ -22,7 +22,7 @@
 		
 		<div class="sec_two_slide">
 			
-			<a href="">
+			<a href="<?php the_permalink(46);?>">
 		
 				<div class="sec_two_inner">
 				
@@ -40,7 +40,7 @@
 		
 		<div class="sec_two_slide">
 			
-			<a href="">
+			<a href="<?php the_permalink(46);?>">
 		
 				<div class="sec_two_inner">
 				
