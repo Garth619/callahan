@@ -95,6 +95,10 @@ h1.contact_header {
 		a {
 			text-decoration: none;
 			color:#000;
+			transition: all 200ms ease-in-out;
+			&:hover {
+				color:$gold;
+			}
 		}
 	}
 	a.map_button {

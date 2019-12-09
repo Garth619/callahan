@@ -155,7 +155,7 @@
 		}
 		> ul {
 			margin-top:31px;
-			padding:0 32px;
+			padding:0 30px;
 		}
 	}
 	ul {
@@ -253,7 +253,7 @@
 		text-transform: uppercase;
 		font-size: 15px;
 		letter-spacing: 0.2em;
-		color:$gold;
+		color:$redlight;
 		line-height: 24px;
 		padding-bottom:39px;
 		@include proxima_extrabold;
@@ -270,7 +270,7 @@
 					display: none;
 				}
 				a {
-					color:$gold;
+					color:$redlight;
 					text-decoration: none;
 					transition: all 200ms ease-in-out;
 					&:before {
