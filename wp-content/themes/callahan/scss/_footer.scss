@@ -464,7 +464,7 @@
 	
 	
 	.form_inner {
-		padding:0 45px 90px;
+		padding:0 60px 90px;
 		span.free_consultation_title {
 			font-size: 66px;
 			line-height: 66px;
@@ -497,6 +497,7 @@
 	
 	.location_wrapper {
 		max-width: 690px;
+		padding: 86px 0 0;
 	}
 	
 	.mobile_col {
@@ -509,7 +510,7 @@
 			}
 			.location_col_two {
 				order:2;
-				margin-top:54px;
+				margin-top: 56px;
 			}
 		}
 		&:last-of-type {
@@ -526,7 +527,7 @@
 	
 	
 	.footer_bottom {
-		padding:0 30px;
+		padding:0 60px;
 	}
 	
 	
@@ -534,10 +535,19 @@
 		display: block;
 		text-align: center;
 		padding-top: 24px;
-		margin-bottom: 30px;
+		margin:28px auto;
 		a.ilawyer {
 			margin-top:16px;
 			display: inline-block;
+		}
+	}
+	
+	.form_inner {
+		span.free_consultation_title {
+			margin: 82px 0 0;
+		}
+		.gform_wrapper {
+			margin: 46px auto 0;
 		}
 	}
 	

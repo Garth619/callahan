@@ -316,17 +316,24 @@ a.results_button {
 	
 	.sec_four_slider_wrapper {
 		margin: -409px auto 0;
-		max-width:700px;
+		max-width: 668px;
 	}
 	
 	.sec_four_selling_points {
 		padding-left:60px;
 		padding-right:60px;
 		max-width:770px;
+		margin-top:0;
 	}
 	
 	.sec_four_selling_point {
 		padding-bottom: 38px;
+		&:first-of-type {
+			margin: 83px auto 0;
+		}
+		&:last-of-type {
+			padding-bottom: 66px;
+		}
 		.sec_four_sp_inner {
 			display: block;
 			.sec_four_sp_left {
@@ -334,6 +341,7 @@ a.results_button {
 				margin-top: 46px;
 				span {
 					max-width: 100%;
+					margin-top: 0px;
 					br {
 						display: none;
 					}
