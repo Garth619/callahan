@@ -79,7 +79,7 @@
 				<p>Callahan & Blaine has had unparalleled success in obtaining record-breaking verdicts and settlements in diverse and wide-ranging areas of litigation. Callahan & Blaine is recognized nationally for winning the most complex and difficult cases.</p>
 
 
-				<h2>Leadership of Callahan & Blaine</h2>
+				<h2>Leadership of Callahan & Blaine</h2>
 				
 				<p><strong>Callahan & Blaine is led by its managing partner Daniel J. Callahan. Dan Callahan is known and respected as one of the top trial lawyers in the United States. Dan's honors and accomplishments include the following:</strong></p>
 				

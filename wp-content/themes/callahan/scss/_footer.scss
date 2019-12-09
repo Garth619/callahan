@@ -92,9 +92,10 @@
 		}
 		input[type="submit"] {
 			background: $red;
-			display: inline-block;
+			display: block;
 			cursor: pointer;
 			width:239px;
+			height:68px;
 			text-align: center;
 			margin:23px auto 0;
 			border:none;

@@ -103,7 +103,7 @@
 					
 				<span class="menu_title">Menu</span><!-- menu_title -->
 					
-			</div ><!-- open_wrapper -->
+			</div><!-- open_wrapper -->
 				
 			</div><!-- menu_wrapper -->
 			
@@ -119,7 +119,7 @@
 			
 			<div class="internal_desktop_email">
 				
-				<a class="" href="">
+				<a class="" href="#consultation">
 					
 					<?php echo file_get_contents("wp-content/themes/callahan/images/icon-mail.svg"); ?>
 					
