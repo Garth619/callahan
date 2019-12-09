@@ -70,7 +70,7 @@
 		
 	</div><!-- sec_four_slider_wrapper -->
 	
-	<div class="sec_four_selling_points">
+	<div id="selling_points_trigger" class="sec_four_selling_points">
 		
 		<div class="sec_four_selling_point">
 			
