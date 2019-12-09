@@ -87,7 +87,7 @@
 				
 				<span class="call_us">Call Us Today</span><!-- call_us -->
 				
-				<a class="phone" href="">(714) 241-4444</a><!-- phone -->
+				<a class="phone" href="tel:7142414444">(714) 241-4444</a><!-- phone -->
 				
 			</div><!-- phone_wrapper -->
 			

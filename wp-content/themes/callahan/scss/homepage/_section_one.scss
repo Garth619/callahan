@@ -85,10 +85,13 @@
 		width:91px;
 		height:91px;
 		.st0-play, .st1-play {
-			transition: all 200ms ease-in-out;
+			transition: all 300ms ease-in-out;
 		}
 	}
 	&:hover {
+		img.video_thumb {
+		
+		}
 		svg#play_button {
 			.st0-play {
 				fill:#FFFFFF;
