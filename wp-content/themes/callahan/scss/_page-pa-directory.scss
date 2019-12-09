@@ -131,6 +131,15 @@
 			> li {
 				font-size: 18px;
 				line-height: 22px;
+				&:last-of-type {
+					> ul.sub-menu {
+						 > li {
+							 &:last-of-type {
+								 margin-bottom: 0;
+							 }
+						}
+					}
+				}
 				 > a {
 					 margin:0;
 					 &:after {
