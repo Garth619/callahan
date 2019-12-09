@@ -337,7 +337,12 @@ h1.about_header {
 
 
 .about_blockquote {
-	margin: 71px auto 0;
+	margin: 107px auto 0;
+}
+
+
+.about_blocquote_inner {
+	padding: 165px 121px 155px;
 }
 
 
@@ -374,7 +379,7 @@ h1.about_header {
 	
 	
 	.about_blockquote {
-    margin: 42px auto 0;
+    margin: 78px auto 0;
     &:before {
 	    left:30px;
 	    width:calc(100% - 60px);
@@ -412,7 +417,7 @@ h1.about_header {
 	
 	
 	h1.about_header {
-    padding-top: 35px;
+    padding-top: 10px;
 	}
 	
 	
@@ -424,9 +429,15 @@ h1.about_header {
 	
 	
 	.about_intro_wrapper {
-		padding: 34px 0 0;
+		padding: 29px 0 0;
 		max-width:100%;
 	}
+	
+	
+	.about_blocquote_inner {
+		padding: 113px 77px 110px;
+	}
+	    
 	
 	
 	
@@ -488,6 +499,10 @@ h1.about_header {
 	
 	.about_blockquote {
     margin: 56px auto 0;
+	}
+	
+	.about_bottom_wrapper {
+    margin: 59px auto -52px;
 	}
 	
 	
