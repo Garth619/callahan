@@ -57,6 +57,7 @@
 .about_right {
 	flex-basis:531px;
 	flex-shrink:0;
+	margin-top:83px;
 }
 
 .about_video_wrapper {
@@ -114,7 +115,7 @@ span.about_video_description {
 	line-height: 36px;
 	color:#212d3d;
 	display: flex;
-	max-width: 405px;
+	max-width: 425px;
 	margin-top:15px;
 	@include proxima_extrabold;
 	&:before {

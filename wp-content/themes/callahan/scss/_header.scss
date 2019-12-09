@@ -40,12 +40,11 @@ body:not(.page-template-template-home) {
 		span.call_us {
 			font-size: 12px;
 			margin-bottom:0;
-			margin-top:3px;
-			//color:$red;
+			margin-top: -5px;
 		}
 		a.phone {
-			font-size: 35px;
-			margin-top:-3px;
+			font-size: 30px;
+			margin-top:-1px;
 			//color:#df9a5a;
 		}
 	}
@@ -604,18 +603,18 @@ nav.nav_desktop {
 		nav.nav_desktop {
 			margin:0;
 			position: relative;
-			top:9px;
+			top: 12px;
 			ul.menu {
 				> li {
 						padding-bottom: 14px;
 						> ul.sub-menu {
-								top: 31px;
+								top: 30px;
 						}
 				}
 			}
 		}
 		.phone_wrapper {
-			margin:9px 0 0 0;
+			margin: 4px 0 0 0;
 			flex-grow: 1;
 			span.call_us {
 				margin-top:0;
@@ -702,7 +701,7 @@ body:not(.page-template-template-home) {
 		ul.menu {
 			> li {
 				 > ul.sub-menu {
-					 	top:30px;
+					 	top: 29px;
 				 }
 			}
 		}

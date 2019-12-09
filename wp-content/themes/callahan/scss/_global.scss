@@ -145,6 +145,9 @@ h1,h2,h3,h4 {
 		margin: 98px 0 78px 0;
 		padding:77px 80px;
 		@include operetta;
+		p {
+			margin-bottom:0;
+		}
 		&:before, &:after {
 			content:"";
 			display: block;
@@ -232,7 +235,7 @@ img.aligncenter {
 		}
 		blockquote {
 			font-size: 28px;
-			line-height: 35px;
+			line-height: 37px;
 			padding: 67px 53px;
 			margin: 35px 0;
 		}
