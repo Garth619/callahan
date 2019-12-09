@@ -256,6 +256,11 @@ a.results_button {
 	
 	.sec_four_selling_point {
 		padding-bottom: 69px;
+		margin: 112px auto 0;
+		&:last-of-type {
+			margin-top:0;
+			padding-bottom:28px;
+		}
 		.sec_four_sp_inner {
 			.sec_four_sp_left {
 				flex-basis:46%;
@@ -263,6 +268,7 @@ a.results_button {
 					font-size: 45px;
 					line-height: 60px;
 					max-width: 396px;
+					margin-top: 5px;
 					br {
 						display: inline-block;
 					}
@@ -275,6 +281,10 @@ a.results_button {
 		}
 	}
 	
+	
+	.sec_four_slider {
+		padding-bottom: 75px;
+	}
 	
 } /* Media Query */
 

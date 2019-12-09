@@ -373,7 +373,7 @@
 	.form_inner {
 		padding-bottom: 94px;
 		span.free_consultation_title {
-			margin: 80px 0 0;
+			margin: 76px 0 0;
 			font-size: 86px;
 		}
 		.gform_wrapper {
@@ -387,8 +387,7 @@
 	}
 	
 	.location_wrapper {
-		padding-left:0;
-		padding-right:0;
+		padding:82px 0 0;
 	}
 	
 	.location_col_one {
@@ -400,7 +399,7 @@
 	}
 	
 	.location_col_four {
-		margin-top:55px;
+		margin-top: 59px;
 	}
 	
 	.location_col_three {
@@ -413,8 +412,11 @@
 		span.location_title {
 			margin-bottom: 26px;
 		}
+		span.address {
+			margin-bottom: 40px;
+		}
 		a.map_button {
-			margin-top: 30px;
+			margin-top: 34px;
 		}
 		.news_post_title {
 			padding-top:10px;
