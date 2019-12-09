@@ -68,6 +68,9 @@
 		.about_video_thumb {
 			.about_video_overlay {
 				background: rgba(23, 51, 85, 0.8);
+				img.about_thumb {
+					//transform: scale(1.1);
+				}
 				svg#play_button {
 					.st0-play {
 						fill: #fff;
@@ -87,6 +90,7 @@
 		max-width:100%;
 		height: auto;
 		display: block;
+		//transform: scale(1);
 	}
 	.about_video_overlay {
 		position: absolute;
@@ -98,12 +102,12 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		transition: all 200ms ease-in-out;
+		transition: all 400ms ease-in-out;
 		svg#play_button {
 			width:145px;
 			height:145px;
 			.st0-play, .st1-play {
-				transition: all 200ms ease-in-out;
+				transition: all 400ms ease-in-out;
 			}
 		}
 	}
