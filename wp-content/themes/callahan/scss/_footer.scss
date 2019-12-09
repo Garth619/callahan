@@ -581,10 +581,11 @@
 		}
 		.gform_wrapper {
 			max-width: 540px;
+			margin: 49px auto 0;
 			ul {
 				li {
 					input, textarea {
-						padding: 17px 35px;
+						padding: 17px 27px;
 					}
 					textarea {
 						height:225px;
@@ -659,6 +660,10 @@
 				height: auto;
 			}
 		}
+	}
+	
+	.footer_bottom {
+		padding:0 30px;
 	}
 	
 	
