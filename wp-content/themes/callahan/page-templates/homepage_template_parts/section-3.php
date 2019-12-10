@@ -10,36 +10,27 @@
 				
 				<img class="stars mobile" src="<?php bloginfo('template_directory');?>/images/test-stars-02.svg"/>
 				
-				<span class="star_title">Client Testimonials</span><!-- star_title -->
+				<span class="star_title"><?php the_field( 'section_three_testimonials_title' ); ?></span><!-- star_title -->
 
 			</div><!-- star_title_wrapper -->
 			
 			<div class="sec_three_slider">
 				
-				<div class="sec_three_slide">
+				<?php if(get_field('section_three_testimonials')): ?>
+				 
+					<?php while(has_sub_field('section_three_testimonials')): ?>
+				 
+						<div class="sec_three_slide">
 					
-					<span class="sec_three_slide_content">Lorem ipsum dolor sit am consec ipsum lorme doij. Femme amet consect sdfulle amet consecturer.</span><!-- sec_three_slide_content -->
+							<span class="sec_three_slide_content"><?php the_sub_field( 'testimonial' ); ?></span><!-- sec_three_slide_content -->
 
-					<span class="sec_three_name">- clients first and last name</span><!-- sec_three_name -->
+							<span class="sec_three_name">- <?php the_sub_field( 'name' ); ?></span><!-- sec_three_name -->
 					
-				</div><!-- sec_three_slide -->
-				
-				<div class="sec_three_slide">
-					
-					<span class="sec_three_slide_content">Lorem ipsum dolor sit am et dolor consec ipsum lorme doij. Femme amet consect sdfulle amet consecturer pre.</span><!-- sec_three_slide_content -->
-
-					<span class="sec_three_name">- clients first and last name</span><!-- sec_three_name -->
-					
-				</div><!-- sec_three_slide -->
-
-				<div class="sec_three_slide">
-					
-					<span class="sec_three_slide_content">Lorem dolor ipsum dolor sit a et consec ipsum lorme doij. Femme amet consect sdfulle amet consecturer pre.</span><!-- sec_three_slide_content -->
-
-					<span class="sec_three_name">- clients first and last name</span><!-- sec_three_name -->
-					
-				</div><!-- sec_three_slide -->
-
+						</div><!-- sec_three_slide -->
+				    
+					<?php endwhile; ?>
+				 
+				<?php endif; ?>
 				
 			</div><!-- sec_three_slider -->
 			
@@ -47,7 +38,13 @@
 		
 		<div class="sec_three_image_wrapper">
 			
-			<img src="<?php bloginfo('template_directory');?>/images/test-att-image-desktop.jpg"/>
+			<?php $section_three_image = get_field( 'section_three_image' ); ?>
+			
+			<?php if ( $section_three_image ) { ?>
+			
+				<img src="<?php echo $section_three_image['url']; ?>" alt="<?php echo $section_three_image['alt']; ?>" />
+			
+			<?php } ?>
 			
 		</div><!-- sec_three_image_wrapper -->
 		

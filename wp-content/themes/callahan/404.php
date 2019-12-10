@@ -9,11 +9,11 @@
 		
 		<div class="content_wrapper content">
 			
-			<h1 class="content_header">404 Error<br/> Page Not Found</h1><!-- content_header -->
+			<h1 class="content_header"><?php the_field( 'not_found_title','option'); ?></h1><!-- content_header -->
 			
-			<p>Uh oh! The page you requested for could not be found. The link to this address may be broken or may have moved since your last visit.</p>
+			<?php the_field( 'not_found_verbiage','option'); ?>
 		
-			<a class="goback">Go Back Now!</a>
+			<a class="goback"><?php the_field( 'not_found_button','option'); ?></a>
 
 		</div><!-- content_wrapper -->
 		
