@@ -25,7 +25,8 @@
 	a.title_button {
 		transform: translateY(-45px);
 		opacity: 0;
-		transition: opacity 300ms ease-in-out, transform 1500ms cubic-bezier(.17,.66,.34,.98);
+		background: $red;
+		transition: background 200ms ease-in-out, opacity 300ms ease-in-out, transform 1500ms cubic-bezier(.17,.66,.34,.98);
 	}
 	
 	
@@ -33,7 +34,7 @@
 		a.title_button {
 			transform: translateY(0px);
 			opacity: 1;
-			transition-delay: 300ms;
+			transition-delay: 0ms, 300ms, 300ms;
 		}
 	}
 	
@@ -204,7 +205,8 @@
 	a.results_button {
 		transform: translateY(15px);
 		opacity: 0;
-		transition: opacity 500ms ease-in-out, transform 1500ms cubic-bezier(.17,.66,.34,.98);
+		background: $red;
+		transition: background 200ms ease-in-out, opacity 300ms ease-in-out, transform 1500ms cubic-bezier(.17,.66,.34,.98);
 	}
 	
 	
@@ -216,7 +218,7 @@
 		a.results_button {
 			transform: translateY(0px);
 			opacity: 1;
-			transition-delay: 100ms;
+			transition-delay: 0ms, 100ms, 100ms;
 		}
 		
 	}

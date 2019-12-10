@@ -6,7 +6,13 @@
 	
 		<div class="sec_one_right">
 			
-			<img src="<?php bloginfo('template_directory');?>/images/hero-desktop.jpg"/>
+			<?php $section_one_image = get_field( 'section_one_image' ); ?>
+			
+			<?php if ( $section_one_image ) { ?>
+			
+				<img src="<?php echo $section_one_image['url']; ?>" alt="<?php echo $section_one_image['alt']; ?>" />
+				
+			<?php } ?>
 			
 		</div><!-- sec_one_right -->
 	
@@ -20,27 +26,33 @@
 				
 				<div class="sec_one_video_thumb_wrapper">
 					
-					<a class="" href="https://www.youtube.com/embed/XBPjVzSoepo" data-lity>
+					<a class="" href="https://www.youtube.com/embed/<?php the_field( 'section_one_youtube_video_id' ); ?>" data-lity>
 					
 						<?php echo file_get_contents("wp-content/themes/callahan/images/icon-play-button.svg"); ?>
-					
-						<img class="video_thumb" src="<?php bloginfo('template_directory');?>/images/hero-video-thumb.jpg"/>
+						
+						<?php $section_one_video_thumb = get_field( 'section_one_video_thumb' ); ?>
+						
+						<?php if ( $section_one_video_thumb ) { ?>
+							
+							<img class="video_thumb" src="<?php echo $section_one_video_thumb['url']; ?>" alt="<?php echo $section_one_video_thumb['alt']; ?>" />
+						
+						<?php } ?>
 					
 					</a>
 					
 				</div><!-- sec_one_video_thumb_wrapper -->
 				
-				<span class="video_title">Text will go here about the firm and the video that is above this</span><!-- video_title -->
+				<span class="video_title"><?php the_field( 'section_one_video_description' ); ?></span><!-- video_title -->
 				
-				<a class="button video_button" href="#consultation">Free Consultation</a>
+				<a class="button video_button" href="#consultation"><?php the_field( 'section_one_button_verbiage' ); ?></a>
 				
 			</div><!-- sec_one_vid_wrapper -->
 			
 			<div class="sec_one_title_wrapper">
 				
-				<span class="sec_one_header">California’s<br/> Premier Litigation Law Firm</span>
+				<span class="sec_one_header"><?php the_field( 'section_one_header' ); ?></span>
 				
-				<a class="button title_button" href="#consultation">Free Consultation</a>
+				<a class="button title_button" href="#consultation"><?php the_field( 'section_one_button_verbiage' ); ?></a>
 				
 			</div><!-- sec_one_title_wrapper -->
 			

@@ -65,7 +65,7 @@
 			
 			<div class="phone_nav_wrapper">
 			
-			<nav>
+			<nav class="nav_desktop">
 				
 				<div class="menu_wrapper menu_wrapper_close">
 				
@@ -87,7 +87,9 @@
 				
 				<span class="call_us">Call Us Today</span><!-- call_us -->
 				
-				<a class="phone" href="tel:7142414444">(714) 241-4444</a><!-- phone -->
+				
+				
+				<a class="phone" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field('phone_number', 'option')); ?>"><?php the_field('phone_number', 'option');?></a><!-- phone -->
 				
 			</div><!-- phone_wrapper -->
 			
