@@ -60,14 +60,6 @@ h1,h2,h3,h4 {
 		 	}
 	}
 	
-	
- 
-.content {
-	font-size: 18px;
-	line-height: 36px;
-	color:#212d3d;
-	@include proxima_semibold;
-	
 	h2 {
 		padding:40px 0 43px 0;
 		color:$gold;
@@ -75,6 +67,14 @@ h1,h2,h3,h4 {
 		line-height: 35px;
 		@include operetta;
 	}
+ 
+.content {
+	font-size: 18px;
+	line-height: 36px;
+	color:#212d3d;
+	@include proxima_semibold;
+	
+	
 	h3 {
 		text-transform: uppercase;
 		font-size: 20px;

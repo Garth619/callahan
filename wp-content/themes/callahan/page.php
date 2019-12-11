@@ -6,13 +6,53 @@
 		
 		<div class="internal_banner_content">
 			
-			<span class="internal_banner_header">California’s Premier Litigation Law Attorneys</span><!-- internal_banner_header -->
+			<?php if(get_field('internal_banner_title')) :?>
+			
+				<?php 
+					
+					$yes = get_field('h1_tag'); if( $yes && in_array('Yes', $yes) ) : ?>
+			
+						<h1 class="internal_banner_header"><?php the_field( 'internal_banner_title'); ?></h1><!-- internal_banner_header -->
+			
+						<?php else: ?>
+			
+						<span class="internal_banner_header"><?php the_field( 'internal_banner_title'); ?></span><!-- internal_banner_header -->
+			
+					<?php endif;?>
+			
+				<?php else: ?>
+				
+				<?php $yes = get_field('h1_tag'); if( $yes && in_array('Yes', $yes) ) : ?>
+				
+				<h1 class="internal_banner_header"><?php the_field( 'global_internal_banner_title','option'); ?></h1><!-- internal_banner_header -->
+			
+				<?php else:?>
+				
+				<span class="internal_banner_header"><?php the_field( 'global_internal_banner_title','option'); ?></span><!-- internal_banner_header -->
+				
+				<?php endif;?>
+			
+			<?php endif;?>
 			
 			<a class="banner_button" href="#consultation">Free Consultation</a><!-- banner_button -->
 			
 		</div><!-- internal_banner_content -->
 		
-		<img src="<?php bloginfo('template_directory');?>/images/int-hero-desktop.jpg"/>
+		<?php $global_internal_banner_image = get_field( 'global_internal_banner_image','option'); ?>
+		
+		<?php $internal_banner = get_field( 'internal_banner' ); ?>
+		
+		<?php if ( $internal_banner ) : ?>
+			
+			<img src="<?php echo $internal_banner['url']; ?>" alt="<?php echo $internal_banner['alt']; ?>" />
+		
+		<?php else: ?>
+			
+			<img src="<?php echo $global_internal_banner_image['url']; ?>" alt="<?php echo $global_internal_banner_image['alt']; ?>" />
+			
+			<?php endif; ?>
+		
+		
 		
 	</div><!-- internal_banner -->
 	
@@ -22,7 +62,15 @@
 		
 		<div class="content_wrapper content">
 			
-			<h1 class="content_header"><?php the_title();?></h1><!-- content_header -->
+			<?php $yes = get_field('h1_tag'); if( $yes && in_array('Yes', $yes) ) : ?>
+			
+				<h2 class="content_header"><?php the_title();?></h2><!-- content_header -->
+			
+			<?php else: ?>
+			
+				<h1 class="content_header"><?php the_title();?></h1><!-- content_header -->
+			
+			<?php endif;?>
 			
 			<?php get_template_part( 'loop', 'page' ); ?>
 			
