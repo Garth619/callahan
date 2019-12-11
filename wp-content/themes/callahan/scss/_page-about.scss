@@ -252,7 +252,7 @@ span.about_video_description {
 
 		.about_video_wrapper {
 			display: block;
-			flex-basis: 470px;
+			flex-basis: 405px;
 			flex-shrink: 0;
 		}
 	}
@@ -302,7 +302,7 @@ span.about_video_description {
 	
 	.about_left {
 		.about_video_wrapper {
-			margin-left:-84px;
+			margin-left:-20px;
 		}
 	}
 	
@@ -422,7 +422,17 @@ h1.about_header {
 	
 	h1.about_header {
     padding-top: 10px;
+    font-size: 125px;
+		line-height: 136px;
+		max-width:575px;
 	}
+	
+	
+	.about_intro_wrapper {
+		font-size: 25px;
+		line-height: 40px;
+	}
+	
 	
 	
 	
@@ -460,8 +470,8 @@ h1.about_header {
 	
 	
 	h1.about_header {
-    font-size: 75px;
-    line-height: 86px;
+    font-size: 21px;
+		line-height: 33px;
     max-width: 355px;
     padding-top: 18px;
    
@@ -469,8 +479,8 @@ h1.about_header {
 	
 	.about_intro_wrapper {
 		padding: 26px 0 0;
-		font-size: 22px;
-		line-height: 35px;
+		font-size: 21px;
+		line-height: 33px;
 	}
 	
 	
@@ -515,7 +525,16 @@ h1.about_header {
 
 @media screen and (max-width: 767px) {
 	
-	
+	.about_blockquote {
+		&:before {
+			left: 20px;
+			width: calc(100% - 40px);
+		}
+		&:after {
+			top:20px;
+			height:calc(100% - 40px);
+		}
+	}
 	
 	.about_blocquote_inner {
     padding: 91px 50px 56px;
@@ -525,8 +544,8 @@ h1.about_header {
 	    margin-bottom: 34px;
    	}
     .about_blockquote_content {
-	    font-size: 21px;
-	    line-height: 32px;
+	    font-size: 18px;
+			line-height: 30px;
 	    margin-bottom: 35px;
     }
 	}

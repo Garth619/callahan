@@ -133,7 +133,7 @@
 .location_wrapper {
 	max-width:1700px;
 	margin:0px auto;
-	padding: 132px 20px 0 46px;
+	padding: 132px 20px 0 54px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -543,14 +543,22 @@
 		}
 	}
 	
+	
+	
 	.form_inner {
 		span.free_consultation_title {
 			margin: 82px 0 0;
 		}
 		.gform_wrapper {
 			margin: 46px auto 0;
+			input[type="submit"] {
+				margin-top: 40px;
+			}
 		}
 	}
+	
+	
+	    
 	
 	
 } /* Media Query */

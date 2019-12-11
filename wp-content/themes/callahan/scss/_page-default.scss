@@ -116,10 +116,10 @@
 		color:$redlight;
 		//display: inline-block;
 		padding:0 85px 0 90px;
-		cursor: pointer;
+		//cursor: pointer;
 		display: flex;
 		
-		width:calc(100% - 40px);
+		width:100%;
 		//padding-right:85px;
 		@include proxima_black;
 		&:after {
@@ -310,8 +310,8 @@
 	
 	.sidebarbox_inner {
 		h3 {
-			padding: 0 0px 0 45px;
-			width: calc(100% - 78px);
+			padding: 0 45px;
+			width: 100%;
 			&:after {
 				margin-left: 20px;
 			}
@@ -412,7 +412,7 @@
 		margin-top:0;
 	}
 	
-	.internal_banner_content {
+	.internal_banner {
 		display: none;
 	}
 	
@@ -446,7 +446,7 @@
 	
 	.sidebarbox_inner {
 		h3 {
-			padding: 0 0 0 30px;
+			padding: 0 30px;
 		}
 		span.h3_icon {
 			right:30px;

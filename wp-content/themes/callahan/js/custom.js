@@ -357,6 +357,8 @@ $('.sec_two_slider').slick({
   adaptiveHeight: true,
   slidesToScroll: 1,
 	arrows:false,
+	autoplay: true,
+  autoplaySpeed: 3000,
 	dots:true,
 	responsive: [
     {
@@ -422,7 +424,7 @@ $('a.goback').on('click', function(e) {
 // sidebar
 	
 		
-		$('<span class="h3_icon"></span>').insertAfter('.sidebarbox_inner h3, .widget h3'); 
+		//$('<span class="h3_icon"></span>').insertAfter('.sidebarbox_inner h3, .widget h3'); 
 	 
 	 
 	 $('<span class="h3_icon"></span>').appendTo('.sidebarbox_inner ul.menu > li.menu-item-has-children > a, .widget > ul > li.menu-item-has-children > a');
@@ -440,6 +442,7 @@ $('a.goback').on('click', function(e) {
 	 
 	 $('.sidebar_box, widget, .widget > span.h3_icon').addClass('active');//
 	 
+/*
 	 $('.sidebarbox_inner h3, .widget h3').on('click', function(e) {
 		 
 		 	$(this).parents('.sidebar_box, .widget').toggleClass('active');
@@ -451,6 +454,7 @@ $('a.goback').on('click', function(e) {
 			
 		
 		});
+*/
 		
 		
 		// blog sidebar

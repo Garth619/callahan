@@ -105,6 +105,18 @@ span.single_video_description {
 }
 
 
+@media screen and (max-width: 1390px) {
+	
+	
+	.single_video {
+		flex-basis:47%;
+	}
+	
+	
+	
+} /* Media Query */
+
+
 @media screen and (max-width: 1190px) {
 	
 	
@@ -113,10 +125,12 @@ span.single_video_description {
 			display: none;
 		}
 	}
+/*
 	
 	.single_video {
 		flex-basis:47%;
 	}
+*/
 	
 	
 } /* Media Query */
