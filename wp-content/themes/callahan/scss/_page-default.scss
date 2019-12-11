@@ -348,6 +348,30 @@
 } /* Media Query */
 
 
+@media screen and (max-width: 1390px) {
+	
+	
+	.two_col {
+		display: block;
+	}
+	
+	.sidebar_wrapper {
+		margin-top:60px;
+		width:502px;
+	}
+	
+	
+/*
+	.sidebar_box.active, .sidebar_box {
+		padding-left:45px;
+		padding-right:45px;
+	}
+*/
+	
+	
+	
+	
+} /* Media Query */
 
 
 @media screen and (max-width: 1190px) {
@@ -364,13 +388,11 @@
 		padding-right:0;
 	}
 	
+	
 	.sidebar_wrapper {
-		margin-top:60px;
+		width:100%;
 	}
 	
-	.two_col {
-		display: block;
-	}
 	.sidebarbox_inner {
 		.widget {
 			span.h3_icon {
@@ -384,6 +406,9 @@
 		}
 		
 	}
+	
+
+	
 	
 } /* Media Query */
 

@@ -45,10 +45,10 @@
 		color:$redlight;
 		//display: inline-block;
 		padding:0 0px 0 90px;
-		cursor: pointer;
+		//cursor: pointer;
 		padding:0 85px 0 90px;
 		display: flex;
-		width:calc(100% - 40px);
+		width:100%;
 		@include proxima_black;
 		&:after {
 			content:"";
@@ -459,14 +459,29 @@ a.read_more {
 } /* Media Query */
 
 
-@media screen and (max-width: 1190px) {
+
+
+
+@media screen and (max-width: 1390px) {
 	
 	.blog_sidebar_wrapper {
 		margin-top: 66px;
+		width:502px;
 	}
 	
 	
 
+	
+} /* Media Query */
+
+@media screen and (max-width: 1190px) {
+	
+	
+	
+	.blog_sidebar_wrapper {
+		width:100%;
+	}
+	
 	
 } /* Media Query */
 
@@ -563,7 +578,7 @@ a.read_more {
 		
 		.sidebar_blog {
 			h3 {
-    		padding: 0 40px 0 55px;
+    		padding: 0 55px;
     		&:after {
 	    		margin-left: 10px;
     		}
