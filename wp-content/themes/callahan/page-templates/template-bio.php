@@ -41,12 +41,6 @@ get_header(); ?>
 					<?php } ?>
 
 					
-					<div class="att_top_content">
-						
-						<?php the_field( 'att_top_intro' ); ?>
-						
-					</div><!-- att_top_content -->
-					
 				</div><!-- att_bio_right -->
 			
 			</div><!-- att_top_inner -->
@@ -56,6 +50,13 @@ get_header(); ?>
 		<div class="att_bio_bottom">
 			
 			<div class="att_bio_bottom_content content">
+				
+				<div class="att_bio_intro">
+				
+					<?php the_field( 'att_top_intro' ); ?>
+				
+				</div><!-- att_bio_intro -->
+
 				
 				<?php the_field( 'att_bottom_content' ); ?>
 								

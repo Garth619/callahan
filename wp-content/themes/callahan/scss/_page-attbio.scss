@@ -4,6 +4,7 @@
 	max-width:1600px;
 	margin: 150px auto 0;
 	position: relative;
+	height: 623px;
 	&:before {
 		content:"";
 		display: block;
@@ -32,7 +33,7 @@
 .att_top_inner {
 	position: relative;
 	z-index:1;
-	padding:117px 100px;
+	padding: 122px 100px 117px;
 	display: flex;
 }
 
@@ -92,6 +93,12 @@ span.position {
 	}
 }
 
+.att_bio_intro {
+	font-size:22px;
+	line-height: 32px;
+	@include proxima_bold;
+}
+
 
 .att_top_content {
 	color:#fff;
@@ -115,7 +122,7 @@ span.position {
 
 .att_bio_bottom {
 	max-width:1600px;
-	margin:139px auto 0;
+	margin: 195px auto 0;
 	display: flex;
 }
 
@@ -200,6 +207,11 @@ span.position {
 
 @media screen and (max-width: 1450px) {
 	
+	
+	.att_bio_top {
+		height: 535px;
+	}
+	
 	.att_bio_left {
 		flex-basis:380px;
 	}
@@ -270,6 +282,8 @@ span.position {
 	
 	.att_bio_top {
 		margin: 104px auto 0;
+		height:auto;
+		
 		&:before {
 			left:45px;
 			width:calc(100% - 90px);
@@ -278,6 +292,10 @@ span.position {
 			top:45px;
 			height:calc(100% - 90px);
 		}
+	}
+	
+	.att_top_inner {
+		padding: 153px 100px 165px 100px;
 	}
 	
 	.att_bio_left {
@@ -312,10 +330,10 @@ span.position {
 	}
 	
 	
-	.att_top_inner {
-		padding: 153px 100px 78px 100px;
+	.att_bio_bottom {
+		margin: 110px auto 0;
 	}
-	
+
 	span.position {
 		margin-top: 36px;
 	}
