@@ -14,7 +14,7 @@
 		
 		<?php if ( $section_four_top_image ) { ?>
 		
-			<img src="<?php echo $section_four_top_image['url']; ?>" alt="<?php echo $section_four_top_image['alt']; ?>" />
+			<img data-src="<?php echo $section_four_top_image['url']; ?>" alt="<?php echo $section_four_top_image['alt']; ?>" />
 		
 		<?php } ?>
 		

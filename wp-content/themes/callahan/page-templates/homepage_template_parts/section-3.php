@@ -6,9 +6,9 @@
 			
 			<div class="star_title_wrapper">
 				
-				<img class="stars desktop" src="<?php bloginfo('template_directory');?>/images/test-stars.svg"/>
+				<img class="stars desktop" data-src="<?php bloginfo('template_directory');?>/images/test-stars.svg"/>
 				
-				<img class="stars mobile" src="<?php bloginfo('template_directory');?>/images/test-stars-02.svg"/>
+				<img class="stars mobile" data-src="<?php bloginfo('template_directory');?>/images/test-stars-02.svg"/>
 				
 				<span class="star_title"><?php the_field( 'section_three_testimonials_title' ); ?></span><!-- star_title -->
 
@@ -42,7 +42,7 @@
 			
 			<?php if ( $section_three_image ) { ?>
 			
-				<img src="<?php echo $section_three_image['url']; ?>" alt="<?php echo $section_three_image['alt']; ?>" />
+				<img data-src="<?php echo $section_three_image['url']; ?>" alt="<?php echo $section_three_image['alt']; ?>" />
 			
 			<?php } ?>
 			

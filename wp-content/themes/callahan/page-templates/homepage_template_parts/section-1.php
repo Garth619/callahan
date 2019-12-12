@@ -8,12 +8,16 @@
 			
 			<?php $section_one_image = get_field( 'section_one_image' ); ?>
 			
-			<?php if ( $section_one_image ) { ?>
+			<?php $section_one_image_webp = get_field( 'section_one_image_webp' ); ?>
+			
+			<picture>
+			
+				<source srcset="<?php echo $section_one_image_webp['url']; ?>" type="image/webp">
 			
 				<img src="<?php echo $section_one_image['url']; ?>" alt="<?php echo $section_one_image['alt']; ?>" />
 				
-			<?php } ?>
-			
+			</picture>
+				
 		</div><!-- sec_one_right -->
 	
 	</div><!-- sec_one_bg_wrapper -->
@@ -32,12 +36,16 @@
 						
 						<?php $section_one_video_thumb = get_field( 'section_one_video_thumb' ); ?>
 						
-						<?php if ( $section_one_video_thumb ) { ?>
+						<?php $section_one_video_thumb_webp = get_field( 'section_one_video_thumb_webp' ); ?>
+
+						<picture>
+							
+							<source srcset="<?php echo $section_one_video_thumb_webp['url']; ?>" type="image/webp">
 							
 							<img class="video_thumb" src="<?php echo $section_one_video_thumb['url']; ?>" alt="<?php echo $section_one_video_thumb['alt']; ?>" />
+							
+						</picture>
 						
-						<?php } ?>
-					
 					</a>
 					
 				</div><!-- sec_one_video_thumb_wrapper -->
